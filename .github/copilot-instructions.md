@@ -85,9 +85,10 @@ Always move client-only UI into a Client Component and import it directly in you
   - If a section of a page is complex or self-contained.
   - If it improves readability or testability.
 - **Naming Conventions:**
-  - Use `PascalCase` for component files and exports (e.g., `UserCard.tsx`).
-  - Use `camelCase` for hooks (e.g., `useUser.ts`).
-  - Use `snake_case` or `kebab-case` for static assets (e.g., `logo_dark.svg`).
+  - Use `kebab-case` for component files (e.g., `user-card.tsx`).
+  - Use `PascalCase` for component exports (e.g., `export function UserCard() {}`).
+  - Use `camelCase` for hooks (e.g., ` const useUser = () => {}`).
+  - Use `kebab-case` for static assets (e.g., `logo-dark.svg`).
   - Name context providers as `XyzProvider` (e.g., `ThemeProvider`).
 - **File Naming:**
   - Match the component name to the file name.
@@ -100,12 +101,12 @@ Always move client-only UI into a Client Component and import it directly in you
   - Use TypeScript interfaces for props.
   - Prefer explicit prop types and default values.
 - **Testing:**
-  - Co-locate tests with components (e.g., `UserCard.test.tsx`).
+  - Co-locate tests with components (e.g., `user-card.test.tsx`).
 
 ## 4. Naming Conventions (General)
 
 - **Folders:** `kebab-case` (e.g., `user-profile/`)
-- **Files:** `PascalCase` for components, `camelCase` for utilities/hooks, `kebab-case` for static assets
+- **Files:** `kebab-case` for components, utilities/hooks, static assets
 - **Variables/Functions:** `camelCase`
 - **Types/Interfaces:** `PascalCase`
 - **Constants:** `UPPER_SNAKE_CASE`

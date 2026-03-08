@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { RSVPModal } from "./RSVPModal";
+import { RSVPModal } from "./rsvp-modal";
 
 export default function RSVPSection() {
   const [modalOpen, setModalOpen] = useState(false);

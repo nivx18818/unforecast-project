@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { MemberCard } from "@/components/landing/MemberCard";
+import { MemberCard } from "@/components/landing/member-card";
 
 export interface Member {
   name: string;

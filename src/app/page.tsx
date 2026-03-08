@@ -1,12 +1,12 @@
-import HeaderBar from "@/components/landing/HeaderBar";
-import HeroSection from "@/components/landing/HeroSection";
-import DiscoverySection from "@/components/landing/DiscoverySection";
-import JourneySection from "@/components/landing/JourneySection";
-import ScheduleSection from "@/components/landing/ScheduleSection";
-import VenueSection from "@/components/landing/VenueSection";
-import RSVPSection from "@/components/landing/RSVPSection";
-import SecretMessagesSection from "@/components/landing/SecretMessagesSection";
-import Footer from "@/components/landing/Footer";
+import HeaderBar from "@/components/landing/header-bar";
+import HeroSection from "@/components/landing/hero-section";
+import DiscoverySection from "@/components/landing/discovery-section";
+import JourneySection from "@/components/landing/journey-section";
+import ScheduleSection from "@/components/landing/schedule-section";
+import VenueSection from "@/components/landing/venue-section";
+import RSVPSection from "@/components/landing/rsvp-section";
+import SecretMessagesSection from "@/components/landing/secret-messages-section";
+import Footer from "@/components/landing/footer";
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { type Member } from "./TeamGrid";
+import { type Member } from "./team-grid";
 import { DialogTitle } from "@/components/ui/dialog";
 
 export function MemberCard({ member }: { member: Member }) {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TeamGrid } from "./TeamGrid";
+import { TeamGrid } from "./team-grid";
 
 const bgImage = "/images/backgrounds/discovery-bg-1.png";
 const bgImage2 = "/images/backgrounds/discovery-bg-2.png";
