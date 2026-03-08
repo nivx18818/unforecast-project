@@ -161,7 +161,7 @@ export default function JourneySection() {
         {/* ── Pre-Event Recap / Gallery ─────────────────────── */}
         <div className="relative flex flex-col gap-16 py-0 pb-24">
           {/* Text intro */}
-          <div className="flex flex-col gap-2 w-full max-w-[703px]">
+          <div className="flex flex-col gap-2 w-full max-w-175.75">
             <span className="font-sans font-bold text-sm leading-5 tracking-[2.8px] uppercase text-gold">
               Pre-Event Recap
             </span>
@@ -174,7 +174,7 @@ export default function JourneySection() {
               </strong>{" "}
               Featuring local specialties and traditional food from the four
               hometown cities of 4 team organizers: Nam Dinh, Bac Ninh, Hai
-              Phong, Hanoi. A charity fundraising campaign organised by
+              Phong, Hanoi. A charity fundraising campaign organized by
               Unforecast Project, where cultural spirit and regional stories are
               brought to life through food, interactive activities, and shared
               experiences.
@@ -182,7 +182,7 @@ export default function JourneySection() {
           </div>
 
           {/* Masonry gallery */}
-          <div className="relative w-full aspect-[1248/960] mx-auto overflow-clip">
+          <div className="relative w-full aspect-1248/960 mx-auto overflow-clip">
             {galleryImages.map(({ src, alt, className }) => (
               <div
                 key={alt}

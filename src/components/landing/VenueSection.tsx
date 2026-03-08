@@ -4,10 +4,10 @@ export default function VenueSection() {
   return (
     <section
       id="venue"
-      className="flex items-center justify-center px-6 py-16 md:p-[96px] bg-background/30 w-full"
+      className="flex items-center justify-center px-6 py-16 md:p-24 bg-background/30 w-full"
       aria-label="Venue"
     >
-      <div className="flex flex-col md:flex-row gap-12 md:gap-[80px] items-center max-w-7xl w-full">
+      <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-center max-w-7xl w-full">
         {/* ── Media block ─────────────────────────────── */}
         <div className="relative flex-1 min-w-0 w-full">
           {/* Offset gold wash panel */}
@@ -16,7 +16,7 @@ export default function VenueSection() {
             aria-hidden="true"
           />
           {/* Photo */}
-          <div className="relative rounded-media-xl overflow-hidden aspect-[4/3] w-full shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+          <div className="relative rounded-media-xl overflow-hidden aspect-4/3 w-full shadow-[0_0_30px_rgba(0,0,0,0.5)]">
             <Image
               src="/images/venue-ballroom.jpg"
               alt="Theatre Pod Sir Graeme Davies 3-3 at British University Vietnam"
@@ -34,26 +34,26 @@ export default function VenueSection() {
 
         {/* ── Text block ──────────────────────────────── */}
         <div className="flex-1 min-w-0 flex flex-col items-start gap-4">
-          <span className="font-sans font-bold text-sm leading-[20px] tracking-[2.8px] uppercase text-primary">
+          <span className="font-sans font-bold text-sm leading-5 tracking-[2.8px] uppercase text-primary">
             Location
           </span>
-          <h2 className="font-display font-bold text-[36px] md:text-[48px] leading-[1.1] md:leading-[48px] text-foreground">
+          <h2 className="font-display font-bold text-[36px] md:text-[48px] leading-[1.1] md:leading-12 text-foreground">
             Theatre Pod Sir
             <br />
             Graeme Davies 3-3
           </h2>
           <div className="pt-2">
-            <p className="font-sans font-normal text-[18px] leading-[29.25px] text-secondary md:max-w-[477px]">
+            <p className="font-sans font-normal text-[18px] leading-[29.25px] text-secondary md:max-w-119.25">
               Set within the campus of British University Vietnam at Ecopark,
               Sir Graeme Davies Theatre Pod 3-3 offers a modern, intimate stage
               for inspiring moments.
             </p>
           </div>
           <div className="flex flex-col pt-2 pb-4">
-            <p className="font-sans font-medium text-[18px] leading-[28px] text-foreground">
+            <p className="font-sans font-medium text-[18px] leading-7 text-foreground">
               British University Vietnam
             </p>
-            <p className="font-sans font-normal text-[16px] leading-[24px] text-muted-foreground">
+            <p className="font-sans font-normal text-[16px] leading-6 text-muted-foreground">
               Lot GD-01, Ecopark Urban Area, Hung Yen
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function VenueSection() {
             href="https://maps.app.goo.gl/v4Ewg8xRkrU6fnzA7"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 pb-[5px] border-b border-primary text-primary font-sans font-medium text-[18px] leading-[28px] tracking-[0.45px] transition-opacity duration-200 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2"
+            className="inline-flex items-center gap-2 pb-1.25 border-b border-primary text-primary font-sans font-medium text-[18px] leading-7 tracking-[0.45px] transition-opacity duration-200 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2"
           >
             Get Directions
             <svg

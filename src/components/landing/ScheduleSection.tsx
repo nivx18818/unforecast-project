@@ -43,7 +43,7 @@ export default function ScheduleSection() {
       <div className="relative flex flex-col gap-8 md:gap-12 w-full max-w-3xl">
         {/* Center line (Desktop) / Left line (Mobile) */}
         <div
-          className="absolute left-[15px] md:left-1/2 -translate-x-1/2 top-0 bottom-0 w-px pointer-events-none bg-primary/20"
+          className="absolute left-3.75 md:left-1/2 -translate-x-1/2 top-0 bottom-0 w-px pointer-events-none bg-primary/20"
           aria-hidden="true"
         />
 
@@ -57,7 +57,7 @@ export default function ScheduleSection() {
             >
               {/* Dot mapping to the line */}
               <div
-                className="absolute left-[15px] md:left-1/2 -translate-x-1/2 top-[8px] md:top-1/2 md:-translate-y-1/2 size-3 rounded-pill bg-primary z-10 shadow-[var(--shadow-gold-dot)]"
+                className="absolute left-3.75 md:left-1/2 -translate-x-1/2 top-2 md:top-1/2 md:-translate-y-1/2 size-3 rounded-pill bg-primary z-10 shadow-(--shadow-gold-dot)"
                 aria-hidden="true"
               />
 
@@ -66,8 +66,8 @@ export default function ScheduleSection() {
                 className={cn(
                   "flex-1 min-w-0 flex flex-col",
                   isRight
-                    ? "order-1 md:order-none items-start md:items-end"
-                    : "order-2 md:order-none mt-1 md:mt-0 items-start md:items-end md:pr-8",
+                    ? "order-1 md:order-0 items-start md:items-end"
+                    : "order-2 md:order-0 mt-1 md:mt-0 items-start md:items-end md:pr-8",
                 )}
               >
                 {isRight ? (
@@ -93,8 +93,8 @@ export default function ScheduleSection() {
                 className={cn(
                   "flex-1 min-w-0 flex flex-col items-start",
                   !isRight
-                    ? "order-1 md:order-none"
-                    : "order-2 md:order-none mt-1 md:mt-0 md:pl-8",
+                    ? "order-1 md:order-0"
+                    : "order-2 md:order-0 mt-1 md:mt-0 md:pl-8",
                 )}
               >
                 {!isRight ? (

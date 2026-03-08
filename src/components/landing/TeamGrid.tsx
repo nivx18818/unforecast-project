@@ -22,13 +22,13 @@ export function TeamGrid({ members }: TeamGridProps) {
   return (
     <>
       <ul
-        className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 max-w-[1344px] mx-auto w-full"
+        className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 max-w-336 mx-auto w-full"
         aria-label="Team members"
       >
         {members.map((member) => (
           <li
             key={member.name}
-            className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-[458px] overflow-hidden rounded-[20px] lg:rounded-none"
+            className="relative w-full aspect-3/4 lg:aspect-auto lg:h-114.5 overflow-hidden rounded-card-sm lg:rounded-none"
           >
             <button
               type="button"
@@ -45,7 +45,7 @@ export function TeamGrid({ members }: TeamGridProps) {
               />
               {/* Bottom gradient */}
               <div
-                className="absolute inset-0 pointer-events-none bg-gradient-to-t from-background via-background/40 to-transparent opacity-90 lg:opacity-60 transition-opacity duration-300 group-hover:opacity-90"
+                className="absolute inset-0 pointer-events-none bg-linear-to-t from-background via-background/40 to-transparent opacity-90 lg:opacity-60 transition-opacity duration-300 group-hover:opacity-90"
                 aria-hidden="true"
               />
               {/* Shadow */}
@@ -74,7 +74,7 @@ export function TeamGrid({ members }: TeamGridProps) {
         }}
       >
         <DialogContent
-          className="max-w-[1024px] p-0 border-none bg-transparent shadow-none"
+          className="max-w-5xl p-0 border-none bg-transparent shadow-none"
           aria-describedby={undefined}
         >
           {selectedMember && <MemberCard member={selectedMember} />}
