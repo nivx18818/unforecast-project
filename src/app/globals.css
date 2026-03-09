@@ -104,6 +104,11 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
+
+  a,
+  button {
+    cursor: pointer;
+  }
 }
 
 /* ─── Typography utility classes ─────────────────────── */
