@@ -35,7 +35,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer
-      className="flex flex-col items-center border-t border-[rgba(255,255,255,0.1)] bg-background py-7 px-12"
+      className="flex flex-col items-center border-t border-[rgba(255,255,255,0.1)] bg-background py-7 px-12 w-full"
       aria-label="Site footer"
     >
       <div className="flex items-center justify-between w-full max-w-7xl">
