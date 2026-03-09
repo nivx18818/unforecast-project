@@ -70,13 +70,19 @@ export default function SectionDotNav() {
                 onClick={() => scrollTo(id)}
                 aria-label={t(labelKey as LabelKey)}
                 className={cn(
-                  "rounded-full transition-all duration-300",
+                  "w-2.5 h-2.5 flex items-center justify-center rounded-full transition-all duration-300",
                   "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
-                  isActive
-                    ? "bg-gold size-2.5 shadow-[0_0_8px_2px_rgba(227,170,49,0.45)]"
-                    : "bg-foreground/20 hover:bg-foreground/50 size-2",
                 )}
-              />
+              >
+                <div
+                  className={cn(
+                    "rounded-full",
+                    isActive
+                      ? "bg-gold size-2.5 shadow-[0_0_8px_2px_rgba(227,170,49,0.45)]"
+                      : "bg-foreground/20 hover:bg-foreground/50 size-2",
+                  )}
+                />
+              </button>
             </TooltipTrigger>
             <TooltipContent side="left">
               {t(labelKey as LabelKey)}
