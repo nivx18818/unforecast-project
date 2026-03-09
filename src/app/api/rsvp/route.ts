@@ -31,6 +31,7 @@ export async function POST(request: Request) {
 
     // Default sheet range (modify "Sheet1" if your tab is named differently)
     const sheetId = process.env.GOOGLE_SPREADSHEET_ID;
+    const tabName = process.env.GOOGLE_SPREADSHEET_TAB_NAME;
 
     if (!sheetId) {
       return NextResponse.json(
@@ -41,17 +42,17 @@ export async function POST(request: Request) {
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: sheetId,
-      range: "Sheet1!A:F", // Targeting columns A through F
+      range: `${tabName}!A:F`, // Targeting columns A through F
       valueInputOption: "USER_ENTERED",
       requestBody: {
         values: [
           [
             new Date().toISOString(), // Timestamp
             type === "attend" ? "Attending" : "Declined", // RSVP Status
-            fullName, // Name
-            email || "", // Email (empty if declining)
-            phone || "", // Phone (empty if declining)
-            message || "", // Message
+            fullName,
+            email || "",
+            phone || "",
+            message || "",
           ],
         ],
       },
