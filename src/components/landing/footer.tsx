@@ -1,42 +1,34 @@
+import {
+  Facebook02Icon,
+  InstagramIcon,
+  Mail01Icon,
+  TelephoneIcon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
+
 const logoSrc =
   "https://www.figma.com/api/mcp/asset/ec354a9e-f10f-42d3-b685-7bc82eae20ab";
-const emailIcon =
-  "https://www.figma.com/api/mcp/asset/92686c8c-95d2-47c1-81d7-aacd839056b2";
-const phoneIcon =
-  "https://www.figma.com/api/mcp/asset/d79a8d94-db62-42db-86f1-dcf7adade6bb";
-const facebookIcon =
-  "https://www.figma.com/api/mcp/asset/f2627a02-d4c3-4557-9073-d4552194594e";
-const instagramIcon =
-  "https://www.figma.com/api/mcp/asset/86cc9d8f-13b4-43e7-a86b-4283c93aff24";
 
 const socialLinks = [
   {
-    icon: emailIcon,
+    icon: Mail01Icon,
     label: "Email Unforecast Project",
-    href: "mailto:contact@unforecastproject.com",
-    width: 20,
-    height: 16,
+    href: "mailto:unforecastproject@gmail.com",
   },
   {
-    icon: phoneIcon,
+    icon: TelephoneIcon,
     label: "Call Unforecast Project",
-    href: "tel:+84",
-    width: 18,
-    height: 18,
+    href: "tel:+84904240405",
   },
   {
-    icon: facebookIcon,
+    icon: Facebook02Icon,
     label: "Unforecast Project on Facebook",
-    href: "https://facebook.com",
-    width: 22,
-    height: 16,
+    href: "https://www.facebook.com/unforecastproject",
   },
   {
-    icon: instagramIcon,
+    icon: InstagramIcon,
     label: "Unforecast Project on Instagram",
-    href: "https://instagram.com",
-    width: 20,
-    height: 20,
+    href: "https://www.instagram.com/unforecastproject/",
   },
 ];
 
@@ -70,7 +62,7 @@ export default function Footer() {
           className="flex items-center gap-6"
           aria-label="Social media links"
         >
-          {socialLinks.map(({ icon, label, href, width, height }) => (
+          {socialLinks.map(({ icon, label, href }) => (
             <a
               key={label}
               href={href}
@@ -79,15 +71,7 @@ export default function Footer() {
               aria-label={label}
               className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-200 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2 rounded"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={icon}
-                alt=""
-                width={width}
-                height={height}
-                aria-hidden="true"
-                className="block"
-              />
+              <HugeiconsIcon icon={icon} />
             </a>
           ))}
         </nav>
