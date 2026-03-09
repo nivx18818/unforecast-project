@@ -87,14 +87,14 @@ export default function JourneySection() {
         {/* ── Project Phases ────────────────────────────────── */}
         <div className="relative overflow-hidden pt-24 pb-20">
           {/* Subtle radial gold glow behind content */}
-          <div
+          {/* <div
             className="pointer-events-none absolute inset-0 opacity-10"
             style={{
               background:
                 "radial-gradient(ellipse at -5% -5%, rgba(227,170,49,1) 0%, rgba(227,170,49,0) 50%)",
             }}
             aria-hidden="true"
-          />
+          /> */}
 
           <div className="relative flex w-full flex-col gap-20">
             {/* Heading */}
