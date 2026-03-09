@@ -22,7 +22,7 @@ export default function HeaderBar() {
       {/* Blur layer */}
       <div className="from-gold/30 absolute inset-0 -z-10 bg-linear-to-b to-transparent mask-[linear-gradient(to_bottom,black,transparent)] backdrop-blur-xs [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
 
-      <div className="flex items-center justify-between">
+      <div className="m-auto flex max-w-7xl items-center justify-between">
         {/* Brand */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
