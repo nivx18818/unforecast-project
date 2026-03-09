@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { RSVPModal } from "./rsvp-modal";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { StarsIcon } from "@hugeicons/core-free-icons";
 
 export default function RSVPSection() {
   const t = useTranslations("rsvp");
@@ -40,16 +41,7 @@ export default function RSVPSection() {
           "shadow-2xl backdrop-blur-md",
         )}
       >
-        {/* Icon */}
-        <Image
-          src="/images/rsvp-icon.svg"
-          alt=""
-          width={44}
-          height={44}
-          className="size-11"
-          aria-hidden="true"
-          unoptimized
-        />
+        <HugeiconsIcon icon={StarsIcon} size={44} className="text-gold" />
 
         {/* Heading */}
         <h2
