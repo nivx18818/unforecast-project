@@ -75,7 +75,7 @@ export function MemberCard({ member }: { member: Member }) {
 
             {/* Name & Divider */}
             <div className="flex flex-col gap-2">
-              <h2 className="font-display text-primary md:leading-18[60px] text-4xl leading-tight font-bold md:text-7xl">
+              <h2 className="font-display text-primary md:text-7xl md:leading-18 text-4xl leading-tight font-bold">
                 {member.name}
               </h2>
               <div className="from-primary h-1 w-20 rounded-full bg-linear-to-r to-transparent" />
