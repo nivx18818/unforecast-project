@@ -10,7 +10,7 @@ import Footer from "@/components/landing/footer";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col items-center bg-background min-h-screen">
+    <div className="bg-background relative flex min-h-screen flex-col items-center">
       <HeaderBar />
       <main className="w-full">
         <HeroSection />

@@ -22,18 +22,18 @@ export function TeamGrid({ members }: TeamGridProps) {
   return (
     <>
       <ul
-        className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 max-w-336 mx-auto w-full"
+        className="relative z-10 mx-auto grid w-full max-w-336 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0"
         aria-label="Team members"
       >
         {members.map((member) => (
           <li
             key={member.name}
-            className="relative w-full aspect-3/4 lg:aspect-auto lg:h-114.5 overflow-hidden rounded-card-sm lg:rounded-none"
+            className="rounded-card-sm relative aspect-3/4 w-full overflow-hidden lg:aspect-auto lg:h-114.5 lg:rounded-none"
           >
             <button
               type="button"
               onClick={() => setSelectedMember(member)}
-              className="group relative w-full h-full block text-left"
+              className="group relative block h-full w-full text-left"
               aria-label={`View details for ${member.name}, ${member.role}`}
             >
               {/* Image */}
@@ -45,20 +45,20 @@ export function TeamGrid({ members }: TeamGridProps) {
               />
               {/* Bottom gradient */}
               <div
-                className="absolute inset-0 pointer-events-none bg-linear-to-t from-background via-background/40 to-transparent opacity-90 lg:opacity-60 transition-opacity duration-300 group-hover:opacity-90"
+                className="from-background via-background/40 pointer-events-none absolute inset-0 bg-linear-to-t to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-90 lg:opacity-60"
                 aria-hidden="true"
               />
               {/* Shadow */}
               <div
-                className="absolute inset-0 pointer-events-none shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)]"
+                className="pointer-events-none absolute inset-0 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)]"
                 aria-hidden="true"
               />
               {/* Labels */}
-              <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end p-6 pb-8 z-10">
-                <span className="font-display font-normal text-2xl leading-8 text-foreground lg:text-center block">
+              <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end p-6 pb-8">
+                <span className="font-display text-foreground block text-2xl leading-8 font-normal lg:text-center">
                   {member.name}
                 </span>
-                <span className="font-sans font-bold text-sm leading-5 tracking-[1.4px] uppercase text-primary lg:text-center block mt-0.5">
+                <span className="text-primary mt-0.5 block font-sans text-sm leading-5 font-bold tracking-[1.4px] uppercase lg:text-center">
                   {member.role}
                 </span>
               </div>
@@ -74,7 +74,7 @@ export function TeamGrid({ members }: TeamGridProps) {
         }}
       >
         <DialogContent
-          className="max-w-5xl p-0 border-none bg-transparent shadow-none"
+          className="max-w-5xl border-none bg-transparent p-0 shadow-none"
           aria-describedby={undefined}
         >
           {selectedMember && <MemberCard member={selectedMember} />}

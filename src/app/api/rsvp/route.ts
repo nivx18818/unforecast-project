@@ -6,10 +6,8 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { type, fullName, email, phone, message } = body;
 
-    const isValidEmail = (e: string) =>
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
-    const isValidPhone = (p: string) =>
-      /^[\d\-\+\s\(\)]+$/.test(p);
+    const isValidEmail = (e: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+    const isValidPhone = (p: string) => /^[\d\-\+\s\(\)]+$/.test(p);
 
     if (!fullName) {
       return NextResponse.json(

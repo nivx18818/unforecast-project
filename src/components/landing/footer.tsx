@@ -35,10 +35,10 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer
-      className="flex flex-col items-center border-t border-[rgba(255,255,255,0.1)] bg-background py-7 px-12 w-full"
+      className="bg-background flex w-full flex-col items-center border-t border-[rgba(255,255,255,0.1)] px-12 py-7"
       aria-label="Site footer"
     >
-      <div className="flex items-center justify-between w-full max-w-7xl">
+      <div className="flex w-full max-w-7xl items-center justify-between">
         {/* Brand */}
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -47,13 +47,13 @@ export default function Footer() {
             alt="Unforecast Project"
             className="size-12 object-cover"
           />
-          <span className="font-display font-bold text-[20px] leading-7 tracking-[0.5px] text-foreground whitespace-nowrap">
+          <span className="font-display text-foreground text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap">
             Unforecast Project
           </span>
         </div>
 
         {/* Copyright */}
-        <p className="font-sans font-normal text-sm leading-5 text-muted-foreground whitespace-nowrap">
+        <p className="text-muted-foreground font-sans text-sm leading-5 font-normal whitespace-nowrap">
           © 2026 Unforecast Project. All rights reserved.
         </p>
 
@@ -69,7 +69,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-200 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2 rounded"
+              className="focus-visible:outline-ring flex items-center justify-center rounded opacity-70 transition-opacity duration-200 hover:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               <HugeiconsIcon icon={icon} />
             </a>

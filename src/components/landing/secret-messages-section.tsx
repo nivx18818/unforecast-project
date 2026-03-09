@@ -7,29 +7,29 @@ const FORM_URL =
 export default function SecretMessagesSection() {
   return (
     <section
-      className="flex flex-col items-center justify-center px-6 py-24 lg:px-48 bg-background w-full"
+      className="bg-background flex w-full flex-col items-center justify-center px-6 py-24 lg:px-48"
       aria-labelledby="messages-heading"
     >
-      <div className="flex flex-col gap-12 items-center w-full max-w-4xl">
+      <div className="flex w-full max-w-4xl flex-col items-center gap-12">
         {/* Heading group */}
-        <div className="flex flex-col gap-4 items-center w-full">
-          <div className="relative w-8.25 h-6">
+        <div className="flex w-full flex-col items-center gap-4">
+          <div className="relative h-6 w-8.25">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={messagesIcon}
               alt=""
-              className="absolute inset-0 w-full h-full object-contain"
+              className="absolute inset-0 h-full w-full object-contain"
               aria-hidden="true"
             />
           </div>
           <h2
             id="messages-heading"
-            className="font-display font-bold text-[60px] leading-15 text-foreground text-center"
+            className="font-display text-foreground text-center text-[60px] leading-15 font-bold"
           >
             Secret Messages
           </h2>
           <div className="max-w-2xl pt-2">
-            <p className="font-sans text-[20px] leading-7 text-muted-foreground text-center">
+            <p className="text-muted-foreground text-center font-sans text-[20px] leading-7">
               Can&apos;t make it or just want to share some love? Send your
               wishes and
               <br className="hidden sm:inline" />
@@ -44,7 +44,7 @@ export default function SecretMessagesSection() {
             href={FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-16 items-center justify-center px-12 rounded-full bg-primary border border-primary text-primary-foreground font-sans font-bold text-[18px] leading-7 tracking-[0.9px] uppercase shadow-[0_0_20px_rgba(227,170,49,0.3)] transition-all duration-300 hover:shadow-[0_0_20px_rgba(227,170,49,0.5)] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2"
+            className="bg-primary border-primary text-primary-foreground focus-visible:outline-ring inline-flex h-16 items-center justify-center rounded-full border px-12 font-sans text-[18px] leading-7 font-bold tracking-[0.9px] uppercase shadow-[0_0_20px_rgba(227,170,49,0.3)] transition-all duration-300 hover:shadow-[0_0_20px_rgba(227,170,49,0.5)] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             Send a Secret Message
           </a>

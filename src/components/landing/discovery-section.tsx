@@ -34,12 +34,12 @@ const members = [
 
 export default function DiscoverySection() {
   return (
-    <section id="discovery" className="relative bg-background overflow-hidden">
+    <section id="discovery" className="bg-background relative overflow-hidden">
       {/* ── Team Hero State ──────────────────────────────── */}
-      <div className="relative flex min-h-[50vh] lg:min-h-screen py-24 items-center justify-center px-6">
+      <div className="relative flex min-h-[50vh] items-center justify-center px-6 py-24 lg:min-h-screen">
         {/* Background photo */}
         <div
-          className="absolute inset-0 opacity-40 pointer-events-none"
+          className="pointer-events-none absolute inset-0 opacity-40"
           aria-hidden="true"
         >
           <Image src={bgImage} alt="" fill className="object-cover" priority />
@@ -47,24 +47,24 @@ export default function DiscoverySection() {
         </div>
         {/* Gradient overlay */}
         <div
-          className="absolute top-0 inset-x-0 h-[40%] bg-linear-to-b from-background to-transparent pointer-events-none"
+          className="from-background pointer-events-none absolute inset-x-0 top-0 h-[40%] bg-linear-to-b to-transparent"
           aria-hidden="true"
         />
         <div
-          className="absolute bottom-0 inset-x-0 h-[40%] bg-linear-to-t from-background to-transparent pointer-events-none"
+          className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-[40%] bg-linear-to-t to-transparent"
           aria-hidden="true"
         />
 
         {/* Heading */}
-        <div className="relative z-10 flex flex-col gap-4 items-center text-center max-w-4xl">
-          <h2 className="font-display font-bold text-5xl lg:text-[72px] leading-tight lg:leading-18 text-foreground">
+        <div className="relative z-10 flex max-w-4xl flex-col items-center gap-4 text-center">
+          <h2 className="font-display text-foreground text-5xl leading-tight font-bold lg:text-[72px] lg:leading-18">
             The Hearts and Minds behind
             <br />
-            <span className="font-normal italic text-primary mt-2 block">
+            <span className="text-primary mt-2 block font-normal italic">
               Unforecast Project
             </span>
           </h2>
-          <div className="mt-8 lg:mt-4 flex flex-col items-center gap-2">
+          <div className="mt-8 flex flex-col items-center gap-2 lg:mt-4">
             <span className="eyebrow">Scroll to discover</span>
             <Image
               src="/images/backgrounds/scroll-arrow.svg"
@@ -78,21 +78,21 @@ export default function DiscoverySection() {
       </div>
 
       {/* ── Team Grid State ──────────────────────────────── */}
-      <div className="relative flex min-h-screen py-24 lg:py-0 items-center justify-center px-6 lg:px-0">
+      <div className="relative flex min-h-screen items-center justify-center px-6 py-24 lg:px-0 lg:py-0">
         {/* Background photo */}
         <div
-          className="absolute inset-0 opacity-40 pointer-events-none"
+          className="pointer-events-none absolute inset-0 opacity-40"
           aria-hidden="true"
         >
           <Image src={bgImage2} alt="" fill className="object-cover" />
           <div className="absolute inset-0 bg-white mix-blend-saturation" />
         </div>
         <div
-          className="absolute top-0 inset-x-0 h-[40%] bg-linear-to-b from-background to-transparent pointer-events-none"
+          className="from-background pointer-events-none absolute inset-x-0 top-0 h-[40%] bg-linear-to-b to-transparent"
           aria-hidden="true"
         />
         <div
-          className="absolute bottom-0 inset-x-0 h-[40%] bg-linear-to-t from-background to-transparent pointer-events-none"
+          className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-[40%] bg-linear-to-t to-transparent"
           aria-hidden="true"
         />
 
@@ -101,30 +101,30 @@ export default function DiscoverySection() {
       </div>
 
       {/* ── Our Story ──────────────────────────────────────── */}
-      <div className="relative flex min-h-[50vh] lg:min-h-screen py-24 items-center justify-center">
+      <div className="relative flex min-h-[50vh] items-center justify-center py-24 lg:min-h-screen">
         {/* Background photo */}
         <div
-          className="absolute inset-0 opacity-40 pointer-events-none"
+          className="pointer-events-none absolute inset-0 opacity-40"
           aria-hidden="true"
         >
           <Image src={bgImage3} alt="" fill className="object-cover" />
           <div className="absolute inset-0 bg-white mix-blend-saturation" />
         </div>
         <div
-          className="absolute top-0 inset-x-0 h-[40%] bg-linear-to-b from-background to-transparent pointer-events-none"
+          className="from-background pointer-events-none absolute inset-x-0 top-0 h-[40%] bg-linear-to-b to-transparent"
           aria-hidden="true"
         />
         <div
-          className="absolute bottom-0 inset-x-0 h-[40%] bg-linear-to-t from-background to-transparent pointer-events-none"
+          className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-[40%] bg-linear-to-t to-transparent"
           aria-hidden="true"
         />
 
-        <div className="relative z-10 flex flex-col gap-8 lg:gap-12 items-center max-w-3xl px-6 text-center">
-          <h2 className="font-display font-bold text-4xl lg:text-[48px] leading-tight lg:leading-12 text-primary">
+        <div className="relative z-10 flex max-w-3xl flex-col items-center gap-8 px-6 text-center lg:gap-12">
+          <h2 className="font-display text-primary text-4xl leading-tight font-bold lg:text-[48px] lg:leading-12">
             Our Story
           </h2>
           <div className="divider-gold" aria-hidden="true" />
-          <div className="font-sans font-normal text-lg lg:text-[20px] leading-relaxed lg:leading-7 text-foreground space-y-6">
+          <div className="text-foreground space-y-6 font-sans text-lg leading-relaxed font-normal lg:text-[20px] lg:leading-7">
             <p>
               We have created Unforecast Project as the final milestone of our
               journey as Events Management students at British University

@@ -69,32 +69,32 @@ const sectionGradient = {
 
 export default function JourneySection() {
   return (
-    <section id="journey" className="relative bg-background overflow-hidden">
+    <section id="journey" className="bg-background relative overflow-hidden">
       {/* Background photo */}
       <div
-        className="absolute inset-[0_0_1348px_0] opacity-40 pointer-events-none"
+        className="pointer-events-none absolute inset-[0_0_1348px_0] opacity-40"
         aria-hidden="true"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={bgImage}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-white mix-blend-saturation" />
       </div>
       <div
-        className="absolute inset-[0_0_1348px_0] pointer-events-none"
+        className="pointer-events-none absolute inset-[0_0_1348px_0]"
         style={sectionGradient}
         aria-hidden="true"
       />
 
-      <div className="mx-auto w-full max-w-7xl flex flex-col px-6 lg:px-12 xl:px-24">
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-12 xl:px-24">
         {/* ── Project Phases ────────────────────────────────── */}
         <div className="relative overflow-hidden pt-24 pb-20">
           {/* Subtle radial gold glow behind content */}
           <div
-            className="absolute inset-0 opacity-10 pointer-events-none"
+            className="pointer-events-none absolute inset-0 opacity-10"
             style={{
               background:
                 "radial-gradient(ellipse at -5% -5%, rgba(227,170,49,1) 0%, rgba(227,170,49,0) 50%)",
@@ -102,11 +102,11 @@ export default function JourneySection() {
             aria-hidden="true"
           />
 
-          <div className="relative flex flex-col gap-20 w-full">
+          <div className="relative flex w-full flex-col gap-20">
             {/* Heading */}
-            <div className="flex flex-col gap-4 items-center text-center w-full">
+            <div className="flex w-full flex-col items-center gap-4 text-center">
               <span className="eyebrow">Journey</span>
-              <h2 className="font-display font-bold text-[48px] leading-12 text-foreground">
+              <h2 className="font-display text-foreground text-[48px] leading-12 font-bold">
                 Project Phases
               </h2>
             </div>
@@ -115,7 +115,7 @@ export default function JourneySection() {
             <div className="relative flex items-start justify-between">
               {/* Connector line */}
               <div
-                className="absolute left-0 right-0 top-5.5 h-px pointer-events-none"
+                className="pointer-events-none absolute top-5.5 right-0 left-0 h-px"
                 style={{
                   background:
                     "linear-gradient(90deg, rgba(227,170,49,0) 0%, rgba(227,170,49,0.4) 50%, rgba(227,170,49,0) 100%)",
@@ -124,21 +124,21 @@ export default function JourneySection() {
               />
 
               {phases.map(({ number, date, title, active }) => (
-                <div key={number} className="relative flex-1 min-w-0">
+                <div key={number} className="relative min-w-0 flex-1">
                   {/* Phase node */}
                   <div className="mb-6">
                     <div
                       className={cn(
-                        "size-12 rounded-pill border-2 border-gold flex items-center justify-center",
+                        "rounded-pill border-gold flex size-12 items-center justify-center border-2",
                         active
                           ? "bg-gold shadow-gold-active"
-                          : "bg-transparent shadow-gold-subtle",
+                          : "shadow-gold-subtle bg-transparent",
                       )}
                       aria-hidden="true"
                     >
                       <span
                         className={cn(
-                          "font-sans font-bold text-base leading-6",
+                          "font-sans text-base leading-6 font-bold",
                           active ? "text-primary-foreground" : "text-gold",
                         )}
                       >
@@ -146,10 +146,10 @@ export default function JourneySection() {
                       </span>
                     </div>
                   </div>
-                  <p className="font-sans font-bold text-sm leading-5 tracking-[0.7px] uppercase text-gold mb-2">
+                  <p className="text-gold mb-2 font-sans text-sm leading-5 font-bold tracking-[0.7px] uppercase">
                     {date}
                   </p>
-                  <p className="font-display font-normal text-[24px] leading-8 text-foreground pr-16">
+                  <p className="font-display text-foreground pr-16 text-[24px] leading-8 font-normal">
                     {title}
                   </p>
                 </div>
@@ -161,15 +161,15 @@ export default function JourneySection() {
         {/* ── Pre-Event Recap / Gallery ─────────────────────── */}
         <div className="relative flex flex-col gap-16 py-0 pb-24">
           {/* Text intro */}
-          <div className="flex flex-col gap-2 w-full max-w-175.75">
-            <span className="font-sans font-bold text-sm leading-5 tracking-[2.8px] uppercase text-gold">
+          <div className="flex w-full max-w-175.75 flex-col gap-2">
+            <span className="text-gold font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
               Pre-Event Recap
             </span>
-            <h2 className="font-display font-bold text-[48px] leading-12 text-foreground">
+            <h2 className="font-display text-foreground text-[48px] leading-12 font-bold">
               A Glimpse into the Past
             </h2>
-            <p className="mt-2 font-sans text-base leading-6 text-muted-foreground">
-              <strong className="font-bold text-muted-foreground">
+            <p className="text-muted-foreground mt-2 font-sans text-base leading-6">
+              <strong className="text-muted-foreground font-bold">
                 Mini Cultural Fair:
               </strong>{" "}
               Featuring local specialties and traditional food from the four
@@ -182,7 +182,7 @@ export default function JourneySection() {
           </div>
 
           {/* Masonry gallery */}
-          <div className="relative w-full aspect-1248/960 mx-auto overflow-clip">
+          <div className="relative mx-auto aspect-1248/960 w-full overflow-clip">
             {galleryImages.map(({ src, alt, className }) => (
               <div
                 key={alt}
@@ -192,11 +192,11 @@ export default function JourneySection() {
                 <img
                   src={src}
                   alt={alt}
-                  className="absolute inset-0 w-full h-full object-cover rounded-card-sm"
+                  className="rounded-card-sm absolute inset-0 h-full w-full object-cover"
                 />
                 {/* Subtle gold radial tint on each photo */}
                 <div
-                  className="absolute inset-0 rounded-card-sm pointer-events-none opacity-10"
+                  className="rounded-card-sm pointer-events-none absolute inset-0 opacity-10"
                   style={{
                     background:
                       "radial-gradient(ellipse at 50% 50%, rgba(227,170,49,1) 0%, rgba(0,0,0,1) 100%)",

@@ -17,12 +17,12 @@ export default function RSVPSection() {
   return (
     <section
       id="rsvp"
-      className="relative flex items-center justify-center overflow-hidden px-6 md:px-24 xl:px-48 py-24 bg-background w-full"
+      className="bg-background relative flex w-full items-center justify-center overflow-hidden px-6 py-24 md:px-24 xl:px-48"
       aria-labelledby="rsvp-heading"
     >
       {/* Subtle radial gold wash */}
       <div
-        className="absolute inset-0 opacity-30 pointer-events-none"
+        className="pointer-events-none absolute inset-0 opacity-30"
         style={{
           background:
             "radial-gradient(ellipse at 50% 50%, rgba(227,170,49,0.1) 0%, rgba(227,170,49,0) 60%)",
@@ -33,9 +33,9 @@ export default function RSVPSection() {
       {/* Glass card */}
       <div
         className={cn(
-          "relative flex flex-col gap-6 items-center max-w-4xl w-full p-8 md:p-20 rounded-card-lg",
-          "bg-surface-glass border border-gold-muted",
-          "backdrop-blur-md shadow-2xl",
+          "rounded-card-lg relative flex w-full max-w-4xl flex-col items-center gap-6 p-8 md:p-20",
+          "bg-surface-glass border-gold-muted border",
+          "shadow-2xl backdrop-blur-md",
         )}
       >
         {/* Icon */}
@@ -52,29 +52,29 @@ export default function RSVPSection() {
         {/* Heading */}
         <h2
           id="rsvp-heading"
-          className="font-display font-bold text-4xl md:text-[48px] md:leading-12 text-foreground text-center"
+          className="font-display text-foreground text-center text-4xl font-bold md:text-[48px] md:leading-12"
         >
           Will you join us?
         </h2>
 
         {/* Body */}
-        <p className="font-sans font-normal text-base md:text-[18px] md:leading-[29.25px] text-secondary text-center max-w-xl">
+        <p className="text-secondary max-w-xl text-center font-sans text-base font-normal md:text-[18px] md:leading-[29.25px]">
           We would be honored by your presence. Kindly confirm
           <br className="hidden sm:block" />
           your attendance by{" "}
-          <strong className="font-bold text-gold">March 14th, 2026</strong>.
+          <strong className="text-gold font-bold">March 14th, 2026</strong>.
         </p>
 
         {/* CTA pair */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center pt-6 w-full">
+        <div className="flex w-full flex-col items-center justify-center gap-4 pt-6 sm:flex-row sm:gap-6">
           <button
             onClick={() => openModal("attend")}
             className={cn(
-              "flex items-center justify-center h-16 w-full sm:w-81 rounded-full",
+              "flex h-16 w-full items-center justify-center rounded-full sm:w-81",
               "bg-gold text-primary-foreground",
-              "font-sans font-bold text-base md:text-[18px] leading-7 tracking-[0.9px] uppercase",
+              "font-sans text-base leading-7 font-bold tracking-[0.9px] uppercase md:text-[18px]",
               "transition-all duration-200 hover:brightness-90",
-              "focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2",
+              "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
               "shadow-[0_4px_20px_rgba(227,170,49,0.3)] hover:shadow-[0_4px_25px_rgba(227,170,49,0.5)]",
             )}
           >
@@ -83,11 +83,11 @@ export default function RSVPSection() {
           <button
             onClick={() => openModal("decline")}
             className={cn(
-              "flex items-center justify-center h-16 w-full sm:w-81 rounded-full",
-              "border-2 border-gold text-gold bg-transparent",
-              "font-sans font-bold text-base md:text-[18px] leading-7 tracking-[0.9px] uppercase",
-              "transition-all duration-200 hover:bg-gold-dim",
-              "focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2",
+              "flex h-16 w-full items-center justify-center rounded-full sm:w-81",
+              "border-gold text-gold border-2 bg-transparent",
+              "font-sans text-base leading-7 font-bold tracking-[0.9px] uppercase md:text-[18px]",
+              "hover:bg-gold-dim transition-all duration-200",
+              "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
             )}
           >
             I Cannot Attend
@@ -95,7 +95,7 @@ export default function RSVPSection() {
         </div>
 
         {/* Footer note */}
-        <p className="font-sans font-normal text-sm leading-5 text-muted-foreground text-center mt-6 md:mt-2">
+        <p className="text-muted-foreground mt-6 text-center font-sans text-sm leading-5 font-normal md:mt-2">
           For any special requests, please contact us directly.
         </p>
       </div>

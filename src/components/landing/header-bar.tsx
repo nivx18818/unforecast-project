@@ -18,15 +18,15 @@ export default function HeaderBar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-12 py-3">
+    <header className="fixed top-0 right-0 left-0 z-50 px-12 py-3">
       {/* Blur layer */}
-      <div className="absolute inset-0 -z-10 bg-linear-to-b from-gold/30 to-transparent backdrop-blur-xs mask-[linear-gradient(to_bottom,black,transparent)] [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+      <div className="from-gold/30 absolute inset-0 -z-10 bg-linear-to-b to-transparent mask-[linear-gradient(to_bottom,black,transparent)] backdrop-blur-xs [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
 
       <div className="flex items-center justify-between">
         {/* Brand */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2 rounded"
+          className="focus-visible:outline-ring flex items-center gap-3 rounded focus-visible:outline-2 focus-visible:outline-offset-2"
           aria-label="Back to top"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -36,7 +36,7 @@ export default function HeaderBar() {
             className="size-12 object-cover"
           />
           <span
-            className="font-display font-bold text-[20px] leading-7 tracking-[0.5px] text-foreground whitespace-nowrap"
+            className="font-display text-foreground text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap"
             aria-hidden="true"
           >
             Unforecast Project
@@ -50,9 +50,9 @@ export default function HeaderBar() {
               key={label}
               onClick={() => scrollTo(href)}
               className={cn(
-                "font-sans font-medium text-sm leading-5 tracking-[0.35px] text-secondary",
-                "transition-colors duration-200 hover:text-foreground",
-                "focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2 rounded",
+                "text-secondary font-sans text-sm leading-5 font-medium tracking-[0.35px]",
+                "hover:text-foreground transition-colors duration-200",
+                "focus-visible:outline-ring rounded focus-visible:outline-2 focus-visible:outline-offset-2",
               )}
             >
               {label}
@@ -63,11 +63,11 @@ export default function HeaderBar() {
           <button
             onClick={() => scrollTo("#rsvp")}
             className={cn(
-              "h-10 px-6 rounded-pill border border-gold",
+              "rounded-pill border-gold h-10 border px-6",
               "bg-gold-dim text-gold",
-              "font-sans font-bold text-sm leading-5 tracking-[0.7px] uppercase",
-              "transition-all duration-200 hover:bg-gold hover:text-primary-foreground",
-              "focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2",
+              "font-sans text-sm leading-5 font-bold tracking-[0.7px] uppercase",
+              "hover:bg-gold hover:text-primary-foreground transition-all duration-200",
+              "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
             )}
           >
             RSVP

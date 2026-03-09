@@ -27,23 +27,23 @@ export default function ScheduleSection() {
   return (
     <section
       id="schedule"
-      className="flex flex-col items-center justify-center gap-12 md:gap-16 px-6 py-16 md:px-24 md:py-24 bg-background max-w-5xl mx-auto w-full"
+      className="bg-background mx-auto flex w-full max-w-5xl flex-col items-center justify-center gap-12 px-6 py-16 md:gap-16 md:px-24 md:py-24"
     >
       {/* Heading */}
-      <div className="flex flex-col items-center gap-4 w-full">
-        <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-[48px] leading-tight md:leading-12 text-foreground text-center">
+      <div className="flex w-full flex-col items-center gap-4">
+        <h2 className="font-display text-foreground text-center text-4xl leading-tight font-bold md:text-5xl md:leading-12 lg:text-[48px]">
           Event Schedule
         </h2>
-        <p className="font-sans text-base md:text-lg leading-6 text-muted-foreground text-center">
+        <p className="text-muted-foreground text-center font-sans text-base leading-6 md:text-lg">
           We are honored and delighted to welcome you!
         </p>
       </div>
 
       {/* Timeline */}
-      <div className="relative flex flex-col gap-8 md:gap-12 w-full max-w-3xl">
+      <div className="relative flex w-full max-w-3xl flex-col gap-8 md:gap-12">
         {/* Center line (Desktop) / Left line (Mobile) */}
         <div
-          className="absolute left-3.75 md:left-1/2 -translate-x-1/2 top-0 bottom-0 w-px pointer-events-none bg-primary/20"
+          className="bg-primary/20 pointer-events-none absolute top-0 bottom-0 left-3.75 w-px -translate-x-1/2 md:left-1/2"
           aria-hidden="true"
         />
 
@@ -53,33 +53,33 @@ export default function ScheduleSection() {
           return (
             <div
               key={time}
-              className="relative flex flex-col md:flex-row md:items-center justify-between w-full pl-12 md:pl-0 gap-1 md:gap-0"
+              className="relative flex w-full flex-col justify-between gap-1 pl-12 md:flex-row md:items-center md:gap-0 md:pl-0"
             >
               {/* Dot mapping to the line */}
               <div
-                className="absolute left-3.75 md:left-1/2 -translate-x-1/2 top-2 md:top-1/2 md:-translate-y-1/2 size-3 rounded-pill bg-primary z-10 shadow-(--shadow-gold-dot)"
+                className="rounded-pill bg-primary absolute top-2 left-3.75 z-10 size-3 -translate-x-1/2 shadow-(--shadow-gold-dot) md:top-1/2 md:left-1/2 md:-translate-y-1/2"
                 aria-hidden="true"
               />
 
               {/* Left column */}
               <div
                 className={cn(
-                  "flex-1 min-w-0 flex flex-col",
+                  "flex min-w-0 flex-1 flex-col",
                   isRight
-                    ? "order-1 md:order-0 items-start md:items-end"
-                    : "order-2 md:order-0 mt-1 md:mt-0 items-start md:items-end md:pr-8",
+                    ? "order-1 items-start md:order-0 md:items-end"
+                    : "order-2 mt-1 items-start md:order-0 md:mt-0 md:items-end md:pr-8",
                 )}
               >
                 {isRight ? (
-                  <time className="font-sans font-bold text-lg md:text-[20px] leading-7 tracking-[1px] text-primary whitespace-normal md:whitespace-nowrap md:text-right md:pr-8">
+                  <time className="text-primary font-sans text-lg leading-7 font-bold tracking-[1px] whitespace-normal md:pr-8 md:text-right md:text-[20px] md:whitespace-nowrap">
                     {time}
                   </time>
                 ) : (
-                  <div className="flex flex-col items-start md:items-end gap-1 w-full">
+                  <div className="flex w-full flex-col items-start gap-1 md:items-end">
                     {events.map((e) => (
                       <p
                         key={e}
-                        className="font-sans font-normal text-lg md:text-[20px] leading-7 text-foreground md:text-right whitespace-normal"
+                        className="text-foreground font-sans text-lg leading-7 font-normal whitespace-normal md:text-right md:text-[20px]"
                       >
                         {e}
                       </p>
@@ -91,22 +91,22 @@ export default function ScheduleSection() {
               {/* Right column */}
               <div
                 className={cn(
-                  "flex-1 min-w-0 flex flex-col items-start",
+                  "flex min-w-0 flex-1 flex-col items-start",
                   !isRight
                     ? "order-1 md:order-0"
-                    : "order-2 md:order-0 mt-1 md:mt-0 md:pl-8",
+                    : "order-2 mt-1 md:order-0 md:mt-0 md:pl-8",
                 )}
               >
                 {!isRight ? (
-                  <time className="font-sans font-bold text-lg md:text-[20px] leading-7 tracking-[1px] text-primary whitespace-normal md:whitespace-nowrap md:pl-8">
+                  <time className="text-primary font-sans text-lg leading-7 font-bold tracking-[1px] whitespace-normal md:pl-8 md:text-[20px] md:whitespace-nowrap">
                     {time}
                   </time>
                 ) : (
-                  <div className="flex flex-col items-start gap-1 w-full">
+                  <div className="flex w-full flex-col items-start gap-1">
                     {events.map((e) => (
                       <p
                         key={e}
-                        className="font-sans font-normal text-lg md:text-[20px] leading-7 text-foreground whitespace-normal"
+                        className="text-foreground font-sans text-lg leading-7 font-normal whitespace-normal md:text-[20px]"
                       >
                         {e}
                       </p>

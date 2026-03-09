@@ -4,19 +4,19 @@ export default function VenueSection() {
   return (
     <section
       id="venue"
-      className="flex items-center justify-center px-6 py-16 md:p-24 bg-background/30 w-full"
+      className="bg-background/30 flex w-full items-center justify-center px-6 py-16 md:p-24"
       aria-label="Venue"
     >
-      <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-center max-w-7xl w-full">
+      <div className="flex w-full max-w-7xl flex-col items-center gap-12 md:flex-row md:gap-20">
         {/* ── Media block ─────────────────────────────── */}
-        <div className="relative flex-1 min-w-0 w-full">
+        <div className="relative w-full min-w-0 flex-1">
           {/* Offset gold wash panel */}
           <div
-            className="absolute inset-[16px_-16px_-16px_16px] rounded-media-xl bg-gold-dim pointer-events-none"
+            className="rounded-media-xl bg-gold-dim pointer-events-none absolute inset-[16px_-16px_-16px_16px]"
             aria-hidden="true"
           />
           {/* Photo */}
-          <div className="relative rounded-media-xl overflow-hidden aspect-4/3 w-full shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+          <div className="rounded-media-xl relative aspect-4/3 w-full overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.5)]">
             <Image
               src="/images/venue-ballroom.jpg"
               alt="Theatre Pod Sir Graeme Davies 3-3 at British University Vietnam"
@@ -26,34 +26,34 @@ export default function VenueSection() {
             />
             {/* Gold tint overlay */}
             <div
-              className="absolute inset-0 bg-primary/10 pointer-events-none"
+              className="bg-primary/10 pointer-events-none absolute inset-0"
               aria-hidden="true"
             />
           </div>
         </div>
 
         {/* ── Text block ──────────────────────────────── */}
-        <div className="flex-1 min-w-0 flex flex-col items-start gap-4">
-          <span className="font-sans font-bold text-sm leading-5 tracking-[2.8px] uppercase text-primary">
+        <div className="flex min-w-0 flex-1 flex-col items-start gap-4">
+          <span className="text-primary font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
             Location
           </span>
-          <h2 className="font-display font-bold text-[36px] md:text-[48px] leading-[1.1] md:leading-12 text-foreground">
+          <h2 className="font-display text-foreground text-[36px] leading-[1.1] font-bold md:text-[48px] md:leading-12">
             Theatre Pod Sir
             <br />
             Graeme Davies 3-3
           </h2>
           <div className="pt-2">
-            <p className="font-sans font-normal text-[18px] leading-[29.25px] text-secondary md:max-w-119.25">
+            <p className="text-secondary font-sans text-[18px] leading-[29.25px] font-normal md:max-w-119.25">
               Set within the campus of British University Vietnam at Ecopark,
               Sir Graeme Davies Theatre Pod 3-3 offers a modern, intimate stage
               for inspiring moments.
             </p>
           </div>
           <div className="flex flex-col pt-2 pb-4">
-            <p className="font-sans font-medium text-[18px] leading-7 text-foreground">
+            <p className="text-foreground font-sans text-[18px] leading-7 font-medium">
               British University Vietnam
             </p>
-            <p className="font-sans font-normal text-[16px] leading-6 text-muted-foreground">
+            <p className="text-muted-foreground font-sans text-[16px] leading-6 font-normal">
               Lot GD-01, Ecopark Urban Area, Hung Yen
             </p>
           </div>
@@ -62,11 +62,11 @@ export default function VenueSection() {
             href="https://maps.app.goo.gl/v4Ewg8xRkrU6fnzA7"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 pb-1.25 border-b border-primary text-primary font-sans font-medium text-[18px] leading-7 tracking-[0.45px] transition-opacity duration-200 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2"
+            className="border-primary text-primary focus-visible:outline-ring inline-flex items-center gap-2 border-b pb-1.25 font-sans text-[18px] leading-7 font-medium tracking-[0.45px] transition-opacity duration-200 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2"
           >
             Get Directions
             <svg
-              className="w-[9.333px] h-[9.333px] fill-current"
+              className="h-[9.333px] w-[9.333px] fill-current"
               viewBox="0 0 10 10"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
