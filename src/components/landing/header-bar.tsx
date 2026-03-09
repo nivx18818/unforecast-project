@@ -1,20 +1,39 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Globe02Icon } from "@hugeicons/core-free-icons";
+import { useRouter, usePathname } from "@/i18n/navigation";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const logoSrc =
   "https://www.figma.com/api/mcp/asset/ec354a9e-f10f-42d3-b685-7bc82eae20ab";
 
-const navLinks = [
-  { label: "Discovery", href: "#discovery" },
-  { label: "Journey", href: "#journey" },
-  { label: "Schedule", href: "#schedule" },
-  { label: "Venue", href: "#venue" },
-];
-
 export default function HeaderBar() {
+  const t = useTranslations("header");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const navLinks = [
+    { label: t("navDiscovery"), href: "#discovery" },
+    { label: t("navJourney"), href: "#journey" },
+    { label: t("navSchedule"), href: "#schedule" },
+    { label: t("navVenue"), href: "#venue" },
+  ];
+
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const toggleLang = () => {
+    router.replace(pathname, { locale: locale === "en" ? "vi" : "en" });
   };
 
   return (
@@ -27,27 +46,27 @@ export default function HeaderBar() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="focus-visible:outline-ring flex items-center gap-3 rounded focus-visible:outline-2 focus-visible:outline-offset-2"
-          aria-label="Back to top"
+          aria-label={t("backToTop")}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoSrc}
-            alt="Unforecast Project logo"
+            alt={t("logoAlt")}
             className="size-12 object-cover"
           />
           <span
             className="font-display text-foreground text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap"
             aria-hidden="true"
           >
-            Unforecast Project
+            {t("brandName")}
           </span>
         </button>
 
         {/* Nav */}
-        <nav className="flex items-center gap-8" aria-label="Main navigation">
+        <nav className="flex items-center gap-8" aria-label={t("navLabel")}>
           {navLinks.map(({ label, href }) => (
             <button
-              key={label}
+              key={href}
               onClick={() => scrollTo(href)}
               className={cn(
                 "text-secondary font-sans text-sm leading-5 font-medium tracking-[0.35px]",
@@ -58,6 +77,25 @@ export default function HeaderBar() {
               {label}
             </button>
           ))}
+
+          {/* Language switcher */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <button
+                onClick={toggleLang}
+                aria-label={t("switchLang")}
+                className={cn(
+                  "text-secondary font-sans text-sm leading-5 font-medium tracking-[0.35px]",
+                  "hover:text-foreground transition-colors duration-200",
+                  "focus-visible:outline-ring rounded focus-visible:outline-2 focus-visible:outline-offset-2",
+                )}
+              >
+                <HugeiconsIcon icon={Globe02Icon} />
+                <span className="sr-only">{t("switchLang")}</span>
+              </button>
+            </TooltipTrigger>
+            <TooltipContent side="bottom">{t("switchLang")}</TooltipContent>
+          </Tooltip>
 
           {/* RSVP pill */}
           <button
@@ -70,7 +108,7 @@ export default function HeaderBar() {
               "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
             )}
           >
-            RSVP
+            {t("rsvp")}
           </button>
         </nav>
       </div>

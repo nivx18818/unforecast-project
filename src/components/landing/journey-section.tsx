@@ -1,28 +1,11 @@
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 const bgImage =
   "https://www.figma.com/api/mcp/asset/e52ac47a-3344-498c-a568-bbeff81977ee";
 
-const phases = [
-  {
-    number: "01",
-    date: "March 02 - 03, 2026",
-    title: "Pre-event: Mini Cultural Fair",
-    active: false,
-  },
-  {
-    number: "02",
-    date: "March 14th, 2026",
-    title: "Main event: Ceremony of Gratitude & Growth",
-    active: true,
-  },
-  {
-    number: "03",
-    date: "Tentatively late March 2026",
-    title: "Post-event: Charity trip to Saint An Bui Chu Orphanage",
-    active: false,
-  },
-];
+// The active phase index (1-based index 1 = phase 02 = main event)
+const ACTIVE_PHASE_INDEX = 1;
 
 const galleryImages = [
   {
@@ -68,6 +51,17 @@ const sectionGradient = {
 };
 
 export default function JourneySection() {
+  const t = useTranslations("journey");
+  const phasesData = t.raw("phases") as Array<{
+    number: string;
+    date: string;
+    title: string;
+  }>;
+  const phases = phasesData.map((p, i) => ({
+    ...p,
+    active: i === ACTIVE_PHASE_INDEX,
+  }));
+
   return (
     <section id="journey" className="bg-background relative overflow-hidden">
       {/* Background photo */}
@@ -105,9 +99,9 @@ export default function JourneySection() {
           <div className="relative flex w-full flex-col gap-20">
             {/* Heading */}
             <div className="flex w-full flex-col items-center gap-4 text-center">
-              <span className="eyebrow">Journey</span>
+              <span className="eyebrow">{t("eyebrow")}</span>
               <h2 className="font-display text-foreground text-[48px] leading-12 font-bold">
-                Project Phases
+                {t("heading")}
               </h2>
             </div>
 
@@ -163,21 +157,16 @@ export default function JourneySection() {
           {/* Text intro */}
           <div className="flex w-full max-w-175.75 flex-col gap-2">
             <span className="text-gold font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
-              Pre-Event Recap
+              {t("preEventEyebrow")}
             </span>
             <h2 className="font-display text-foreground text-[48px] leading-12 font-bold">
-              A Glimpse into the Past
+              {t("galleryHeading")}
             </h2>
             <p className="text-muted-foreground mt-2 font-sans text-base leading-6">
               <strong className="text-muted-foreground font-bold">
-                Mini Cultural Fair:
+                {t("galleryBodyBold")}
               </strong>{" "}
-              Featuring local specialties and traditional food from the four
-              hometown cities of 4 team organizers: Nam Dinh, Bac Ninh, Hai
-              Phong, Hanoi. A charity fundraising campaign organized by
-              Unforecast Project, where cultural spirit and regional stories are
-              brought to life through food, interactive activities, and shared
-              experiences.
+              {t("galleryBody")}
             </p>
           </div>
 

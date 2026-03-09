@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 const messagesIcon =
   "https://www.figma.com/api/mcp/asset/478fb939-7706-4915-b3f2-7ffac22edcac";
 
@@ -5,6 +7,8 @@ const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSdtnDdkCqQ1uHVw-PB89fYbAp92MidpDF64LqiXnApFGmsnWQ/viewform?usp=sharing&ouid=109241048830103920557";
 
 export default function SecretMessagesSection() {
+  const t = useTranslations("secretMessages");
+
   return (
     <section
       className="bg-background flex w-full flex-col items-center justify-center px-6 py-24 lg:px-48"
@@ -26,14 +30,11 @@ export default function SecretMessagesSection() {
             id="messages-heading"
             className="font-display text-foreground text-center text-[60px] leading-15 font-bold"
           >
-            Secret Messages
+            {t("heading")}
           </h2>
           <div className="max-w-2xl pt-2">
             <p className="text-muted-foreground text-center font-sans text-[20px] leading-7">
-              Can&apos;t make it or just want to share some love? Send your
-              wishes and
-              <br className="hidden sm:inline" />
-              secrets to the celebration.
+              {t("body")}
             </p>
           </div>
         </div>
@@ -46,7 +47,7 @@ export default function SecretMessagesSection() {
             rel="noopener noreferrer"
             className="bg-primary border-primary text-primary-foreground focus-visible:outline-ring inline-flex h-16 items-center justify-center rounded-full border px-12 font-sans text-[18px] leading-7 font-bold tracking-[0.9px] uppercase shadow-[0_0_20px_rgba(227,170,49,0.3)] transition-all duration-300 hover:shadow-[0_0_20px_rgba(227,170,49,0.5)] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            Send a Secret Message
+            {t("cta")}
           </a>
         </div>
       </div>

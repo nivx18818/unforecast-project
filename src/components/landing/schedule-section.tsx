@@ -1,29 +1,17 @@
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
-const scheduleItems = [
-  {
-    time: "13:00 - 13:45",
-    events: ["Check-in", "Welcome drink"],
-    side: "right" as const,
-  },
-  {
-    time: "13:45 - 14:30",
-    events: ["Showcase and interactive zone", "Graduation gallery"],
-    side: "left" as const,
-  },
-  {
-    time: "14:30 - 16:15",
-    events: ["Main ceremony"],
-    side: "right" as const,
-  },
-  {
-    time: "16:15 - 17:00",
-    events: ["Networking session", "Tea break"],
-    side: "left" as const,
-  },
-];
-
 export default function ScheduleSection() {
+  const t = useTranslations("schedule");
+  const itemsData = t.raw("items") as Array<{
+    time: string;
+    events: string[];
+  }>;
+  const scheduleItems = itemsData.map((item, i) => ({
+    ...item,
+    side: (i % 2 === 0 ? "right" : "left") as "right" | "left",
+  }));
+
   return (
     <section
       id="schedule"
@@ -32,10 +20,10 @@ export default function ScheduleSection() {
       {/* Heading */}
       <div className="flex w-full flex-col items-center gap-4">
         <h2 className="font-display text-foreground text-center text-4xl leading-tight font-bold md:text-5xl md:leading-12 lg:text-[48px]">
-          Event Schedule
+          {t("heading")}
         </h2>
         <p className="text-muted-foreground text-center font-sans text-base leading-6 md:text-lg">
-          We are honored and delighted to welcome you!
+          {t("subheading")}
         </p>
       </div>
 

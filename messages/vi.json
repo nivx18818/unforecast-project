@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "title": "Unforecast Project - Lễ Tri Ân và Trưởng Thành",
+    "description": "Dự án tốt nghiệp của sinh viên năm cuối ngành Quản trị Sự kiện tại Đại học Anh Quốc Việt Nam. Tham gia cùng chúng tôi vào ngày 14 tháng 3 năm 2026 tại Đại học Anh Quốc Việt Nam, Ecopark."
+  },
+  "header": {
+    "backToTop": "Về đầu trang",
+    "logoAlt": "Logo Unforecast Project",
+    "brandName": "Unforecast Project",
+    "navLabel": "Điều hướng chính",
+    "navDiscovery": "Khám Phá",
+    "navJourney": "Hành Trình",
+    "navSchedule": "Lịch Trình",
+    "navVenue": "Địa Điểm",
+    "rsvp": "RSVP",
+    "switchLang": "English"
+  },
+  "hero": {
+    "sectionLabel": "Hero",
+    "title": "Unforecast Project",
+    "tagline": "Lễ Tri Ân và Trưởng Thành",
+    "description": "Dự án tốt nghiệp tổ chức bởi nhóm sinh viên năm cuối ngành Quản lý Tổ chức Sự kiện trường Đại học Anh Quốc Việt Nam",
+    "date": "14 tháng 3, 2026",
+    "venueLine1": "Trường Đại học Anh Quốc Việt Nam",
+    "venueLine2": "Ecopark"
+  },
+  "discovery": {
+    "headline1": "Đội ngũ ấp ủ và tạo nên",
+    "headline2": "Unforecast Project",
+    "scrollCta": "Cuộn xuống để khám phá",
+    "storyHeading": "Câu Chuyện Của Chúng Tôi",
+    "storyParagraph1": "Chúng mình cùng nhau tạo nên Unforecast Project như cột mốc cuối trong hành trình học tập với tư cách là sinh viên ngành Quản trị Sự kiện tại trường Đại Học Anh Quốc Việt Nam. Dự án là sự kết tinh những kiến thức, trải nghiệm và kĩ năng mà chúng mình đã tích lũy trong suốt ba năm học tập và thực hành trong lĩnh vực sự kiện.",
+    "storyParagraph2": "Bằng cách hiểu rằng sự không chắc chắn như một phần vốn có của ngành sự kiện, \"Unforecast\" khuyến khích việc học hỏi liên tục và quá trình nhìn lại trải nghiệm, đồng thời đánh dấu bước chuyển của chúng mình từ sinh viên sang những người sẵn sàng bước vào môi trường nghề nghiệp trong lĩnh vực quản trị sự kiện.",
+    "members": [
+      {
+        "name": "Nguyễn Phương Thảo",
+        "role": "Trưởng Ban Tổ chức",
+        "bio": "Mình lựa chọn bắt đầu Unforecast Project vì mình không thể đoán được dự án thực sự diễn ra như thế nào. Nhưng có lẽ chính những sự khó dự đoán ấy đã khiến hành trình này trở nên ý nghĩa. Càng tổ chức nhiều sự kiện, mình càng nhận ra sự bất định luôn là một phần của quá trình. Dự án đã cho mình can đảm bắt đầu trước khi mọi thứ trở nên rõ ràng và thử những điều chưa từng làm, đồng thời là cơ hội để mình nhìn lại hành trình học và làm sự kiện. Không chỉ là việc hoàn thành một dự án để tốt nghiệp, Unforecast Project còn giúp mình hiểu rõ hơn về bản thân và hành trình đã đưa mình đến đây."
+      },
+      {
+        "name": "Nguyễn Thị Minh Thư",
+        "role": "Trưởng Ban Vận Hành",
+        "bio": "Là một sinh viên năm cuối, Unforecast Project với mình không chỉ là một dự án tốt nghiệp mà còn là dấu mốc tổng kết cho ba năm học tập và trưởng thành tại BUV. Trở thành một phần của dự án giúp mình hiểu rõ hơn về tầm quan trọng của trách nhiệm, tinh thần hợp tác và khả năng thích ứng trước những điều khó dự đoán trong ngành sự kiện. Dù có nhiều thử thách xảy ra, chính những trải nghiệm đó đã giúp mình trưởng thành hơn, học được nhiều bài học thực tế và tạo nên một hành trình thật sự đáng nhớ."
+      },
+      {
+        "name": "Nguyễn Thuỵ Bảo Hân",
+        "role": "Trưởng Ban Đối ngoại",
+        "bio": "Trở thành một phần của Unforecast Project là điều mình chưa từng dự đoán khi mới bước vào BUV. Đúng như cái tên \"Unforecast\", dự án mang đến nhiều bất ngờ và thử thách. Mỗi thử thách hay ý tưởng bất chợt đều mang lại những trải nghiệm mới. Chính sự ngẫu hứng và tinh thần đồng hành trong dự án đã tạo nên một hành trình đáng nhớ và khó quên với mình."
+      },
+      {
+        "name": "Nguyễn Phương Hà",
+        "role": "Trưởng Ban Sáng tạo",
+        "bio": "Với mình, Unforecast Project không chỉ đơn thuần là một bài thi. Đó còn là tâm huyết, là dấu ấn mà mình mong muốn để lại trong hành trình học tập tại BUV. Thông qua Unforecast Project, mình và team hy vọng có thể biến những điều không lường trước trở thành những điều kỳ diệu, tạo nên những khoảnh khắc đáng nhớ và không thể quên trong suốt 3 năm thanh xuân tại BUV."
+      }
+    ]
+  },
+  "journey": {
+    "eyebrow": "Hành Trình",
+    "heading": "Các Giai Đoạn Dự Án",
+    "preEventEyebrow": "Tóm Tắt Tiền Sự Kiện",
+    "galleryHeading": "Nhìn Lại Những Khoảnh Khắc",
+    "galleryBodyBold": "Không giản trải nghiệm văn hoá ẩm thực:",
+    "galleryBody": "Giới thiệu các đặc sản đến từ bốn quê hương Nam Định, Bắc Ninh, Hải Phòng và Hà Nội. Một hoạt động gây quỹ từ thiện do Unforecast Project tổ chức, nơi tinh thần văn hóa và những câu chuyện vùng miền được tái hiện qua ẩm thực, và hoạt động trải nghiệm.",
+    "phases": [
+      {
+        "number": "01",
+        "date": "02 - 03 tháng 3, 2026",
+        "title": "Tiền sự kiện: Không giản trải nghiệm văn hoá ẩm thực"
+      },
+      {
+        "number": "02",
+        "date": "14 tháng 3, 2026",
+        "title": "Sự kiện chính: Lễ Tri Ân và Trưởng Thành"
+      },
+      {
+        "number": "03",
+        "date": "Dự kiến cuối tháng 3, 2026",
+        "title": "Sau sự kiện: Chuyến đi thiện nguyện đến Cô Nhi viện Thánh An Bùi Chu"
+      }
+    ]
+  },
+  "schedule": {
+    "heading": "Lịch Trình Sự Kiện",
+    "subheading": "Chúng tôi vô cùng vinh dự và vui mừng được đón tiếp quý khách!",
+    "items": [
+      {
+        "time": "13:00 - 13:45",
+        "events": ["Đón tiếp"]
+      },
+      {
+        "time": "13:45 - 14:30",
+        "events": ["Khu trưng bày", "và Triển lãm tương tác"]
+      },
+      {
+        "time": "14:30 - 16:15",
+        "events": ["Lễ Tri ân và Trưởng thành"]
+      },
+      {
+        "time": "16:15 - 17:00",
+        "events": ["Tiệc trà và giao lưu"]
+      }
+    ]
+  },
+  "venue": {
+    "sectionLabel": "Địa Điểm",
+    "imageAlt": "Hội Trường Sir Graeme Davies 3-3 tại Trường Đại học Anh Quốc Việt Nam",
+    "eyebrow": "Vị Trí",
+    "headingLine1": "Hội Trường Sir",
+    "headingLine2": "Graeme Davies 3-3",
+    "body": "Nằm trong khuôn viên Đại học Anh Quốc Việt Nam tại Ecopark, Hội Trường Sir Graeme Davies 3-3 mang đến một sân khấu hiện đại, ấm cúng cho những khoảnh khắc đầy cảm hứng.",
+    "addressLine1": "Trường Đại học Anh Quốc Việt Nam",
+    "addressLine2": "Lô GD-01, Khu Đô Thị Ecopark, Hưng Yên",
+    "directions": "Xem Đường Đi"
+  },
+  "rsvp": {
+    "heading": "Bạn có tham dự không?",
+    "body": "Chúng tôi rất trân trọng sự hiện diện của bạn. Vui lòng xác nhận tham dự trước ngày",
+    "date": "14 tháng 3, 2026",
+    "attendBtn": "Tôi Sẽ Tham Dự",
+    "declineBtn": "Tôi Không Thể Tham Dự",
+    "footerNote": "Đối với các yêu cầu đặc biệt, vui lòng liên hệ trực tiếp với chúng tôi."
+  },
+  "rsvpModal": {
+    "titleSuccess": "Cảm Ơn Bạn!",
+    "titleAttend": "Xác Nhận Tham Dự",
+    "titleDecline": "Chúng Tôi Sẽ Nhớ Bạn",
+    "descSuccess": "Phản hồi của bạn đã được ghi nhận thành công.",
+    "descAttend": "Vui lòng điền vào biểu mẫu bên dưới để xác nhận tham dự.",
+    "descDecline": "Rất tiếc khi bạn không thể đến. Hãy để lại lời nhắn cho ban tổ chức.",
+    "errorGeneric": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "nameLabel": "Họ và Tên",
+    "namePlaceholder": "Nhập họ và tên đầy đủ của bạn",
+    "nameRequired": "Họ và tên là bắt buộc.",
+    "emailLabel": "Địa Chỉ Email",
+    "emailPlaceholder": "email@example.com",
+    "emailRequired": "Email là bắt buộc.",
+    "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "phoneLabel": "Số Điện Thoại",
+    "phonePlaceholder": "+84 98 765 4321",
+    "phoneRequired": "Số điện thoại là bắt buộc.",
+    "submitting": "Đang gửi...",
+    "confirmBtn": "Xác Nhận",
+    "nameLabelDecline": "Họ và tên của bạn",
+    "messageLabel": "Lời Nhắn (Không bắt buộc)",
+    "messagePlaceholder": "Chúc mừng buổi lễ thành công rực rỡ...",
+    "sending": "Đang gửi...",
+    "sendBtn": "Gửi Lời Nhắn"
+  },
+  "secretMessages": {
+    "heading": "Lời Nhắn Bí Mật",
+    "body": "Không thể đến hay chỉ muốn gửi lời yêu thương? Hãy gửi những lời chúc và điều bí mật của bạn đến buổi lễ.",
+    "cta": "Gửi Lời Nhắn Bí Mật"
+  },
+  "footer": {
+    "logoAlt": "Unforecast Project",
+    "brandName": "Unforecast Project",
+    "copyright": "© 2026 Unforecast Project. Đã đăng ký bản quyền.",
+    "footerLabel": "Footer trang web",
+    "socialLabel": "Liên kết mạng xã hội",
+    "emailLabel": "Email Unforecast Project",
+    "callLabel": "Gọi cho Unforecast Project",
+    "facebookLabel": "Unforecast Project trên Facebook",
+    "instagramLabel": "Unforecast Project trên Instagram"
+  }
+}

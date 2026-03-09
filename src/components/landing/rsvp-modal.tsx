@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useTranslations } from "next-intl";
 import {
   Dialog,
   DialogContent,
@@ -21,6 +22,7 @@ export function RSVPModal({
   onOpenChangeAction: onOpenChange,
   type,
 }: RSVPModalProps) {
+  const t = useTranslations("rsvpModal");
   const isAttend = type === "attend";
   const [isLoading, setIsLoading] = React.useState(false);
   const [isSuccess, setIsSuccess] = React.useState(false);
@@ -56,16 +58,16 @@ export function RSVPModal({
   const validate = () => {
     const newErrors = { fullName: "", email: "", phone: "" };
     if (!fullName.trim()) {
-      newErrors.fullName = "Full name is required.";
+      newErrors.fullName = t("nameRequired");
     }
     if (isAttend) {
       if (!email.trim()) {
-        newErrors.email = "Email is required.";
+        newErrors.email = t("emailRequired");
       } else if (!/\S+@\S+\.\S+/.test(email)) {
-        newErrors.email = "Please enter a valid email address.";
+        newErrors.email = t("emailInvalid");
       }
       if (!phone.trim()) {
-        newErrors.phone = "Phone number is required.";
+        newErrors.phone = t("phoneRequired");
       }
     }
     setErrors(newErrors);
@@ -101,7 +103,7 @@ export function RSVPModal({
         onOpenChange(false);
       }, 2000);
     } catch {
-      setError("Something went wrong. Please try again.");
+      setError(t("errorGeneric"));
     } finally {
       setIsLoading(false);
     }
@@ -116,17 +118,17 @@ export function RSVPModal({
         <DialogHeader className="gap-3 px-2 text-center">
           <DialogTitle className="font-display text-foreground text-center text-[32px] leading-tight font-bold md:text-[40px]">
             {isSuccess
-              ? "Thank You!"
+              ? t("titleSuccess")
               : isAttend
-                ? "Confirm Your Attendance"
-                : "We'll Miss You"}
+                ? t("titleAttend")
+                : t("titleDecline")}
           </DialogTitle>
           <DialogDescription className="text-muted-foreground text-center font-sans text-base font-normal md:text-lg">
             {isSuccess
-              ? "Your response has been successfully recorded."
+              ? t("descSuccess")
               : isAttend
-                ? "Please fill out the form below to confirm your attendance."
-                : "We are sorry you can't make it. Leave a message for the hosts."}
+                ? t("descAttend")
+                : t("descDecline")}
           </DialogDescription>
         </DialogHeader>
 
@@ -147,13 +149,13 @@ export function RSVPModal({
                     htmlFor="fullName"
                     className="text-foreground font-sans text-sm font-bold tracking-[0.4px]"
                   >
-                    Your Name
+                    {t("nameLabel")}
                   </label>
                   <input
                     id="fullName"
                     name="fullName"
                     type="text"
-                    placeholder="Enter your full name"
+                    placeholder={t("namePlaceholder")}
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     className="text-foreground placeholder:text-muted-foreground focus-visible:ring-ring h-12 rounded-[12px] border border-transparent bg-white/5 px-4 text-base transition-all outline-none hover:border-white/10 focus-visible:bg-white/10 focus-visible:ring-1"
@@ -171,13 +173,13 @@ export function RSVPModal({
                     htmlFor="email"
                     className="text-foreground font-sans text-sm font-bold tracking-[0.4px]"
                   >
-                    Email Address
+                    {t("emailLabel")}
                   </label>
                   <input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="email@example.com"
+                    placeholder={t("emailPlaceholder")}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="text-foreground placeholder:text-muted-foreground focus-visible:ring-ring h-12 rounded-[12px] border border-transparent bg-white/5 px-4 text-base transition-all outline-none hover:border-white/10 focus-visible:bg-white/10 focus-visible:ring-1"
@@ -195,13 +197,13 @@ export function RSVPModal({
                     htmlFor="phone"
                     className="text-foreground font-sans text-sm font-bold tracking-[0.4px]"
                   >
-                    Phone Number
+                    {t("phoneLabel")}
                   </label>
                   <input
                     id="phone"
                     name="phone"
                     type="tel"
-                    placeholder="+84 98 765 4321"
+                    placeholder={t("phonePlaceholder")}
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     className="text-foreground placeholder:text-muted-foreground focus-visible:ring-ring h-12 rounded-[12px] border border-transparent bg-white/5 px-4 text-base transition-all outline-none hover:border-white/10 focus-visible:bg-white/10 focus-visible:ring-1"
@@ -226,7 +228,7 @@ export function RSVPModal({
                     "shadow-[0_4px_20px_rgba(227,170,49,0.3)] hover:shadow-[0_4px_25px_rgba(227,170,49,0.5)]",
                   )}
                 >
-                  {isLoading ? "Submitting..." : "Confirm"}
+                  {isLoading ? t("submitting") : t("confirmBtn")}
                 </button>
               </>
             ) : (
@@ -236,13 +238,13 @@ export function RSVPModal({
                     htmlFor="fullName"
                     className="text-foreground font-sans text-sm font-bold tracking-[0.4px]"
                   >
-                    Your name
+                    {t("nameLabelDecline")}
                   </label>
                   <input
                     id="fullName"
                     name="fullName"
                     type="text"
-                    placeholder="Enter your full name"
+                    placeholder={t("namePlaceholder")}
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     className="text-foreground placeholder:text-muted-foreground focus-visible:ring-ring h-12 rounded-[12px] border border-transparent bg-white/5 px-4 text-base transition-all outline-none hover:border-white/10 focus-visible:bg-white/10 focus-visible:ring-1"
@@ -261,12 +263,12 @@ export function RSVPModal({
                     htmlFor="message"
                     className="text-foreground font-sans text-sm font-bold tracking-[0.4px]"
                   >
-                    Message (Optional)
+                    {t("messageLabel")}
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    placeholder="Wishing you a wonderful celebration..."
+                    placeholder={t("messagePlaceholder")}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     className="text-foreground placeholder:text-muted-foreground focus-visible:ring-ring min-h-24 resize-none rounded-[12px] border border-transparent bg-white/5 p-4 text-base transition-all outline-none hover:border-white/10 focus-visible:bg-white/10 focus-visible:ring-1"
@@ -286,7 +288,7 @@ export function RSVPModal({
                     "shadow-[0_4px_20px_rgba(227,170,49,0.3)] hover:shadow-[0_4px_25px_rgba(227,170,49,0.5)]",
                   )}
                 >
-                  {isLoading ? "Sending..." : "Send Message"}
+                  {isLoading ? t("sending") : t("sendBtn")}
                 </button>
               </>
             )}

@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { RSVPModal } from "./rsvp-modal";
 
 export default function RSVPSection() {
+  const t = useTranslations("rsvp");
   const [modalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState<"attend" | "decline">("attend");
 
@@ -54,15 +56,13 @@ export default function RSVPSection() {
           id="rsvp-heading"
           className="font-display text-foreground text-center text-4xl font-bold md:text-[48px] md:leading-12"
         >
-          Will you join us?
+          {t("heading")}
         </h2>
 
         {/* Body */}
         <p className="text-secondary max-w-xl text-center font-sans text-base font-normal md:text-[18px] md:leading-[29.25px]">
-          We would be honored by your presence. Kindly confirm
-          <br className="hidden sm:block" />
-          your attendance by{" "}
-          <strong className="text-gold font-bold">March 14th, 2026</strong>.
+          {t("body")}{" "}
+          <strong className="text-gold font-bold">{t("date")}</strong>.
         </p>
 
         {/* CTA pair */}
@@ -78,7 +78,7 @@ export default function RSVPSection() {
               "shadow-[0_4px_20px_rgba(227,170,49,0.3)] hover:shadow-[0_4px_25px_rgba(227,170,49,0.5)]",
             )}
           >
-            I Will Attend
+            {t("attendBtn")}
           </button>
           <button
             onClick={() => openModal("decline")}
@@ -90,13 +90,13 @@ export default function RSVPSection() {
               "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
             )}
           >
-            I Cannot Attend
+            {t("declineBtn")}
           </button>
         </div>
 
         {/* Footer note */}
         <p className="text-muted-foreground mt-6 text-center font-sans text-sm leading-5 font-normal md:mt-2">
-          For any special requests, please contact us directly.
+          {t("footerNote")}
         </p>
       </div>
 

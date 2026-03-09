@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "title": "Unforecast Project - Ceremony of Gratitude and Growth",
+    "description": "A capstone project by final-year BUV Events Management students. Join us on March 14th, 2026 at British University Vietnam, Ecopark."
+  },
+  "header": {
+    "backToTop": "Back to top",
+    "logoAlt": "Unforecast Project logo",
+    "brandName": "Unforecast Project",
+    "navLabel": "Main navigation",
+    "navDiscovery": "Discovery",
+    "navJourney": "Journey",
+    "navSchedule": "Schedule",
+    "navVenue": "Venue",
+    "rsvp": "RSVP",
+    "switchLang": "Tiếng Việt"
+  },
+  "hero": {
+    "sectionLabel": "Hero",
+    "title": "Unforecast Project",
+    "tagline": "Ceremony of Gratitude and Growth",
+    "description": "A capstone project by final-year BUV Events Management students",
+    "date": "March 14th, 2026",
+    "venueLine1": "British University Vietnam",
+    "venueLine2": "Ecopark"
+  },
+  "discovery": {
+    "headline1": "The Hearts and Minds behind",
+    "headline2": "Unforecast Project",
+    "scrollCta": "Scroll to discover",
+    "storyHeading": "Our Story",
+    "storyParagraph1": "We have created Unforecast Project as the final milestone of our journey as Events Management students at British University Vietnam. It thoughtfully brings together the knowledge, experiences, and lessons we have gained throughout three years of learning and practicing event management.",
+    "storyParagraph2": "By embracing uncertainty as an inherent aspect of event management, the \"Unforecast\" concept supports continuous learning and reflective practice, marking the organizers' transition from academic learners to practice-ready event management professionals.",
+    "members": [
+      {
+        "name": "Nguyen Phuong Thao",
+        "role": "Project Director",
+        "bio": "I chose to start Unforecast Project because I cannot forecast how it will take shape. Yet perhaps that uncertainty is exactly what makes this journey meaningful. The more events I organize, the more I realize that unpredictability is always part of the process. This project gave me the courage to step into the unknown and try something different, while also inviting me to look back at my journey of learning and creating events. It is not only about completing a project for graduation, but also about understanding myself and the journey behind it."
+      },
+      {
+        "name": "Nguyen Thi Minh Thu",
+        "role": "Operational Director",
+        "bio": "As a final-year student, Unforecast Project is not only a graduation project for me but also a milestone that reflects my three-year journey of learning and growth at BUV. Being part of this project has helped me better understand the importance of responsibility, teamwork, and the ability to adapt to unpredictable situations in the event industry. Although there were many challenges along the way, those experiences helped me grow, learn valuable practical lessons, and create a truly memorable journey."
+      },
+      {
+        "name": "Nguyen Thuy Bao Han",
+        "role": "Partnership Director",
+        "bio": "Becoming part of the Unforecast Project was something I never expected when I first entered BUV. True to its name, \"Unforecast,\" the project brought many surprises and challenges. Each challenge or spontaneous idea brought new experiences. The spontaneity and spirit of teamwork throughout the project created a memorable and unforgettable journey for me."
+      },
+      {
+        "name": "Nguyen Phuong Ha",
+        "role": "Creative Director",
+        "bio": "For me, the Unforecast Project is more than just an assignment. It represents our passion and the mark I hope to leave during my journey at BUV. Through the Unforecast Project, my team and I hope to transform the unexpected into something magical, creating meaningful moments and unforgettable memories throughout our three-year journey at BUV."
+      }
+    ]
+  },
+  "journey": {
+    "eyebrow": "Journey",
+    "heading": "Project Phases",
+    "preEventEyebrow": "Pre-Event Recap",
+    "galleryHeading": "A Glimpse into the Past",
+    "galleryBodyBold": "Mini Cultural Fair:",
+    "galleryBody": "Featuring local specialties and traditional food from the four hometown cities of 4 team organizers: Nam Dinh, Bac Ninh, Hai Phong, Hanoi. A charity fundraising campaign organized by Unforecast Project, where cultural spirit and regional stories are brought to life through food, interactive activities, and shared experiences.",
+    "phases": [
+      {
+        "number": "01",
+        "date": "March 02 - 03, 2026",
+        "title": "Pre-event: Mini Cultural Fair"
+      },
+      {
+        "number": "02",
+        "date": "March 14th, 2026",
+        "title": "Main event: Ceremony of Gratitude & Growth"
+      },
+      {
+        "number": "03",
+        "date": "Tentatively late March 2026",
+        "title": "Post-event: Charity trip to Saint An Bui Chu Orphanage"
+      }
+    ]
+  },
+  "schedule": {
+    "heading": "Event Schedule",
+    "subheading": "We are honored and delighted to welcome you!",
+    "items": [
+      {
+        "time": "13:00 - 13:45",
+        "events": ["Check-in", "Welcome drink"]
+      },
+      {
+        "time": "13:45 - 14:30",
+        "events": ["Showcase and interactive zone", "Graduation gallery"]
+      },
+      {
+        "time": "14:30 - 16:15",
+        "events": ["Main ceremony"]
+      },
+      {
+        "time": "16:15 - 17:00",
+        "events": ["Networking session", "Tea break"]
+      }
+    ]
+  },
+  "venue": {
+    "sectionLabel": "Venue",
+    "imageAlt": "Theatre Pod Sir Graeme Davies 3-3 at British University Vietnam",
+    "eyebrow": "Location",
+    "headingLine1": "Theatre Pod Sir",
+    "headingLine2": "Graeme Davies 3-3",
+    "body": "Set within the campus of British University Vietnam at Ecopark, Sir Graeme Davies Theatre Pod 3-3 offers a modern, intimate stage for inspiring moments.",
+    "addressLine1": "British University Vietnam",
+    "addressLine2": "Lot GD-01, Ecopark Urban Area, Hung Yen",
+    "directions": "Get Directions"
+  },
+  "rsvp": {
+    "heading": "Will you join us?",
+    "body": "We would be honored by your presence. Kindly confirm your attendance by",
+    "date": "March 14th, 2026",
+    "attendBtn": "I Will Attend",
+    "declineBtn": "I Cannot Attend",
+    "footerNote": "For any special requests, please contact us directly."
+  },
+  "rsvpModal": {
+    "titleSuccess": "Thank You!",
+    "titleAttend": "Confirm Your Attendance",
+    "titleDecline": "We'll Miss You",
+    "descSuccess": "Your response has been successfully recorded.",
+    "descAttend": "Please fill out the form below to confirm your attendance.",
+    "descDecline": "We are sorry you can't make it. Leave a message for the hosts.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "Enter your full name",
+    "nameRequired": "Full name is required.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "email@example.com",
+    "emailRequired": "Email is required.",
+    "emailInvalid": "Please enter a valid email address.",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+84 98 765 4321",
+    "phoneRequired": "Phone number is required.",
+    "submitting": "Submitting...",
+    "confirmBtn": "Confirm",
+    "nameLabelDecline": "Your name",
+    "messageLabel": "Message (Optional)",
+    "messagePlaceholder": "Wishing you a wonderful celebration...",
+    "sending": "Sending...",
+    "sendBtn": "Send Message"
+  },
+  "secretMessages": {
+    "heading": "Secret Messages",
+    "body": "Can't make it or just want to share some love? Send your wishes and secrets to the celebration.",
+    "cta": "Send a Secret Message"
+  },
+  "footer": {
+    "logoAlt": "Unforecast Project",
+    "brandName": "Unforecast Project",
+    "copyright": "© 2026 Unforecast Project. All rights reserved.",
+    "footerLabel": "Site footer",
+    "socialLabel": "Social media links",
+    "emailLabel": "Email Unforecast Project",
+    "callLabel": "Call Unforecast Project",
+    "facebookLabel": "Unforecast Project on Facebook",
+    "instagramLabel": "Unforecast Project on Instagram"
+  }
+}

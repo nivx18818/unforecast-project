@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Calendar04Icon, Location01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -8,10 +9,12 @@ const heroImageOverlay =
   "https://www.figma.com/api/mcp/asset/cd5312bb-8076-4b9c-b111-bfcfa260876f";
 
 export default function HeroSection() {
+  const t = useTranslations("hero");
+
   return (
     <section
       className="bg-background relative flex min-h-screen flex-col items-center overflow-hidden pb-10"
-      aria-label="Hero"
+      aria-label={t("sectionLabel")}
     >
       {/* Cinematic backdrop */}
       <div
@@ -47,20 +50,20 @@ export default function HeroSection() {
         {/* Title block */}
         <div className="flex flex-col items-center gap-0 drop-shadow-md">
           <h1 className="font-display text-gold text-[72px] leading-24 font-bold whitespace-nowrap">
-            Unforecast Project
+            {t("title")}
           </h1>
           <p
             className={cn(
               "font-display text-foreground text-[72px] leading-24 font-bold whitespace-nowrap",
             )}
           >
-            Ceremony of Gratitude and Growth
+            {t("tagline")}
           </p>
         </div>
 
         {/* Subtitle */}
         <p className="text-secondary mt-4 max-w-2xl font-sans text-[20px] leading-7 font-normal">
-          A capstone project by final-year BUV Events Management students
+          {t("description")}
         </p>
 
         {/* Metadata row */}
@@ -69,7 +72,7 @@ export default function HeroSection() {
           <div className="flex w-64 items-center justify-end gap-2">
             <HugeiconsIcon icon={Calendar04Icon} className="text-gold" />
             <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px] whitespace-nowrap">
-              March 14th, 2026
+              {t("date")}
             </span>
           </div>
 
@@ -85,9 +88,9 @@ export default function HeroSection() {
           <div className="flex w-64 items-center justify-start gap-2">
             <HugeiconsIcon icon={Location01Icon} className="text-gold" />
             <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px]">
-              British University Vietnam
+              {t("venueLine1")}
               <br />
-              Ecopark
+              {t("venueLine2")}
             </span>
           </div>
         </div>

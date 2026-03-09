@@ -1,11 +1,14 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function VenueSection() {
+  const t = useTranslations("venue");
+
   return (
     <section
       id="venue"
       className="bg-background/30 flex w-full items-center justify-center px-6 py-16 md:p-24"
-      aria-label="Venue"
+      aria-label={t("sectionLabel")}
     >
       <div className="flex w-full max-w-7xl flex-col items-center gap-12 md:flex-row md:gap-20">
         {/* ── Media block ─────────────────────────────── */}
@@ -19,7 +22,7 @@ export default function VenueSection() {
           <div className="rounded-media-xl relative aspect-4/3 w-full overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.5)]">
             <Image
               src="/images/venue-ballroom.jpg"
-              alt="Theatre Pod Sir Graeme Davies 3-3 at British University Vietnam"
+              alt={t("imageAlt")}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -35,26 +38,24 @@ export default function VenueSection() {
         {/* ── Text block ──────────────────────────────── */}
         <div className="flex min-w-0 flex-1 flex-col items-start gap-4">
           <span className="text-primary font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
-            Location
+            {t("eyebrow")}
           </span>
           <h2 className="font-display text-foreground text-[36px] leading-[1.1] font-bold md:text-[48px] md:leading-12">
-            Theatre Pod Sir
+            {t("headingLine1")}
             <br />
-            Graeme Davies 3-3
+            {t("headingLine2")}
           </h2>
           <div className="pt-2">
             <p className="text-secondary font-sans text-[18px] leading-[29.25px] font-normal md:max-w-119.25">
-              Set within the campus of British University Vietnam at Ecopark,
-              Sir Graeme Davies Theatre Pod 3-3 offers a modern, intimate stage
-              for inspiring moments.
+              {t("body")}
             </p>
           </div>
           <div className="flex flex-col pt-2 pb-4">
             <p className="text-foreground font-sans text-[18px] leading-7 font-medium">
-              British University Vietnam
+              {t("addressLine1")}
             </p>
             <p className="text-muted-foreground font-sans text-[16px] leading-6 font-normal">
-              Lot GD-01, Ecopark Urban Area, Hung Yen
+              {t("addressLine2")}
             </p>
           </div>
           {/* Directions link */}
@@ -64,7 +65,7 @@ export default function VenueSection() {
             rel="noopener noreferrer"
             className="border-primary text-primary focus-visible:outline-ring inline-flex items-center gap-2 border-b pb-1.25 font-sans text-[18px] leading-7 font-medium tracking-[0.45px] transition-opacity duration-200 hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2"
           >
-            Get Directions
+            {t("directions")}
             <svg
               className="h-[9.333px] w-[9.333px] fill-current"
               viewBox="0 0 10 10"
