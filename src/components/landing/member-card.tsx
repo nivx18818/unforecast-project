@@ -8,7 +8,7 @@ export function MemberCard({ member }: { member: Member }) {
   // Using radial gradients to match the Figma design's lighting effects
   // The first overlay is a gentle primary (gold), the second is a faint blue.
   return (
-    <div className="rounded-media-xl bg-background border-gold-muted relative flex w-full max-w-5xl flex-col items-center justify-center overflow-hidden border shadow-[0_0_40px_-10px_var(--gold-dim)]">
+    <div className="border-primary/30 bg-background rounded-media-xl relative flex w-full max-w-5xl flex-col items-center justify-center overflow-hidden border shadow-[0px_0px_40px_-10px_rgba(227,170,49,0.2)]">
       {/* For accessibility since we hid the header */}
       <DialogTitle className="sr-only">{member.name}</DialogTitle>
 
@@ -24,19 +24,19 @@ export function MemberCard({ member }: { member: Member }) {
         }}
       >
         {/* Decorative blur blobs behind the content (as in Figma) */}
-        <div className="bg-muted pointer-events-none absolute -right-24 -bottom-24 size-64 rounded-full blur-[32px]" />
+        <div className="bg-primary/5 pointer-events-none absolute -right-24 -bottom-24 size-64 rounded-full blur-[32px]" />
         <div className="pointer-events-none absolute -top-24 -left-24 size-64 rounded-full bg-[rgba(165,243,252,0.05)] blur-[32px]" />
 
         {/* ── Image Section (Left) ── */}
-        <div className="relative h-75 flex-1 shrink-0 overflow-hidden md:h-full md:w-[45%] md:flex-none">
+        <div className="relative h-75 w-full shrink-0 overflow-hidden md:h-full md:w-1/2 md:flex-1">
           <Image
             src={member.src}
             alt={member.name}
             fill
             className="object-cover"
           />
-          {/* Overlay gradient to blend into background */}
-          <div className="from-background/50 md:from-background/0 to-background/50 absolute inset-0 bg-linear-to-t md:bg-linear-to-r" />
+          {/* Overlay gradient to blend into background — transparent left half, dark right half */}
+          <div className="to-background/60 md:to-background/50 absolute inset-0 bg-linear-to-b from-transparent md:bg-linear-to-r md:from-transparent md:from-50%" />
 
           {/* Decorative Sparkle SVG */}
           <div className="text-primary absolute top-6 left-6 size-8.25">
@@ -63,7 +63,7 @@ export function MemberCard({ member }: { member: Member }) {
         </div>
 
         {/* ── Content Section (Right) ── */}
-        <div className="relative z-10 flex h-82.5 flex-1 flex-col justify-center p-8 md:h-full md:p-16">
+        <div className="relative z-10 flex h-82.5 w-full flex-col justify-center p-8 md:h-full md:w-1/2 md:flex-1 md:p-16">
           <div className="flex w-full max-w-md flex-col gap-6">
             {/* Role / Tag */}
             <div className="flex items-center gap-2">
@@ -75,7 +75,7 @@ export function MemberCard({ member }: { member: Member }) {
 
             {/* Name & Divider */}
             <div className="flex flex-col gap-2">
-              <h2 className="font-display text-primary text-4xl leading-tight font-bold md:text-[60px]">
+              <h2 className="font-display text-primary text-4xl leading-tight font-bold md:text-[72px] md:leading-[72px]">
                 {member.name}
               </h2>
               <div className="from-primary h-1 w-20 rounded-full bg-linear-to-r to-transparent" />
@@ -83,7 +83,7 @@ export function MemberCard({ member }: { member: Member }) {
 
             {/* Bio text */}
             <div className="custom-scrollbar overflow-y-auto pr-4">
-              <p className="text-secondary font-sans text-base leading-relaxed font-normal whitespace-pre-line">
+              <p className="text-secondary font-sans text-base leading-[26px] font-normal whitespace-pre-line">
                 {member.bio}
               </p>
             </div>

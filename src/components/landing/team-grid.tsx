@@ -74,7 +74,7 @@ export function TeamGrid({ members }: TeamGridProps) {
         }}
       >
         <DialogContent
-          className="max-w-5xl border-none bg-transparent p-0 shadow-none"
+          className="max-w-5xl border-none bg-transparent p-0 shadow-none sm:max-w-5xl"
           aria-describedby={undefined}
         >
           {selectedMember && <MemberCard member={selectedMember} />}
