@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
+import { FadeUp, StaggerContainer, StaggerItem } from "./motion";
 
 export default function ScheduleSection() {
   const t = useTranslations("schedule");
@@ -18,17 +19,17 @@ export default function ScheduleSection() {
       className="bg-background mx-auto flex w-full max-w-5xl flex-col items-center justify-center gap-12 px-6 py-16 md:gap-16 md:px-24 md:py-24"
     >
       {/* Heading */}
-      <div className="flex w-full flex-col items-center gap-4">
+      <FadeUp className="flex w-full flex-col items-center gap-4">
         <h2 className="font-display text-foreground text-center text-4xl leading-tight font-bold md:text-5xl md:leading-12 lg:text-[48px]">
           {t("heading")}
         </h2>
         <p className="text-muted-foreground text-center font-sans text-base leading-6 md:text-lg">
           {t("subheading")}
         </p>
-      </div>
+      </FadeUp>
 
       {/* Timeline */}
-      <div className="relative flex w-full max-w-3xl flex-col gap-8 md:gap-12">
+      <StaggerContainer className="relative flex w-full max-w-3xl flex-col gap-8 md:gap-12">
         {/* Center line (Desktop) / Left line (Mobile) */}
         <div
           className="bg-primary/20 pointer-events-none absolute top-0 bottom-0 left-3.75 w-px -translate-x-1/2 md:left-1/2"
@@ -39,7 +40,7 @@ export default function ScheduleSection() {
           const isRight = side === "right";
 
           return (
-            <div
+            <StaggerItem
               key={time}
               className="relative flex w-full flex-col justify-between gap-1 pl-12 md:flex-row md:items-center md:gap-0 md:pl-0"
             >
@@ -102,10 +103,10 @@ export default function ScheduleSection() {
                   </div>
                 )}
               </div>
-            </div>
+            </StaggerItem>
           );
         })}
-      </div>
+      </StaggerContainer>
     </section>
   );
 }

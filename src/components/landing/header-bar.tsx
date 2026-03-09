@@ -11,6 +11,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { SlideDownMount } from "./motion";
 
 const logoSrc =
   "https://www.figma.com/api/mcp/asset/ec354a9e-f10f-42d3-b685-7bc82eae20ab";
@@ -41,7 +42,10 @@ export default function HeaderBar() {
       {/* Blur layer */}
       <div className="from-gold/30 absolute inset-0 -z-10 bg-linear-to-b to-transparent mask-[linear-gradient(to_bottom,black,transparent)] backdrop-blur-xs [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
 
-      <div className="m-auto flex max-w-7xl items-center justify-between">
+      <SlideDownMount
+        className="m-auto flex max-w-7xl items-center justify-between"
+        delay={0.1}
+      >
         {/* Brand */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -117,7 +121,7 @@ export default function HeaderBar() {
             {t("rsvp")}
           </button>
         </div>
-      </div>
+      </SlideDownMount>
     </header>
   );
 }

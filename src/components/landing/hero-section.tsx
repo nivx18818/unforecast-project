@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Calendar04Icon, Location01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { FadeUpMount } from "./motion";
 
 const heroImage =
   "https://www.figma.com/api/mcp/asset/0047e038-4f12-41b1-8d39-03c6f2b055cc";
@@ -49,41 +50,46 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 pt-24 pb-12 text-center">
         {/* Title block */}
-        <div className="flex flex-col items-center gap-0 drop-shadow-md">
-          <h1 className="font-display text-gold text-center text-[40px] leading-tight font-bold sm:text-[56px] md:text-[72px] md:leading-24">
-            {t("title")}
-          </h1>
-          <p
-            className={cn(
-              "font-display text-foreground text-center text-[40px] leading-tight font-bold sm:text-[56px] md:text-[72px] md:leading-24",
-            )}
-          >
-            {t("tagline")}
-          </p>
-        </div>
+        <FadeUpMount delay={0.2}>
+          <div className="flex flex-col items-center gap-0 drop-shadow-md">
+            <h1 className="font-display text-gold text-center text-[40px] leading-tight font-bold sm:text-[56px] md:text-[72px] md:leading-24">
+              {t("title")}
+            </h1>
+            <p
+              className={cn(
+                "font-display text-foreground text-center text-[40px] leading-tight font-bold sm:text-[56px] md:text-[72px] md:leading-24",
+              )}
+            >
+              {t("tagline")}
+            </p>
+          </div>
+        </FadeUpMount>
 
         {/* Subtitle */}
-        <p className="text-secondary mt-4 max-w-2xl font-sans text-[20px] leading-7 font-normal">
-          {t("description")}
-        </p>
+        <FadeUpMount delay={0.45}>
+          <p className="text-secondary mt-4 max-w-2xl font-sans text-[20px] leading-7 font-normal">
+            {t("description")}
+          </p>
+        </FadeUpMount>
 
         {/* Metadata row */}
-        <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:gap-8">
-          {/* Date */}
-          <div className="flex w-fit items-center justify-center gap-2">
-            <HugeiconsIcon icon={Calendar04Icon} className="text-gold" />
-            <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px] whitespace-nowrap">
-              {t("date")}
-            </span>
-          </div>
+        <FadeUpMount delay={0.65}>
+          <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:gap-8">
+            {/* Date */}
+            <div className="flex w-fit items-center justify-center gap-2">
+              <HugeiconsIcon icon={Calendar04Icon} className="text-gold" />
+              <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px] whitespace-nowrap">
+                {t("date")}
+              </span>
+            </div>
 
-          {/* Divider — hidden on mobile */}
-          <span
-            className="text-gold-muted hidden font-sans text-base font-medium select-none sm:inline"
-            aria-hidden="true"
-          >
-            |
-          </span>
+            {/* Divider — hidden on mobile */}
+            <span
+              className="text-gold-muted hidden font-sans text-base font-medium select-none sm:inline"
+              aria-hidden="true"
+            >
+              |
+            </span>
 
             {/* Location */}
             <div className="flex w-fit justify-center gap-2 sm:items-start md:items-center">

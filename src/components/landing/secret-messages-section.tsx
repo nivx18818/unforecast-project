@@ -1,6 +1,7 @@
 import { MailLock01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useTranslations } from "next-intl";
+import { FadeUp, ScaleFade } from "./motion";
 
 const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSdtnDdkCqQ1uHVw-PB89fYbAp92MidpDF64LqiXnApFGmsnWQ/viewform?usp=sharing&ouid=109241048830103920557";
@@ -16,7 +17,7 @@ export default function SecretMessagesSection() {
     >
       <div className="flex w-full max-w-4xl flex-col items-center gap-12">
         {/* Heading group */}
-        <div className="flex w-full flex-col items-center gap-4">
+        <FadeUp className="flex w-full flex-col items-center gap-4">
           <div className="relative">
             <HugeiconsIcon
               icon={MailLock01Icon}
@@ -35,10 +36,10 @@ export default function SecretMessagesSection() {
               {t("body")}
             </p>
           </div>
-        </div>
+        </FadeUp>
 
         {/* CTA Wrapper */}
-        <div className="flex w-full justify-center">
+        <ScaleFade delay={0.15} className="flex w-full justify-center">
           <a
             href={FORM_URL}
             target="_blank"
@@ -47,7 +48,7 @@ export default function SecretMessagesSection() {
           >
             {t("cta")}
           </a>
-        </div>
+        </ScaleFade>
       </div>
     </section>
   );

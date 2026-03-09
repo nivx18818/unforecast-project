@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
+import { FadeUp, StaggerContainer, StaggerItem, FadeIn } from "./motion";
 
 const bgImage =
   "https://www.figma.com/api/mcp/asset/e52ac47a-3344-498c-a568-bbeff81977ee";
@@ -98,15 +99,15 @@ export default function JourneySection() {
 
           <div className="relative flex w-full flex-col gap-20">
             {/* Heading */}
-            <div className="flex w-full flex-col items-center gap-4 text-center">
+            <FadeUp className="flex w-full flex-col items-center gap-4 text-center">
               <span className="eyebrow">{t("eyebrow")}</span>
               <h2 className="font-display text-foreground text-[32px] leading-10 font-bold md:text-[48px] md:leading-12">
                 {t("heading")}
               </h2>
-            </div>
+            </FadeUp>
 
             {/* Timeline */}
-            <div className="relative flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+            <StaggerContainer className="relative flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
               {/* Connector line — desktop only */}
               <div
                 className="pointer-events-none absolute top-5.5 right-0 left-0 hidden h-px md:block"
@@ -118,7 +119,7 @@ export default function JourneySection() {
               />
 
               {phases.map(({ number, date, title, active }) => (
-                <div key={number} className="relative min-w-0 flex-1">
+                <StaggerItem key={number} className="relative min-w-0 flex-1">
                   {/* Phase node */}
                   <div className="mb-6">
                     <div
@@ -146,16 +147,16 @@ export default function JourneySection() {
                   <p className="font-display text-foreground pr-0 text-[22px] leading-7 font-normal md:pr-16 md:text-[24px] md:leading-8">
                     {title}
                   </p>
-                </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </div>
         </div>
 
         {/* ── Pre-Event Recap / Gallery ─────────────────────── */}
         <div className="relative flex flex-col gap-16 py-0 pb-24">
           {/* Text intro */}
-          <div className="flex w-full max-w-175.75 flex-col gap-2">
+          <FadeUp className="flex w-full max-w-175.75 flex-col gap-2">
             <span className="text-gold font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
               {t("preEventEyebrow")}
             </span>
@@ -168,11 +169,11 @@ export default function JourneySection() {
               </strong>{" "}
               {t("galleryBody")}
             </p>
-          </div>
+          </FadeUp>
 
           {/* Masonry gallery — mobile: simple 2-col grid; desktop: absolute mosaic */}
           {/* Mobile grid */}
-          <div className="grid grid-cols-2 gap-2 md:hidden">
+          <FadeIn className="grid grid-cols-2 gap-2 md:hidden">
             {galleryImages.map(({ src, alt }) => (
               <div
                 key={alt}
@@ -186,9 +187,9 @@ export default function JourneySection() {
                 />
               </div>
             ))}
-          </div>
+          </FadeIn>
           {/* Desktop mosaic */}
-          <div className="relative mx-auto hidden aspect-1248/960 w-full overflow-clip md:block">
+          <FadeIn className="relative mx-auto hidden aspect-1248/960 w-full overflow-clip md:block">
             {galleryImages.map(({ src, alt, className }) => (
               <div
                 key={alt}
@@ -211,7 +212,7 @@ export default function JourneySection() {
                 />
               </div>
             ))}
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

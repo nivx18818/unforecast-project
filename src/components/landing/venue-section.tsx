@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { SlideIn } from "./motion";
 
 export default function VenueSection() {
   const t = useTranslations("venue");
@@ -12,7 +13,7 @@ export default function VenueSection() {
     >
       <div className="flex w-full max-w-7xl flex-col items-center gap-12 md:flex-row md:gap-20">
         {/* ── Media block ─────────────────────────────── */}
-        <div className="relative w-full min-w-0 flex-1">
+        <SlideIn direction="left" className="relative w-full min-w-0 flex-1">
           {/* Offset gold wash panel — hidden on mobile to prevent viewport overflow */}
           <div
             className="rounded-media-xl bg-gold-dim pointer-events-none absolute inset-[16px_-16px_-16px_16px] hidden md:block"
@@ -33,10 +34,14 @@ export default function VenueSection() {
               aria-hidden="true"
             />
           </div>
-        </div>
+        </SlideIn>
 
-        {/* ── Text block ──────────────────────────────── */}
-        <div className="flex min-w-0 flex-1 flex-col items-start gap-4">
+        {/* ── Text block ────────────────────────────── */}
+        <SlideIn
+          direction="right"
+          delay={0.1}
+          className="flex min-w-0 flex-1 flex-col items-start gap-4"
+        >
           <span className="text-primary font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
             {t("eyebrow")}
           </span>
@@ -75,7 +80,7 @@ export default function VenueSection() {
               <path d="M7.102 5.25H0V4.083H7.102L3.835 0.817L4.667 0L9.333 4.667L4.667 9.333L3.835 8.517L7.102 5.25z" />
             </svg>
           </a>
-        </div>
+        </SlideIn>
       </div>
     </section>
   );

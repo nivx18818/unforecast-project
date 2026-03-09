@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { MemberCard } from "@/components/landing/member-card";
 
@@ -21,14 +22,31 @@ export function TeamGrid({ members }: TeamGridProps) {
 
   return (
     <>
-      <ul
+      <motion.ul
         className="relative z-10 mx-auto grid w-full max-w-336 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0"
         aria-label="Team members"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-80px" }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: { staggerChildren: 0.12, delayChildren: 0.05 },
+          },
+        }}
       >
         {members.map((member) => (
-          <li
+          <motion.li
             key={member.name}
             className="rounded-card-sm relative aspect-3/4 w-full overflow-hidden lg:aspect-auto lg:h-114.5 lg:rounded-none"
+            variants={{
+              hidden: { opacity: 0, y: 32 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] },
+              },
+            }}
           >
             <button
               type="button"
@@ -63,9 +81,9 @@ export function TeamGrid({ members }: TeamGridProps) {
                 </span>
               </div>
             </button>
-          </li>
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
 
       <Dialog
         open={selectedMember !== null}

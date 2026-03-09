@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { RSVPModal } from "./rsvp-modal";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { StarsIcon } from "@hugeicons/core-free-icons";
+import { ScaleFade } from "./motion";
 
 export default function RSVPSection() {
   const t = useTranslations("rsvp");
@@ -34,7 +35,7 @@ export default function RSVPSection() {
       />
 
       {/* Glass card */}
-      <div
+      <ScaleFade
         className={cn(
           "rounded-card-lg relative flex w-full max-w-4xl flex-col items-center gap-6 p-8 md:p-20",
           "bg-surface-glass border-gold-muted border",
@@ -90,7 +91,7 @@ export default function RSVPSection() {
         <p className="text-muted-foreground mt-6 text-center font-sans text-sm leading-5 font-normal md:mt-2">
           {t("footerNote")}
         </p>
-      </div>
+      </ScaleFade>
 
       {modalOpen && (
         <RSVPModal

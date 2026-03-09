@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { TeamGrid } from "./team-grid";
 import type { Member } from "./team-grid";
+import { FadeUp } from "./motion";
 
 const bgImage = "/images/backgrounds/discovery-bg-1.png";
 const bgImage2 = "/images/backgrounds/discovery-bg-2.png";
@@ -50,7 +51,7 @@ export default function DiscoverySection() {
         />
 
         {/* Heading */}
-        <div className="relative z-10 flex max-w-4xl flex-col items-center gap-4 text-center">
+        <FadeUp className="relative z-10 flex max-w-4xl flex-col items-center gap-4 text-center">
           <h2 className="font-display text-foreground text-5xl leading-tight font-bold lg:text-[72px] lg:leading-18">
             {t("headline1")}
             <br />
@@ -68,7 +69,7 @@ export default function DiscoverySection() {
               aria-hidden="true"
             />
           </div>
-        </div>
+        </FadeUp>
       </div>
 
       {/* ── Team Grid State ──────────────────────────────── */}
@@ -113,7 +114,7 @@ export default function DiscoverySection() {
           aria-hidden="true"
         />
 
-        <div className="relative z-10 flex max-w-3xl flex-col items-center gap-8 px-6 text-center lg:gap-12">
+        <FadeUp className="relative z-10 flex max-w-3xl flex-col items-center gap-8 px-6 text-center lg:gap-12">
           <h2 className="font-display text-primary text-4xl leading-tight font-bold lg:text-[48px] lg:leading-12">
             {t("storyHeading")}
           </h2>
@@ -123,7 +124,7 @@ export default function DiscoverySection() {
             <p>{t("storyParagraph2")}</p>
           </div>
           <div className="divider-gold" aria-hidden="true" />
-        </div>
+        </FadeUp>
       </div>
     </section>
   );

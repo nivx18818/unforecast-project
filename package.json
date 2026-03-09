@@ -13,6 +13,7 @@
     "@hugeicons/react": "^1.1.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.35.2",
     "googleapis": "^171.4.0",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
