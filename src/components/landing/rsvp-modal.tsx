@@ -26,27 +26,64 @@ export function RSVPModal({
   const [isSuccess, setIsSuccess] = React.useState(false);
   const [error, setError] = React.useState("");
 
+  // Form state
+  const [fullName, setFullName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
+  // Validation errors
+  const [errors, setErrors] = React.useState({
+    fullName: "",
+    email: "",
+    phone: "",
+  });
+
   // Reset state when modal opens/closes
   React.useEffect(() => {
     if (open) {
       setIsSuccess(false);
       setError("");
       setIsLoading(false);
+      setFullName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+      setErrors({ fullName: "", email: "", phone: "" });
     }
   }, [open]);
 
+  const validate = () => {
+    const newErrors = { fullName: "", email: "", phone: "" };
+    if (!fullName.trim()) {
+      newErrors.fullName = "Full name is required.";
+    }
+    if (isAttend) {
+      if (!email.trim()) {
+        newErrors.email = "Email is required.";
+      } else if (!/\S+@\S+\.\S+/.test(email)) {
+        newErrors.email = "Please enter a valid email address.";
+      }
+      if (!phone.trim()) {
+        newErrors.phone = "Phone number is required.";
+      }
+    }
+    setErrors(newErrors);
+    return !Object.values(newErrors).some((e) => e);
+  };
+
   const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!validate()) return;
     setIsLoading(true);
     setError("");
 
-    const formData = new FormData(e.currentTarget);
     const data = {
       type,
-      fullName: formData.get("fullName"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
+      fullName,
+      email,
+      phone,
+      message,
     };
 
     try {
@@ -72,7 +109,7 @@ export function RSVPModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-130 p-8 md:p-12 bg-background border border-white/10 gap-8 rounded-card-lg sm:rounded-[32px] overflow-hidden">
+      <DialogContent className="w-full max-w-md md:max-w-lg p-6 md:p-8 bg-background border border-white/10 gap-6 rounded-card-lg sm:rounded-[32px] overflow-y-auto max-h-[calc(100dvh-2rem)] hide-scrollbar">
         {/* Subtle decorative elements matching Figma at the bottom */}
         <div className="absolute flex justify-center bottom-0 left-1/2 -translate-x-1/2 w-31 h-1 bg-gold rounded-t-full" />
 
@@ -84,7 +121,7 @@ export function RSVPModal({
                 ? "Confirm Your Attendance"
                 : "We'll Miss You"}
           </DialogTitle>
-          <DialogDescription className="font-sans font-normal text-base md:text-lg text-secondary text-center">
+          <DialogDescription className="font-sans font-normal text-base md:text-lg text-muted-foreground text-center">
             {isSuccess
               ? "Your response has been successfully recorded."
               : isAttend
@@ -95,7 +132,7 @@ export function RSVPModal({
 
         {!isSuccess && (
           <form
-            className="flex flex-col gap-5 md:gap-6 mt-2"
+            className="flex flex-col gap-3 md:gap-4 mt-2"
             onSubmit={handleSubmit}
           >
             {error && (
@@ -117,10 +154,16 @@ export function RSVPModal({
                     name="fullName"
                     type="text"
                     placeholder="Enter your full name"
-                    className="h-14.5 px-5 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
-                    required
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    className="h-12 px-4 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
                     disabled={isLoading}
                   />
+                  {errors.fullName && (
+                    <span className="text-destructive text-sm">
+                      {errors.fullName}
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex flex-col gap-2">
@@ -135,10 +178,16 @@ export function RSVPModal({
                     name="email"
                     type="email"
                     placeholder="email@example.com"
-                    className="h-14.5 px-5 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
-                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="h-12 px-4 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
                     disabled={isLoading}
                   />
+                  {errors.email && (
+                    <span className="text-destructive text-sm">
+                      {errors.email}
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex flex-col gap-2">
@@ -153,17 +202,23 @@ export function RSVPModal({
                     name="phone"
                     type="tel"
                     placeholder="+84 98 765 4321"
-                    className="h-14.5 px-5 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
-                    required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    className="h-12 px-4 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
                     disabled={isLoading}
                   />
+                  {errors.phone && (
+                    <span className="text-destructive text-sm">
+                      {errors.phone}
+                    </span>
+                  )}
                 </div>
 
                 <button
                   type="submit"
                   disabled={isLoading}
                   className={cn(
-                    "mt-2 flex items-center justify-center h-15 w-full rounded-full disabled:opacity-50 disabled:cursor-not-allowed",
+                    "mt-2 flex items-center justify-center h-12 w-full rounded-full disabled:opacity-50 disabled:cursor-not-allowed",
                     "bg-gold text-primary-foreground",
                     "font-sans font-bold text-base md:text-[18px] leading-7 tracking-[0.9px] uppercase",
                     "transition-all duration-200 hover:brightness-90",
@@ -188,10 +243,17 @@ export function RSVPModal({
                     name="fullName"
                     type="text"
                     placeholder="Enter your full name"
-                    className="h-14.5 px-5 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    className="h-12 px-4 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all text-base"
                     required
                     disabled={isLoading}
                   />
+                  {errors.fullName && (
+                    <span className="text-destructive text-sm">
+                      {errors.fullName}
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex flex-col gap-2">
@@ -205,7 +267,9 @@ export function RSVPModal({
                     id="message"
                     name="message"
                     placeholder="Wishing you a wonderful celebration..."
-                    className="min-h-29.5 p-5 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all resize-none text-base"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="min-h-24 p-4 rounded-[12px] bg-white/5 border border-transparent hover:border-white/10 text-foreground placeholder:text-muted-foreground outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:bg-white/10 transition-all resize-none text-base"
                     disabled={isLoading}
                   />
                 </div>
@@ -214,7 +278,7 @@ export function RSVPModal({
                   type="submit"
                   disabled={isLoading}
                   className={cn(
-                    "mt-2 flex items-center justify-center h-15 w-full rounded-full disabled:opacity-50 disabled:cursor-not-allowed",
+                    "mt-2 flex items-center justify-center h-12 w-full rounded-full disabled:opacity-50 disabled:cursor-not-allowed",
                     "bg-gold text-primary-foreground",
                     "font-sans font-bold text-base md:text-[18px] leading-7 tracking-[0.9px] uppercase",
                     "transition-all duration-200 hover:brightness-90",
