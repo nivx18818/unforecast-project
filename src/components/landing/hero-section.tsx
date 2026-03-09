@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Calendar04Icon, Location01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -11,6 +11,7 @@ const heroImageOverlay =
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const locale = useLocale();
 
   return (
     <section
@@ -48,7 +49,12 @@ export default function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 pt-24 pb-12 text-center">
+      <div
+        className={cn(
+          "relative flex w-full flex-1 flex-col items-center justify-center px-6 pt-24 pb-12 text-center",
+          locale === "vi" ? "max-w-5xl" : "max-w-4xl",
+        )}
+      >
         {/* Title block */}
         <FadeUpMount delay={0.2}>
           <div className="flex flex-col items-center gap-0 drop-shadow-md">
