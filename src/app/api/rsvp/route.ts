@@ -6,12 +6,31 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { type, fullName, email, phone, message } = body;
 
-    // Validate request
+    const isValidEmail = (e: string) =>
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+    const isValidPhone = (p: string) =>
+      /^[\d\-\+\s\(\)]+$/.test(p);
+
     if (!fullName) {
       return NextResponse.json(
-        { error: "Missing required fields" },
+        { error: "Full Name is required" },
         { status: 400 },
       );
+    }
+
+    if (type === "attend") {
+      if (!email || !isValidEmail(email)) {
+        return NextResponse.json(
+          { error: "Valid email required for attending" },
+          { status: 400 },
+        );
+      }
+      if (!phone || !isValidPhone(phone)) {
+        return NextResponse.json(
+          { error: "Valid phone number required for attending" },
+          { status: 400 },
+        );
+      }
     }
 
     // Prepare credentials for Google API
@@ -29,7 +48,6 @@ export async function POST(request: Request) {
 
     const sheets = google.sheets({ version: "v4", auth });
 
-    // Default sheet range (modify "Sheet1" if your tab is named differently)
     const sheetId = process.env.GOOGLE_SPREADSHEET_ID;
     const tabName = process.env.GOOGLE_SPREADSHEET_TAB_NAME;
 
