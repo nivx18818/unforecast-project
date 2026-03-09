@@ -69,7 +69,7 @@ export default function HeroSection() {
         {/* Metadata row */}
         <div className="mt-6 flex items-center gap-8">
           {/* Date */}
-          <div className="flex w-64 items-center justify-end gap-2">
+          <div className="flex w-fit items-center justify-end gap-2">
             <HugeiconsIcon icon={Calendar04Icon} className="text-gold" />
             <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px] whitespace-nowrap">
               {t("date")}
@@ -85,7 +85,7 @@ export default function HeroSection() {
           </span>
 
           {/* Location */}
-          <div className="flex w-64 items-center justify-start gap-2">
+          <div className="flex w-fit items-center justify-start gap-2">
             <HugeiconsIcon icon={Location01Icon} className="text-gold" />
             <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px]">
               {t("venueLine1")}
