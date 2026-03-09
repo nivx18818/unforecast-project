@@ -12,31 +12,31 @@ const locationIcon =
 export default function HeroSection() {
   return (
     <section
-      className="relative flex flex-col items-center min-h-240 overflow-hidden bg-background pb-20"
+      className="bg-background relative flex min-h-screen flex-col items-center overflow-hidden pb-10"
       aria-label="Hero"
     >
       {/* Cinematic backdrop */}
       <div
-        className="absolute inset-0 mix-blend-screen opacity-60 pointer-events-none overflow-hidden"
+        className="pointer-events-none absolute inset-0 overflow-hidden opacity-60 mix-blend-screen"
         aria-hidden="true"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={heroImage}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover object-top scale-125 md:scale-150"
+          className="absolute inset-0 h-full w-full scale-125 object-cover object-top md:scale-150"
         />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={heroImageOverlay}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
         />
       </div>
 
       {/* Bottom gradient fade */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-90"
+        className="pointer-events-none absolute inset-0 opacity-90"
         style={{
           background:
             "linear-gradient(180deg, rgba(1,14,27,0) 0%, rgba(1,14,27,0.5) 50%, #010E1B 100%)",
@@ -45,15 +45,15 @@ export default function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative flex flex-1 flex-col items-center justify-center w-full max-w-4xl px-6 pt-32 pb-20 text-center">
+      <div className="relative flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 pt-24 pb-12 text-center">
         {/* Title block */}
         <div className="flex flex-col items-center gap-0 drop-shadow-md">
-          <h1 className="font-display font-bold text-[72px] leading-24 text-gold whitespace-nowrap">
+          <h1 className="font-display text-gold text-[72px] leading-24 font-bold whitespace-nowrap">
             Unforecast Project
           </h1>
           <p
             className={cn(
-              "font-display font-bold text-[72px] leading-24 text-foreground whitespace-nowrap",
+              "font-display text-foreground text-[72px] leading-24 font-bold whitespace-nowrap",
             )}
           >
             Ceremony of Gratitude and Growth
@@ -61,14 +61,14 @@ export default function HeroSection() {
         </div>
 
         {/* Subtitle */}
-        <p className="mt-4 font-sans font-normal text-[20px] leading-7 text-secondary max-w-2xl">
+        <p className="text-secondary mt-4 max-w-2xl font-sans text-[20px] leading-7 font-normal">
           A capstone project by final-year BUV Events Management students
         </p>
 
         {/* Metadata row */}
         <div className="mt-6 flex items-center gap-8">
           {/* Date */}
-          <div className="flex items-center gap-2 w-50 justify-end">
+          <div className="flex w-50 items-center justify-end gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={calendarIcon}
@@ -76,21 +76,21 @@ export default function HeroSection() {
               className="size-6"
               aria-hidden="true"
             />
-            <span className="font-sans font-medium text-base leading-6 tracking-[0.4px] text-foreground whitespace-nowrap">
+            <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px] whitespace-nowrap">
               March 14th, 2026
             </span>
           </div>
 
           {/* Divider */}
           <span
-            className="font-sans font-medium text-base text-gold-muted select-none"
+            className="text-gold-muted font-sans text-base font-medium select-none"
             aria-hidden="true"
           >
             |
           </span>
 
           {/* Location */}
-          <div className="flex items-center gap-2 w-50 justify-start">
+          <div className="flex w-50 items-center justify-start gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={locationIcon}
@@ -98,7 +98,7 @@ export default function HeroSection() {
               className="size-6"
               aria-hidden="true"
             />
-            <span className="font-sans font-medium text-base leading-6 tracking-[0.4px] text-foreground">
+            <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px]">
               British University Vietnam
               <br />
               Ecopark
