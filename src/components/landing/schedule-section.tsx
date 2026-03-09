@@ -52,14 +52,14 @@ export default function ScheduleSection() {
               {/* Left column */}
               <div
                 className={cn(
-                  "flex min-w-0 flex-1 flex-col",
+                  "flex min-w-0 flex-1 flex-col md:pr-8",
                   isRight
                     ? "order-1 items-start md:order-0 md:items-end"
-                    : "order-2 mt-1 items-start md:order-0 md:mt-0 md:items-end md:pr-8",
+                    : "order-2 mt-1 items-start md:order-0 md:mt-0 md:items-end",
                 )}
               >
                 {isRight ? (
-                  <time className="text-primary font-sans text-lg leading-7 font-bold tracking-[1px] whitespace-normal md:pr-8 md:text-right md:text-[20px] md:whitespace-nowrap">
+                  <time className="text-primary font-sans text-lg leading-7 font-bold tracking-[1px] whitespace-normal md:text-right md:text-[20px] md:whitespace-nowrap">
                     {time}
                   </time>
                 ) : (
@@ -79,14 +79,14 @@ export default function ScheduleSection() {
               {/* Right column */}
               <div
                 className={cn(
-                  "flex min-w-0 flex-1 flex-col items-start",
+                  "flex min-w-0 flex-1 flex-col items-start md:pl-8",
                   !isRight
                     ? "order-1 md:order-0"
-                    : "order-2 mt-1 md:order-0 md:mt-0 md:pl-8",
+                    : "order-2 mt-1 md:order-0 md:mt-0",
                 )}
               >
                 {!isRight ? (
-                  <time className="text-primary font-sans text-lg leading-7 font-bold tracking-[1px] whitespace-normal md:pl-8 md:text-[20px] md:whitespace-nowrap">
+                  <time className="text-primary font-sans text-lg leading-7 font-bold tracking-[1px] whitespace-normal md:text-[20px] md:whitespace-nowrap">
                     {time}
                   </time>
                 ) : (
