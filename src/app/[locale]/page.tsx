@@ -7,11 +7,13 @@ import VenueSection from "@/components/landing/venue-section";
 import RSVPSection from "@/components/landing/rsvp-section";
 import SecretMessagesSection from "@/components/landing/secret-messages-section";
 import Footer from "@/components/landing/footer";
+import SectionDotNav from "@/components/landing/section-dot-nav";
 
 export default function Home() {
   return (
     <div className="bg-background relative flex min-h-screen flex-col items-center">
       <HeaderBar />
+      <SectionDotNav />
       <main className="w-full">
         <HeroSection />
         <DiscoverySection />

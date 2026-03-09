@@ -63,8 +63,8 @@ export function MemberCard({ member }: { member: Member }) {
         </div>
 
         {/* ── Content Section (Right) ── */}
-        <div className="relative z-10 flex h-82.5 w-full flex-col justify-center p-8 md:h-full md:w-1/2 md:flex-1 md:p-16">
-          <div className="flex w-full max-w-md flex-col gap-6">
+        <div className="relative z-10 flex h-82.5 w-full flex-col overflow-hidden p-8 md:h-full md:w-1/2 md:flex-1 md:p-16">
+          <div className="flex min-h-0 w-full max-w-md flex-1 flex-col gap-6">
             {/* Role / Tag */}
             <div className="flex items-center gap-2">
               <div className="bg-primary h-px w-8 shrink-0 rounded-full" />
@@ -82,7 +82,7 @@ export function MemberCard({ member }: { member: Member }) {
             </div>
 
             {/* Bio text */}
-            <div className="custom-scrollbar overflow-y-auto pr-4">
+            <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto pr-4">
               <p className="text-secondary font-sans text-base leading-6.5 font-normal whitespace-pre-line">
                 {member.bio}
               </p>

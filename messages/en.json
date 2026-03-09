@@ -8,11 +8,13 @@
     "logoAlt": "Unforecast Project logo",
     "brandName": "Unforecast Project",
     "navLabel": "Main navigation",
+    "navHero": "Home",
     "navDiscovery": "Discovery",
     "navJourney": "Journey",
     "navSchedule": "Schedule",
     "navVenue": "Venue",
     "rsvp": "RSVP",
+    "navMessages": "Messages",
     "switchLang": "Tiếng Việt"
   },
   "hero": {

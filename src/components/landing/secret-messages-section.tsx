@@ -10,6 +10,7 @@ export default function SecretMessagesSection() {
 
   return (
     <section
+      id="messages"
       className="bg-background flex w-full flex-col items-center justify-center px-6 py-24 lg:px-48"
       aria-labelledby="messages-heading"
     >

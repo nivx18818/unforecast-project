@@ -55,7 +55,7 @@ export default function HeaderBar() {
             className="size-12 object-cover"
           />
           <span
-            className="font-display text-foreground text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap"
+            className="font-display text-foreground hidden text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap md:inline"
             aria-hidden="true"
           >
             {t("brandName")}

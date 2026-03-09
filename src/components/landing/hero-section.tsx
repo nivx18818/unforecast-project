@@ -13,6 +13,7 @@ export default function HeroSection() {
 
   return (
     <section
+      id="hero"
       className="bg-background relative flex min-h-screen flex-col items-center overflow-hidden pb-10"
       aria-label={t("sectionLabel")}
     >
