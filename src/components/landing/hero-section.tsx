@@ -1,13 +1,11 @@
 import { cn } from "@/lib/utils";
+import { Calendar04Icon, Location01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 
 const heroImage =
   "https://www.figma.com/api/mcp/asset/0047e038-4f12-41b1-8d39-03c6f2b055cc";
 const heroImageOverlay =
   "https://www.figma.com/api/mcp/asset/cd5312bb-8076-4b9c-b111-bfcfa260876f";
-const calendarIcon =
-  "https://www.figma.com/api/mcp/asset/dae2cc78-0602-46ac-bd7d-8bb46814eef8";
-const locationIcon =
-  "https://www.figma.com/api/mcp/asset/b808b315-840b-4143-8c33-64fb272869c6";
 
 export default function HeroSection() {
   return (
@@ -68,14 +66,8 @@ export default function HeroSection() {
         {/* Metadata row */}
         <div className="mt-6 flex items-center gap-8">
           {/* Date */}
-          <div className="flex w-50 items-center justify-end gap-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={calendarIcon}
-              alt=""
-              className="size-6"
-              aria-hidden="true"
-            />
+          <div className="flex w-64 items-center justify-end gap-2">
+            <HugeiconsIcon icon={Calendar04Icon} className="text-gold" />
             <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px] whitespace-nowrap">
               March 14th, 2026
             </span>
@@ -90,14 +82,8 @@ export default function HeroSection() {
           </span>
 
           {/* Location */}
-          <div className="flex w-50 items-center justify-start gap-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={locationIcon}
-              alt=""
-              className="size-6"
-              aria-hidden="true"
-            />
+          <div className="flex w-64 items-center justify-start gap-2">
+            <HugeiconsIcon icon={Location01Icon} className="text-gold" />
             <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px]">
               British University Vietnam
               <br />
