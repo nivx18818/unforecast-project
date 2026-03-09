@@ -1,10 +1,24 @@
 "use client";
 
 import Image from "next/image";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { type Member } from "./team-grid";
 import { DialogTitle } from "@/components/ui/dialog";
 
 export function MemberCard({ member }: { member: Member }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [atBottom, setAtBottom] = useState(false);
+
+  const checkScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const isAtBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 8;
+    setAtBottom(isAtBottom);
+  }, []);
+
+  useEffect(() => {
+    checkScroll();
+  }, [checkScroll]);
   // Using radial gradients to match the Figma design's lighting effects
   // The first overlay is a gentle primary (gold), the second is a faint blue.
   return (
@@ -82,10 +96,26 @@ export function MemberCard({ member }: { member: Member }) {
             </div>
 
             {/* Bio text */}
-            <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto pr-4">
-              <p className="text-secondary font-sans text-base leading-6.5 font-normal whitespace-pre-line">
-                {member.bio}
-              </p>
+            <div className="relative min-h-0 flex-1">
+              <div
+                ref={scrollRef}
+                onScroll={checkScroll}
+                className="custom-scrollbar h-full overflow-y-auto pr-1"
+                style={
+                  !atBottom
+                    ? {
+                        maskImage:
+                          "linear-gradient(to bottom, black 80%, transparent 100%)",
+                        WebkitMaskImage:
+                          "linear-gradient(to bottom, black 80%, transparent 100%)",
+                      }
+                    : undefined
+                }
+              >
+                <p className="text-secondary font-sans text-base leading-6.5 font-normal whitespace-pre-line">
+                  {member.bio}
+                </p>
+              </div>
             </div>
           </div>
         </div>

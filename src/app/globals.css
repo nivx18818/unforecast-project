@@ -146,4 +146,15 @@
     height: 1px;
     background-color: var(--gold-muted);
   }
+
+  /* Scrollable bio area — native scrollbar on mobile, hidden on desktop */
+  @media (min-width: 768px) {
+    .custom-scrollbar {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
