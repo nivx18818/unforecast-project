@@ -64,9 +64,9 @@ export default function HeaderBar() {
 
         {/* Nav links (hidden on mobile) + always-visible controls */}
         <div className="flex items-center gap-4 md:gap-8">
-          {/* Nav links — only on md+ */}
+          {/* Nav links — only on lg+ (hidden on mobile & tablet) */}
           <nav
-            className="hidden items-center gap-8 md:flex"
+            className="hidden items-center gap-8 lg:flex"
             aria-label={t("navLabel")}
           >
             {navLinks.map(({ label, href }) => (
