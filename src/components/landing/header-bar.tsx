@@ -37,7 +37,7 @@ export default function HeaderBar() {
   };
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 px-12 py-3">
+    <header className="fixed top-0 right-0 left-0 z-50 px-6 py-3 md:px-12">
       {/* Blur layer */}
       <div className="from-gold/30 absolute inset-0 -z-10 bg-linear-to-b to-transparent mask-[linear-gradient(to_bottom,black,transparent)] backdrop-blur-xs [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
 
@@ -62,21 +62,27 @@ export default function HeaderBar() {
           </span>
         </button>
 
-        {/* Nav */}
-        <nav className="flex items-center gap-8" aria-label={t("navLabel")}>
-          {navLinks.map(({ label, href }) => (
-            <button
-              key={href}
-              onClick={() => scrollTo(href)}
-              className={cn(
-                "text-secondary font-sans text-sm leading-5 font-medium tracking-[0.35px]",
-                "hover:text-foreground transition-colors duration-200",
-                "focus-visible:outline-ring rounded focus-visible:outline-2 focus-visible:outline-offset-2",
-              )}
-            >
-              {label}
-            </button>
-          ))}
+        {/* Nav links (hidden on mobile) + always-visible controls */}
+        <div className="flex items-center gap-4 md:gap-8">
+          {/* Nav links — only on md+ */}
+          <nav
+            className="hidden items-center gap-8 md:flex"
+            aria-label={t("navLabel")}
+          >
+            {navLinks.map(({ label, href }) => (
+              <button
+                key={href}
+                onClick={() => scrollTo(href)}
+                className={cn(
+                  "text-secondary font-sans text-sm leading-5 font-medium tracking-[0.35px]",
+                  "hover:text-foreground transition-colors duration-200",
+                  "focus-visible:outline-ring rounded focus-visible:outline-2 focus-visible:outline-offset-2",
+                )}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
 
           {/* Language switcher */}
           <Tooltip>
@@ -101,7 +107,7 @@ export default function HeaderBar() {
           <button
             onClick={() => scrollTo("#rsvp")}
             className={cn(
-              "rounded-pill border-gold h-10 border px-6",
+              "rounded-pill border-gold h-10 border px-4 md:px-6",
               "bg-gold-dim text-gold",
               "font-sans text-sm leading-5 font-bold tracking-[0.7px] uppercase",
               "hover:bg-gold hover:text-primary-foreground transition-all duration-200",
@@ -110,7 +116,7 @@ export default function HeaderBar() {
           >
             {t("rsvp")}
           </button>
-        </nav>
+        </div>
       </div>
     </header>
   );

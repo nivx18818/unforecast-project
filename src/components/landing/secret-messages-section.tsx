@@ -17,11 +17,15 @@ export default function SecretMessagesSection() {
         {/* Heading group */}
         <div className="flex w-full flex-col items-center gap-4">
           <div className="relative">
-            <HugeiconsIcon icon={MailLock01Icon} size={32} className="text-gold" />
+            <HugeiconsIcon
+              icon={MailLock01Icon}
+              size={32}
+              className="text-gold"
+            />
           </div>
           <h2
             id="messages-heading"
-            className="font-display text-foreground text-center text-[60px] leading-15 font-bold"
+            className="font-display text-foreground text-center text-[40px] leading-tight font-bold md:text-[60px] md:leading-15"
           >
             {t("heading")}
           </h2>

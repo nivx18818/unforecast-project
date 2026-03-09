@@ -13,9 +13,9 @@ export default function VenueSection() {
       <div className="flex w-full max-w-7xl flex-col items-center gap-12 md:flex-row md:gap-20">
         {/* ── Media block ─────────────────────────────── */}
         <div className="relative w-full min-w-0 flex-1">
-          {/* Offset gold wash panel */}
+          {/* Offset gold wash panel — hidden on mobile to prevent viewport overflow */}
           <div
-            className="rounded-media-xl bg-gold-dim pointer-events-none absolute inset-[16px_-16px_-16px_16px]"
+            className="rounded-media-xl bg-gold-dim pointer-events-none absolute inset-[16px_-16px_-16px_16px] hidden md:block"
             aria-hidden="true"
           />
           {/* Photo */}

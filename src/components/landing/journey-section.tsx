@@ -100,16 +100,16 @@ export default function JourneySection() {
             {/* Heading */}
             <div className="flex w-full flex-col items-center gap-4 text-center">
               <span className="eyebrow">{t("eyebrow")}</span>
-              <h2 className="font-display text-foreground text-[48px] leading-12 font-bold">
+              <h2 className="font-display text-foreground text-[32px] leading-10 font-bold md:text-[48px] md:leading-12">
                 {t("heading")}
               </h2>
             </div>
 
             {/* Timeline */}
-            <div className="relative flex items-start justify-between">
-              {/* Connector line */}
+            <div className="relative flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+              {/* Connector line — desktop only */}
               <div
-                className="pointer-events-none absolute top-5.5 right-0 left-0 h-px"
+                className="pointer-events-none absolute top-5.5 right-0 left-0 hidden h-px md:block"
                 style={{
                   background:
                     "linear-gradient(90deg, rgba(227,170,49,0) 0%, rgba(227,170,49,0.4) 50%, rgba(227,170,49,0) 100%)",
@@ -143,7 +143,7 @@ export default function JourneySection() {
                   <p className="text-gold mb-2 font-sans text-sm leading-5 font-bold tracking-[0.7px] uppercase">
                     {date}
                   </p>
-                  <p className="font-display text-foreground pr-16 text-[24px] leading-8 font-normal">
+                  <p className="font-display text-foreground pr-0 text-[22px] leading-7 font-normal md:pr-16 md:text-[24px] md:leading-8">
                     {title}
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function JourneySection() {
             <span className="text-gold font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
               {t("preEventEyebrow")}
             </span>
-            <h2 className="font-display text-foreground text-[48px] leading-12 font-bold">
+            <h2 className="font-display text-foreground text-[32px] leading-10 font-bold md:text-[48px] md:leading-12">
               {t("galleryHeading")}
             </h2>
             <p className="text-muted-foreground mt-2 font-sans text-base leading-6">
@@ -170,8 +170,25 @@ export default function JourneySection() {
             </p>
           </div>
 
-          {/* Masonry gallery */}
-          <div className="relative mx-auto aspect-1248/960 w-full overflow-clip">
+          {/* Masonry gallery — mobile: simple 2-col grid; desktop: absolute mosaic */}
+          {/* Mobile grid */}
+          <div className="grid grid-cols-2 gap-2 md:hidden">
+            {galleryImages.map(({ src, alt }) => (
+              <div
+                key={alt}
+                className="rounded-card-sm relative aspect-3/4 overflow-hidden"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt={alt}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+          {/* Desktop mosaic */}
+          <div className="relative mx-auto hidden aspect-1248/960 w-full overflow-clip md:block">
             {galleryImages.map(({ src, alt, className }) => (
               <div
                 key={alt}

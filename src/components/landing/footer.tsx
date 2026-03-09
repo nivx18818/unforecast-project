@@ -38,10 +38,10 @@ export default function Footer() {
 
   return (
     <footer
-      className="bg-background flex w-full flex-col items-center border-t border-[rgba(255,255,255,0.1)] px-12 py-7"
+      className="bg-background flex w-full flex-col items-center border-t border-[rgba(255,255,255,0.1)] px-6 py-7 md:px-12"
       aria-label={t("footerLabel")}
     >
-      <div className="flex w-full max-w-7xl items-center justify-between">
+      <div className="flex w-full max-w-7xl flex-col items-center gap-6 md:flex-row md:justify-between">
         {/* Brand */}
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}

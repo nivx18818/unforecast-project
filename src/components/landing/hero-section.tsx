@@ -49,12 +49,12 @@ export default function HeroSection() {
       <div className="relative flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-6 pt-24 pb-12 text-center">
         {/* Title block */}
         <div className="flex flex-col items-center gap-0 drop-shadow-md">
-          <h1 className="font-display text-gold text-[72px] leading-24 font-bold whitespace-nowrap">
+          <h1 className="font-display text-gold text-center text-[40px] leading-tight font-bold sm:text-[56px] md:text-[72px] md:leading-24">
             {t("title")}
           </h1>
           <p
             className={cn(
-              "font-display text-foreground text-[72px] leading-24 font-bold whitespace-nowrap",
+              "font-display text-foreground text-center text-[40px] leading-tight font-bold sm:text-[56px] md:text-[72px] md:leading-24",
             )}
           >
             {t("tagline")}
@@ -67,27 +67,27 @@ export default function HeroSection() {
         </p>
 
         {/* Metadata row */}
-        <div className="mt-6 flex items-center gap-8">
+        <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:gap-8">
           {/* Date */}
-          <div className="flex w-fit items-center justify-end gap-2">
+          <div className="flex w-fit items-center justify-center gap-2">
             <HugeiconsIcon icon={Calendar04Icon} className="text-gold" />
             <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px] whitespace-nowrap">
               {t("date")}
             </span>
           </div>
 
-          {/* Divider */}
+          {/* Divider — hidden on mobile */}
           <span
-            className="text-gold-muted font-sans text-base font-medium select-none"
+            className="text-gold-muted hidden font-sans text-base font-medium select-none sm:inline"
             aria-hidden="true"
           >
             |
           </span>
 
           {/* Location */}
-          <div className="flex w-fit items-center justify-start gap-2">
+          <div className="flex w-fit items-center justify-center gap-2">
             <HugeiconsIcon icon={Location01Icon} className="text-gold" />
-            <span className="text-foreground font-sans text-base leading-6 font-medium tracking-[0.4px]">
+            <span className="text-foreground text-center font-sans text-base leading-6 font-medium tracking-[0.4px]">
               {t("venueLine1")}
               <br />
               {t("venueLine2")}
