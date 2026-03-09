@@ -2,22 +2,22 @@ import { cn } from "@/lib/utils";
 
 const scheduleItems = [
   {
-    time: "13:00 – 13:45",
+    time: "13:00 - 13:45",
     events: ["Check-in", "Welcome drink"],
     side: "right" as const,
   },
   {
-    time: "13:45 – 14:30",
+    time: "13:45 - 14:30",
     events: ["Showcase and interactive zone", "Graduation gallery"],
     side: "left" as const,
   },
   {
-    time: "14:30 – 16:15",
+    time: "14:30 - 16:15",
     events: ["Main ceremony"],
     side: "right" as const,
   },
   {
-    time: "16:15 – 17:00",
+    time: "16:15 - 17:00",
     events: ["Networking session", "Tea break"],
     side: "left" as const,
   },

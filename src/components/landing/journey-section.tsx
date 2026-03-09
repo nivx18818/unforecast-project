@@ -6,7 +6,7 @@ const bgImage =
 const phases = [
   {
     number: "01",
-    date: "March 02 – 03, 2026",
+    date: "March 02 - 03, 2026",
     title: "Pre-event: Mini Cultural Fair",
     active: false,
   },
