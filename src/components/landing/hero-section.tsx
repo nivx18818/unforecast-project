@@ -85,16 +85,17 @@ export default function HeroSection() {
             |
           </span>
 
-          {/* Location */}
-          <div className="flex w-fit items-center justify-center gap-2">
-            <HugeiconsIcon icon={Location01Icon} className="text-gold" />
-            <span className="text-foreground text-center font-sans text-base leading-6 font-medium tracking-[0.4px]">
-              {t("venueLine1")}
-              <br />
-              {t("venueLine2")}
-            </span>
+            {/* Location */}
+            <div className="flex w-fit justify-center gap-2 sm:items-start md:items-center">
+              <HugeiconsIcon icon={Location01Icon} className="text-gold" />
+              <span className="text-foreground text-center font-sans text-base leading-6 font-medium tracking-[0.4px]">
+                {t("venueLine1")}
+                <br />
+                {t("venueLine2")}
+              </span>
+            </div>
           </div>
-        </div>
+        </FadeUpMount>
       </div>
     </section>
   );
