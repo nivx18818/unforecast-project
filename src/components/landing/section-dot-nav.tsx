@@ -58,7 +58,7 @@ export default function SectionDotNav() {
 
   return (
     <nav
-      className="fixed right-3 top-1/2 z-40 flex -translate-y-1/2 flex-col gap-3 md:right-5"
+      className="fixed top-1/2 right-3 z-40 flex -translate-y-1/2 flex-col gap-3 md:right-5"
       aria-label={t("navLabel")}
     >
       {SECTIONS.map(({ id, labelKey }) => {
@@ -74,7 +74,7 @@ export default function SectionDotNav() {
                   "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
                   isActive
                     ? "bg-gold size-2.5 shadow-[0_0_8px_2px_rgba(227,170,49,0.45)]"
-                    : "bg-foreground/20 size-2 hover:bg-foreground/50",
+                    : "bg-foreground/20 hover:bg-foreground/50 size-2",
                 )}
               />
             </TooltipTrigger>
