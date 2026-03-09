@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Unforecast Project - Lễ Tri Ân và Trưởng Thành",
-    "description": "Dự án tốt nghiệp của sinh viên năm cuối ngành Quản trị Sự kiện tại Đại học Anh Quốc Việt Nam. Tham gia cùng chúng tôi vào ngày 14 tháng 3 năm 2026 tại Đại học Anh Quốc Việt Nam, Ecopark."
+    "description": "Dự án tốt nghiệp tổ chức bởi nhóm sinh viên năm cuối ngành Quản lý Tổ chức Sự kiện trường Đại học Anh Quốc Việt Nam. Tham gia cùng chúng mình vào ngày 14 tháng 3 năm 2026 tại Đại học Anh Quốc Việt Nam, Ecopark."
   },
   "header": {
     "backToTop": "Về đầu trang",
@@ -28,7 +28,7 @@
     "headline1": "Đội ngũ ấp ủ và tạo nên",
     "headline2": "Unforecast Project",
     "scrollCta": "Cuộn xuống để khám phá",
-    "storyHeading": "Câu Chuyện Của Chúng Tôi",
+    "storyHeading": "Câu Chuyện Của Chúng Mình",
     "storyParagraph1": "Chúng mình cùng nhau tạo nên Unforecast Project như cột mốc cuối trong hành trình học tập với tư cách là sinh viên ngành Quản trị Sự kiện tại trường Đại Học Anh Quốc Việt Nam. Dự án là sự kết tinh những kiến thức, trải nghiệm và kĩ năng mà chúng mình đã tích lũy trong suốt ba năm học tập và thực hành trong lĩnh vực sự kiện.",
     "storyParagraph2": "Bằng cách hiểu rằng sự không chắc chắn như một phần vốn có của ngành sự kiện, \"Unforecast\" khuyến khích việc học hỏi liên tục và quá trình nhìn lại trải nghiệm, đồng thời đánh dấu bước chuyển của chúng mình từ sinh viên sang những người sẵn sàng bước vào môi trường nghề nghiệp trong lĩnh vực quản trị sự kiện.",
     "members": [
@@ -114,16 +114,16 @@
   },
   "rsvp": {
     "heading": "Bạn có tham dự không?",
-    "body": "Chúng tôi rất trân trọng sự hiện diện của bạn. Vui lòng xác nhận tham dự trước ngày",
+    "body": "Chúng mình rất trân trọng sự hiện diện của bạn. Vui lòng xác nhận tham dự trước ngày",
     "date": "14 tháng 3, 2026",
-    "attendBtn": "Tôi Sẽ Tham Dự",
-    "declineBtn": "Tôi Không Thể Tham Dự",
-    "footerNote": "Đối với các yêu cầu đặc biệt, vui lòng liên hệ trực tiếp với chúng tôi."
+    "attendBtn": "Mình Sẽ Tham Dự",
+    "declineBtn": "Mình Không Thể Tham Dự",
+    "footerNote": "Đối với các yêu cầu đặc biệt, vui lòng liên hệ trực tiếp với chúng mình."
   },
   "rsvpModal": {
     "titleSuccess": "Cảm Ơn Bạn!",
     "titleAttend": "Xác Nhận Tham Dự",
-    "titleDecline": "Chúng Tôi Sẽ Nhớ Bạn",
+    "titleDecline": "Chúng Mình Sẽ Nhớ Bạn",
     "descSuccess": "Phản hồi của bạn đã được ghi nhận thành công.",
     "descAttend": "Vui lòng điền vào biểu mẫu bên dưới để xác nhận tham dự.",
     "descDecline": "Rất tiếc khi bạn không thể đến. Hãy để lại lời nhắn cho ban tổ chức.",
