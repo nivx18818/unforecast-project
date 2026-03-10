@@ -1,46 +1,46 @@
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import { FadeUp, StaggerContainer, StaggerItem, FadeIn } from "./motion";
 
-const bgImage =
-  "https://www.figma.com/api/mcp/asset/e52ac47a-3344-498c-a568-bbeff81977ee";
+const bgImage = "/images/backgrounds/journey-bg.jpg";
 
 // The active phase index (1-based index 1 = phase 02 = main event)
 const ACTIVE_PHASE_INDEX = 1;
 
 const galleryImages = [
   {
-    src: "https://www.figma.com/api/mcp/asset/271ae0a2-7827-4734-bf44-f9f158ca38eb",
+    src: "/images/gallery/DSC04304.jpg",
     alt: "DSC04304",
     className: "absolute left-[33.97%] top-[76.56%] w-[32.05%] h-[23.43%]",
   },
   {
-    src: "https://www.figma.com/api/mcp/asset/5957fa8d-b072-4f7a-9429-bb833c49fe3a",
+    src: "/images/gallery/DSC04278.jpg",
     alt: "DSC04278",
     className: "absolute left-0 top-0 w-[32.05%] h-[23.43%]",
   },
   {
-    src: "https://www.figma.com/api/mcp/asset/a40a73d0-500f-4fbe-b0a6-1ce9d8246108",
+    src: "/images/gallery/DSC04267.jpg",
     alt: "DSC04267",
     className: "absolute left-0 top-[25.93%] w-[32.05%] h-[74.06%]",
   },
   {
-    src: "https://www.figma.com/api/mcp/asset/f774b13f-b294-436d-b4da-334aa045f9f2",
+    src: "/images/gallery/DSC04250.jpg",
     alt: "DSC04250",
     className: "absolute left-[33.97%] top-0 w-[32.05%] h-[74.06%]",
   },
   {
-    src: "https://www.figma.com/api/mcp/asset/3ef21697-6c8b-459b-80b5-d22744c350b8",
+    src: "/images/gallery/DSC04203.jpg",
     alt: "DSC04203",
     className: "absolute left-[67.94%] top-0 w-[32.05%] h-[23.43%]",
   },
   {
-    src: "https://www.figma.com/api/mcp/asset/bb2aa575-1d33-456f-a35f-99cef3d8e5df",
+    src: "/images/gallery/DSC04179.jpg",
     alt: "DSC04179",
     className: "absolute left-[67.94%] top-[25.93%] w-[32.05%] h-[23.43%]",
   },
   {
-    src: "https://www.figma.com/api/mcp/asset/a8da1d5d-50a2-4177-9eb6-903c09945e43",
+    src: "/images/gallery/IMG_6171.jpg",
     alt: "IMG_6171",
     className: "absolute left-[67.94%] top-[51.87%] w-[32.05%] h-[48.12%]",
   },
@@ -70,11 +70,12 @@ export default function JourneySection() {
         className="pointer-events-none absolute inset-[0_0_1348px_0] opacity-40"
         aria-hidden="true"
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={bgImage}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover object-[50%_15%]"
+          fill
+          className="object-cover object-[50%_15%]"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-white mix-blend-saturation" />
       </div>
@@ -179,11 +180,12 @@ export default function JourneySection() {
                 key={alt}
                 className="rounded-card-sm relative aspect-3/4 overflow-hidden"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={src}
                   alt={alt}
-                  className="absolute inset-0 h-full w-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
                 />
               </div>
             ))}
@@ -195,11 +197,12 @@ export default function JourneySection() {
                 key={alt}
                 className={cn("rounded-card-sm overflow-hidden", className)}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={src}
                   alt={alt}
-                  className="rounded-card-sm absolute inset-0 h-full w-full object-cover"
+                  fill
+                  className="rounded-card-sm object-cover"
+                  sizes="33vw"
                 />
                 {/* Subtle gold radial tint on each photo */}
                 <div

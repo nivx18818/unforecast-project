@@ -6,9 +6,9 @@ import {
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-const logoSrc =
-  "https://www.figma.com/api/mcp/asset/ec354a9e-f10f-42d3-b685-7bc82eae20ab";
+const logoSrc = "/images/logo.png";
 
 const socialLinks = [
   {
@@ -44,11 +44,12 @@ export default function Footer() {
       <div className="flex w-full max-w-7xl flex-col items-center gap-6 lg:flex-row lg:justify-between">
         {/* Brand */}
         <div className="flex items-center gap-3">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={logoSrc}
             alt={t("logoAlt")}
-            className="size-12 object-cover"
+            width={48}
+            height={48}
+            className="object-cover"
           />
           <span className="font-display text-foreground text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap">
             {t("brandName")}

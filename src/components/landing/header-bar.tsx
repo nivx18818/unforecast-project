@@ -8,10 +8,10 @@ import {
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 import { SlideDownMount } from "./motion";
 
-const logoSrc =
-  "https://www.figma.com/api/mcp/asset/ec354a9e-f10f-42d3-b685-7bc82eae20ab";
+const logoSrc = "/images/logo.png";
 
 export default function HeaderBar() {
   const t = useTranslations("header");
@@ -49,11 +49,12 @@ export default function HeaderBar() {
           className="focus-visible:outline-ring flex items-center gap-3 rounded focus-visible:outline-2 focus-visible:outline-offset-2"
           aria-label={t("backToTop")}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={logoSrc}
             alt={t("logoAlt")}
-            className="size-12 object-cover"
+            width={48}
+            height={48}
+            className="object-cover"
           />
           <span
             className="font-display text-foreground hidden text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap md:inline"

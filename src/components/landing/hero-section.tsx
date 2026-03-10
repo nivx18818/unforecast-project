@@ -2,12 +2,11 @@ import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Calendar04Icon, Location01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import Image from "next/image";
 import { FadeUpMount } from "./motion";
 
-const heroImage =
-  "https://www.figma.com/api/mcp/asset/0047e038-4f12-41b1-8d39-03c6f2b055cc";
-const heroImageOverlay =
-  "https://www.figma.com/api/mcp/asset/cd5312bb-8076-4b9c-b111-bfcfa260876f";
+const heroImage = "/images/backgrounds/hero-bg.jpg";
+const heroImageOverlay = "/images/backgrounds/hero-overlay.jpg";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
@@ -24,17 +23,21 @@ export default function HeroSection() {
         className="pointer-events-none absolute inset-0 overflow-hidden opacity-60 mix-blend-screen"
         aria-hidden="true"
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={heroImage}
           alt=""
-          className="absolute inset-0 h-full w-full scale-125 object-cover object-top md:scale-150"
+          fill
+          priority
+          className="scale-125 object-cover object-top md:scale-150"
+          sizes="100vw"
         />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={heroImageOverlay}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-20"
+          fill
+          priority
+          className="object-cover opacity-20"
+          sizes="100vw"
         />
       </div>
 
