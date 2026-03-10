@@ -122,6 +122,7 @@ export default function DiscoverySection() {
           <div className="text-foreground space-y-6 font-sans text-lg leading-relaxed font-normal lg:text-[20px] lg:leading-7">
             <p>{t("storyParagraph1")}</p>
             <p>{t("storyParagraph2")}</p>
+            <p>{t("storyParagraph3")}</p>
           </div>
           <div className="divider-gold" aria-hidden="true" />
         </FadeUp>

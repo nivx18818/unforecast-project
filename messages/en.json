@@ -32,8 +32,9 @@
     "headline2": "Unforecast Project",
     "scrollCta": "Scroll to discover",
     "storyHeading": "Our Story",
-    "storyParagraph1": "We have created Unforecast Project as the final milestone of our journey as Events Management students at British University Vietnam. It thoughtfully brings together the knowledge, experiences, and lessons we have gained throughout three years of learning and practicing event management.",
-    "storyParagraph2": "By embracing uncertainty as an inherent aspect of event management, the \"Unforecast\" concept supports continuous learning and reflective practice, marking the organizers' transition from academic learners to practice-ready event management professionals.",
+    "storyParagraph1": "We have created Unforecast Project as the final milestone of our journey as Events Management students at British University Vietnam.",
+    "storyParagraph2": "By embracing uncertainty as an inherent aspect of event management, Unforecast Project supports continuous learning and reflective practice, marking the organizers' transition from academic learners to practice-ready event management professionals.",
+    "storyParagraph3": "Through this event, the Organizing Team aims to foster a space for connection, while expressing our sincere appreciation to those who have supported and accompanied Phuong Thao, Phuong Ha, Minh Thu, and Bao Han throughout our journey.",
     "members": [
       {
         "name": "Nguyen Phuong Thao",
@@ -63,7 +64,7 @@
     "preEventEyebrow": "Pre-Event Recap",
     "galleryHeading": "A Glimpse into the Past",
     "galleryBodyBold": "Mini Cultural Fair:",
-    "galleryBody": "Featuring local specialties and traditional food from the four hometown cities of 4 team organizers: Nam Dinh, Bac Ninh, Hai Phong, Hanoi. A charity fundraising campaign organized by Unforecast Project, where cultural spirit and regional stories are brought to life through food, interactive activities, and shared experiences.",
+    "galleryBody": "Featuring local specialities and traditional dishes from the hometowns of the four team organizers - Nam Dinh, Bac Ninh, Hai Phong, and Hanoi. This charity fundraising initiative by the Unforecast Project brings cultural spirit and regional stories to life through food, interactive activities, and shared experience.",
     "phases": [
       {
         "number": "01",
@@ -110,7 +111,7 @@
     "eyebrow": "Location",
     "headingLine1": "Theatre Pod Sir",
     "headingLine2": "Graeme Davies 3-3",
-    "body": "Set within the campus of British University Vietnam at Ecopark, Sir Graeme Davies Theatre Pod 3-3 offers a modern, intimate stage for inspiring moments.",
+    "body": "British University Vietnam - where our journeys started, memories were made, and this chapter gracefully comes to a close.",
     "addressLine1": "British University Vietnam",
     "addressLine2": "Lot GD-01, Ecopark Urban Area, Hung Yen",
     "directions": "Get Directions"
@@ -121,15 +122,15 @@
     "date": "March 14th, 2026",
     "attendBtn": "I Will Attend",
     "declineBtn": "I Cannot Attend",
-    "footerNote": "For any special requests, please contact us directly."
+    "footerNote": "For any questions, please contact us directly."
   },
   "rsvpModal": {
     "titleSuccess": "Thank You!",
     "titleAttend": "Confirm Your Attendance",
-    "titleDecline": "We'll Miss You",
+    "titleDecline": "Stay Connected With Us",
     "descSuccess": "Your response has been successfully recorded.",
     "descAttend": "Please fill out the form below to confirm your attendance.",
-    "descDecline": "We are sorry you can't make it. Leave a message for the hosts.",
+    "descDecline": "If you are unable to join us, you are welcome to leave a message or your wishes for the organizing team.",
     "errorGeneric": "Something went wrong. Please try again.",
     "nameLabel": "Your Name",
     "namePlaceholder": "Enter your full name",
@@ -151,7 +152,7 @@
   },
   "secretMessages": {
     "heading": "Secret Messages",
-    "body": "Can't make it or just want to share some love? Send your wishes and secrets to the celebration.",
+    "body": "Would you like to surprise the organizing team during the event? Please follow the instructions in the form below.",
     "cta": "Send a Secret Message"
   },
   "footer": {
