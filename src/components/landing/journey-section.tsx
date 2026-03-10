@@ -48,7 +48,7 @@ const galleryImages = [
 
 const sectionGradient = {
   background:
-    "linear-gradient(180deg, #010E1B 0%, rgba(1,14,27,0) 40%, rgba(1,14,27,0) 60%, #010E1B 100%)",
+    "linear-gradient(180deg, #010E1B 0%, rgba(1,14,27,0) 15%, rgba(1,14,27,0) 85%, #010E1B 100%)",
 };
 
 export default function JourneySection() {
@@ -74,7 +74,7 @@ export default function JourneySection() {
           src={bgImage}
           alt=""
           fill
-          className="object-cover object-[50%_15%]"
+          className="object-cover object-[50%_22%]"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-white mix-blend-saturation" />
