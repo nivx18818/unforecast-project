@@ -1,16 +1,13 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Globe02Icon } from "@hugeicons/core-free-icons";
-import { useRouter, usePathname } from "@/i18n/navigation";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
+import { useLocale, useTranslations } from "next-intl";
 import { SlideDownMount } from "./motion";
 
 const logoSrc =
@@ -100,7 +97,8 @@ export default function HeaderBar() {
                   "focus-visible:outline-ring rounded focus-visible:outline-2 focus-visible:outline-offset-2",
                 )}
               >
-                <HugeiconsIcon icon={Globe02Icon} />
+                {/* <HugeiconsIcon icon={Globe02Icon} /> */}
+                <span>{locale == "vi" ? "VI|EN" : "EN|VI"}</span>
                 <span className="sr-only">{t("switchLang")}</span>
               </button>
             </TooltipTrigger>
