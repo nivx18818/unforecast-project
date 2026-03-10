@@ -76,10 +76,15 @@ export default function DiscoverySection() {
       <div className="relative flex min-h-screen items-center justify-center px-6 py-24 lg:px-0 lg:py-0">
         {/* Background photo */}
         <div
-          className="pointer-events-none absolute inset-0 opacity-40"
+          className="pointer-events-none absolute inset-0 overflow-hidden opacity-40"
           aria-hidden="true"
         >
-          <Image src={bgImage2} alt="" fill className="object-cover" />
+          <Image
+            src={bgImage2}
+            alt=""
+            fill
+            className="scale-[1.38] object-cover object-[50%_50%]"
+          />
           <div className="absolute inset-0 bg-white mix-blend-saturation" />
         </div>
         <div

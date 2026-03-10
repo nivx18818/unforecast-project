@@ -74,7 +74,7 @@ export default function JourneySection() {
         <img
           src={bgImage}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_15%]"
         />
         <div className="absolute inset-0 bg-white mix-blend-saturation" />
       </div>
