@@ -78,6 +78,13 @@ export default function HeroSection() {
           </p>
         </FadeUpMount>
 
+        {/* Slogan */}
+        <FadeUpMount delay={0.55}>
+          <p className="text-gold-muted mt-6 font-sans text-sm font-medium tracking-[0.15em]">
+            {t("slogan")}
+          </p>
+        </FadeUpMount>
+
         {/* Metadata row */}
         <FadeUpMount delay={0.65}>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:gap-8">
