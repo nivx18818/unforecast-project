@@ -15,8 +15,6 @@ const SECTIONS = [
   { id: "journey", labelKey: "navJourney" },
   { id: "schedule", labelKey: "navSchedule" },
   { id: "venue", labelKey: "navVenue" },
-  { id: "rsvp", labelKey: "rsvp" },
-  { id: "messages", labelKey: "navMessages" },
 ] as const;
 
 type LabelKey = (typeof SECTIONS)[number]["labelKey"];
