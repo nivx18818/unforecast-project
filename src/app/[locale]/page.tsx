@@ -4,8 +4,6 @@ import DiscoverySection from "@/components/landing/discovery-section";
 import JourneySection from "@/components/landing/journey-section";
 import ScheduleSection from "@/components/landing/schedule-section";
 import VenueSection from "@/components/landing/venue-section";
-import RSVPSection from "@/components/landing/rsvp-section";
-import SecretMessagesSection from "@/components/landing/secret-messages-section";
 import Footer from "@/components/landing/footer";
 import SectionDotNav from "@/components/landing/section-dot-nav";
 
@@ -20,8 +18,6 @@ export default function Home() {
         <JourneySection />
         <ScheduleSection />
         <VenueSection />
-        <RSVPSection />
-        <SecretMessagesSection />
       </main>
       <Footer />
     </div>
