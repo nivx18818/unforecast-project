@@ -6,7 +6,7 @@ import { FadeUp, StaggerContainer, StaggerItem, FadeIn } from "./motion";
 const bgImage = "/images/backgrounds/journey-bg.jpg";
 
 // The active phase index (1-based index 1 = phase 02 = main event)
-const ACTIVE_PHASE_INDEX = 1;
+const ACTIVE_PHASE_INDEX = 2;
 
 const galleryImages = [
   {
