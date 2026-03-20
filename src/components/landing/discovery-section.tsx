@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { TeamGrid } from "./team-grid";
 import type { Member } from "./team-grid";
 import { FadeUp } from "./motion";
+import ScrollArrow from "./scroll-arrow";
 
 const bgImage = "/images/backgrounds/discovery-bg-1.png";
 const bgImage2 = "/images/backgrounds/discovery-bg-2.png";
@@ -61,13 +62,7 @@ export default function DiscoverySection() {
           </h2>
           <div className="mt-8 flex flex-col items-center gap-2 lg:mt-4">
             <span className="eyebrow">{t("scrollCta")}</span>
-            <Image
-              src="/images/backgrounds/scroll-arrow.svg"
-              alt=""
-              width={12}
-              height={7}
-              aria-hidden="true"
-            />
+            <ScrollArrow className="mt-1" />
           </div>
         </FadeUp>
       </div>
