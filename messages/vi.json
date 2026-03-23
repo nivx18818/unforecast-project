@@ -156,6 +156,12 @@
     "cta": "Gửi Lời Nhắn Bí Mật"
   },
   "footer": {
+    "organizer": "Ban Tổ chức",
+    "diamondSponsor": "Nhà tài trợ Kim cương",
+    "goldSponsor": "Nhà tài trợ Vàng",
+    "silverSponsor": "Nhà tài trợ Bạc",
+    "bronzeSponsor": "Nhà tài trợ Đồng",
+    "coordinator": "Cộng tác viên",
     "logoAlt": "Unforecast Project",
     "brandName": "Unforecast Project",
     "copyright": "© 2026 Unforecast Project. Đã đăng ký bản quyền.",

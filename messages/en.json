@@ -156,6 +156,12 @@
     "cta": "Send a Secret Message"
   },
   "footer": {
+    "organizer": "Organizer",
+    "diamondSponsor": "Diamond Sponsor",
+    "goldSponsor": "Gold Sponsor",
+    "silverSponsor": "Silver Sponsor",
+    "bronzeSponsor": "Bronze Sponsor",
+    "coordinator": "Coordinator",
     "logoAlt": "Unforecast Project",
     "brandName": "Unforecast Project",
     "copyright": "© 2026 Unforecast Project. All rights reserved.",
