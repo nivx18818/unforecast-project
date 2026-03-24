@@ -20,6 +20,7 @@ export default function HeaderBar() {
   const pathname = usePathname();
 
   const navLinks = [
+    { label: t("navProjectPhases"), href: "#project-phases" },
     { label: t("navDiscovery"), href: "#discovery" },
     { label: t("navJourney"), href: "#journey" },
     { label: t("navSchedule"), href: "#schedule" },

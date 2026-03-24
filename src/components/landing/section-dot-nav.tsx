@@ -11,6 +11,7 @@ import {
 
 const SECTIONS = [
   { id: "hero", labelKey: "navHero" },
+  { id: "project-phases", labelKey: "navProjectPhases" },
   { id: "discovery", labelKey: "navDiscovery" },
   { id: "journey", labelKey: "navJourney" },
   { id: "schedule", labelKey: "navSchedule" },
@@ -68,7 +69,7 @@ export default function SectionDotNav() {
                 onClick={() => scrollTo(id)}
                 aria-label={t(labelKey as LabelKey)}
                 className={cn(
-                  "w-2.5 h-2.5 flex items-center justify-center rounded-full transition-all duration-300",
+                  "flex h-2.5 w-2.5 items-center justify-center rounded-full transition-all duration-300",
                   "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
                 )}
               >

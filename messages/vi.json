@@ -9,6 +9,7 @@
     "brandName": "Unforecast Project",
     "navLabel": "Điều hướng chính",
     "navHero": "Đầu Trang",
+    "navProjectPhases": "Giai Đoạn",
     "navDiscovery": "Khám Phá",
     "navJourney": "Hành Trình",
     "navSchedule": "Lịch Trình",
@@ -55,13 +56,9 @@
       }
     ]
   },
-  "journey": {
+  "projectPhases": {
     "eyebrow": "Hành Trình",
     "heading": "Các Giai Đoạn Dự Án",
-    "preEventEyebrow": "Tóm Tắt Tiền Sự Kiện",
-    "galleryHeading": "Nhìn Lại Những Khoảnh Khắc",
-    "galleryBodyBold": "Không gian Trải nghiệm văn hoá ẩm thực:",
-    "galleryBody": "Giới thiệu các đặc sản địa phương và món ăn truyền thống đến từ quê hương của bốn thành viên ban tổ chức - Nam Định, Bắc Ninh, Hải Phòng và Hà Nội. Đây là hoạt động gây quỹ từ thiện của Unforecast Project, nơi tinh thần văn hóa và câu chuyện vùng miền được tái hiện thông qua ẩm thực, các hoạt động tương tác và những trải nghiệm gắn kết.",
     "phases": [
       {
         "number": "01",
@@ -79,6 +76,12 @@
         "title": "Sau sự kiện: Chuyến đi thiện nguyện đến Cô Nhi viện Thánh An Bùi Chu"
       }
     ]
+  },
+  "journey": {
+    "preEventEyebrow": "Tóm Tắt Tiền Sự Kiện",
+    "galleryHeading": "Nhìn Lại Những Khoảnh Khắc",
+    "galleryBodyBold": "Không gian Trải nghiệm văn hoá ẩm thực:",
+    "galleryBody": "Giới thiệu các đặc sản địa phương và món ăn truyền thống đến từ quê hương của bốn thành viên ban tổ chức - Nam Định, Bắc Ninh, Hải Phòng và Hà Nội. Đây là hoạt động gây quỹ từ thiện của Unforecast Project, nơi tinh thần văn hóa và câu chuyện vùng miền được tái hiện thông qua ẩm thực, các hoạt động tương tác và những trải nghiệm gắn kết."
   },
   "schedule": {
     "heading": "Lịch Trình Sự Kiện",

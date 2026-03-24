@@ -9,6 +9,7 @@
     "brandName": "Unforecast Project",
     "navLabel": "Main navigation",
     "navHero": "Home",
+    "navProjectPhases": "Project Phases",
     "navDiscovery": "Discovery",
     "navJourney": "Journey",
     "navSchedule": "Schedule",
@@ -55,13 +56,9 @@
       }
     ]
   },
-  "journey": {
+  "projectPhases": {
     "eyebrow": "Journey",
     "heading": "Project Phases",
-    "preEventEyebrow": "Pre-Event Recap",
-    "galleryHeading": "A Glimpse into the Past",
-    "galleryBodyBold": "Mini Cultural Fair:",
-    "galleryBody": "Featuring local specialities and traditional dishes from the hometowns of the four team organizers - Nam Dinh, Bac Ninh, Hai Phong, and Hanoi. This charity fundraising initiative by the Unforecast Project brings cultural spirit and regional stories to life through food, interactive activities, and shared experience.",
     "phases": [
       {
         "number": "01",
@@ -79,6 +76,12 @@
         "title": "Post-event: Charity trip to Saint An Bui Chu Orphanage"
       }
     ]
+  },
+  "journey": {
+    "preEventEyebrow": "Pre-Event Recap",
+    "galleryHeading": "A Glimpse into the Past",
+    "galleryBodyBold": "Mini Cultural Fair:",
+    "galleryBody": "Featuring local specialities and traditional dishes from the hometowns of the four team organizers - Nam Dinh, Bac Ninh, Hai Phong, and Hanoi. This charity fundraising initiative by the Unforecast Project brings cultural spirit and regional stories to life through food, interactive activities, and shared experience."
   },
   "schedule": {
     "heading": "Event Schedule",
