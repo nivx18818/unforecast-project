@@ -75,7 +75,23 @@
         "date": "March 28th, 2026",
         "title": "Post-event: Charity trip to Saint An Bui Chu Orphanage"
       }
-    ]
+    ],
+    "postEvent": {
+      "eyebrow": "Post-event information",
+      "heading": "Saint An Orphanage",
+      "body1": "Saint An Orphanage (Bui Chu, Nam Dinh) has long been a home for children who are orphaned, abandoned, or living in especially difficult circumstances. Beyond providing for their daily needs, it serves as a source of support where they are given the opportunity to study, grow, and gradually build their future in an environment filled with care and long-term guidance.",
+      "body2": "Since 1993, the orphanage has taken in 341 children with different backgrounds, including orphans, children with disabilities, and those who have been abandoned. They are nurtured and cared for with the best possible conditions. Those who are able to attend school are always encouraged and supported in pursuing education and vocational training, with the aim of helping them become independent and better integrate into society.",
+      "body3": "Understanding and deeply appreciating this journey, Unforecast Project is organizing a fundraising initiative to spread compassion and support these children. All contributions will be personally delivered during a charity trip on March 28, creating a meaningful connection while sharing love and encouragement for their journey ahead.",
+      "donationHeading": "Donation Information",
+      "accountNameLabel": "Account Name",
+      "accountName": "NGUYEN THI MINH THU",
+      "accountNumberLabel": "Account Number",
+      "accountNumber": "9969156805",
+      "bankNameLabel": "Bank Name",
+      "bankName": "Vietcombank - Joint Stock Commercial Bank for Foreign Trade of Vietnam (VCB)",
+      "transferNoteLabel": "Transfer Note",
+      "transferNote": "Name - Donation Thanh An Orphanage"
+    }
   },
   "journey": {
     "preEventEyebrow": "Pre-Event Recap",

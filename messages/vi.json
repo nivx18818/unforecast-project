@@ -75,7 +75,23 @@
         "date": "28 tháng 3, 2026",
         "title": "Sau sự kiện: Chuyến đi thiện nguyện đến Cô Nhi viện Thánh An Bùi Chu"
       }
-    ]
+    ],
+    "postEvent": {
+      "eyebrow": "Thông tin sau sự kiện",
+      "heading": "Cô Nhi Viện Thánh An",
+      "body1": "Cô nhi viện Thánh An (Bùi Chu, Nam Định) từ lâu đã trở thành mái ấm của nhiều trẻ mồ côi, bị bỏ rơi và có hoàn cảnh đặc biệt khó khăn. Không chỉ chăm lo cho cuộc sống thường nhật, nơi đây còn là điểm tựa để các em được học tập, rèn luyện và từng bước trưởng thành trong sự yêu thương và định hướng lâu dài cho tương lai.",
+      "body2": "Từ năm 1993 đến nay, Cô Nhi Viện đã tiếp nhận 341 trẻ em mồ côi, khuyết tật và bị bỏ rơi dưới nhiều hình thức khác nhau. Các em được chăm sóc, nuôi dưỡng và tạo những điều kiện tốt nhất. Những em có thể và có khả năng đi học luôn được tạo điều kiện để các em đến trường học chữ và học nghề với mục đích giúp các em sống tự lập và dễ hoà nhập vào đời sống cộng động.",
+      "body3": "Thấu hiểu và trân trọng hành trình ấy, Unforecast Project triển khai hoạt động quyên góp từ thiện nhằm lan tỏa sự sẻ chia và đồng hành cùng các em nhỏ. Toàn bộ sự đóng góp sẽ được trao tận tay các em trong chuyến đi thiện nguyện diễn ra vào ngày 28/03, như một sự kết nối trực tiếp và ý nghĩa, gửi tặng những tình cảm yêu thương và tiếp thêm động lực cho các em trong cuộc sống",
+      "donationHeading": "Thông tin quyên góp",
+      "accountNameLabel": "Chủ tài khoản",
+      "accountName": "NGUYEN THI MINH THU",
+      "accountNumberLabel": "Số tài khoản",
+      "accountNumber": "9969156805",
+      "bankNameLabel": "Ngân hàng",
+      "bankName": "Vietcombank - Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam (VCB)",
+      "transferNoteLabel": "Nội dung chuyển khoản",
+      "transferNote": "Họ tên - Từ thiện Cô Nhi Viện Thánh An"
+    }
   },
   "journey": {
     "preEventEyebrow": "Tóm Tắt Tiền Sự Kiện",
