@@ -5,37 +5,37 @@ import { FadeUp, FadeIn } from "./motion";
 
 const galleryImages = [
   {
-    src: "/images/gallery/DSC04304.jpg",
+    src: "/images/gallery/pre-event/DSC04304.jpg",
     alt: "DSC04304",
     className: "absolute left-[33.97%] top-[76.56%] w-[32.05%] h-[23.43%]",
   },
   {
-    src: "/images/gallery/DSC04278.jpg",
+    src: "/images/gallery/pre-event/DSC04278.jpg",
     alt: "DSC04278",
     className: "absolute left-0 top-0 w-[32.05%] h-[23.43%]",
   },
   {
-    src: "/images/gallery/DSC04267.jpg",
+    src: "/images/gallery/pre-event/DSC04267.jpg",
     alt: "DSC04267",
     className: "absolute left-0 top-[25.93%] w-[32.05%] h-[74.06%]",
   },
   {
-    src: "/images/gallery/DSC04250.jpg",
+    src: "/images/gallery/pre-event/DSC04250.jpg",
     alt: "DSC04250",
     className: "absolute left-[33.97%] top-0 w-[32.05%] h-[74.06%]",
   },
   {
-    src: "/images/gallery/DSC04203.jpg",
+    src: "/images/gallery/pre-event/DSC04203.jpg",
     alt: "DSC04203",
     className: "absolute left-[67.94%] top-0 w-[32.05%] h-[23.43%]",
   },
   {
-    src: "/images/gallery/DSC04179.jpg",
+    src: "/images/gallery/pre-event/DSC04179.jpg",
     alt: "DSC04179",
     className: "absolute left-[67.94%] top-[25.93%] w-[32.05%] h-[23.43%]",
   },
   {
-    src: "/images/gallery/IMG_6171.jpg",
+    src: "/images/gallery/pre-event/IMG_6171.jpg",
     alt: "IMG_6171",
     className: "absolute left-[67.94%] top-[51.87%] w-[32.05%] h-[48.12%]",
   },
