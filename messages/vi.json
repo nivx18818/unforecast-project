@@ -10,12 +10,9 @@
     "navLabel": "Điều hướng chính",
     "navHero": "Đầu Trang",
     "navProjectPhases": "Giai Đoạn",
+    "navPostEvent": "Sau Sự Kiện",
     "navDiscovery": "Khám Phá",
     "navJourney": "Hành Trình",
-    "navSchedule": "Lịch Trình",
-    "navVenue": "Địa Điểm",
-    "rsvp": "RSVP",
-    "navMessages": "Tin Nhắn",
     "switchLang": "English"
   },
   "hero": {
@@ -100,37 +97,37 @@
     "galleryBody": "Giới thiệu các đặc sản địa phương và món ăn truyền thống đến từ quê hương của bốn thành viên ban tổ chức - Nam Định, Bắc Ninh, Hải Phòng và Hà Nội. Đây là hoạt động gây quỹ từ thiện của Unforecast Project, nơi tinh thần văn hóa và câu chuyện vùng miền được tái hiện thông qua ẩm thực, các hoạt động tương tác và những trải nghiệm gắn kết."
   },
   "schedule": {
-    "heading": "Lịch Trình Sự Kiện",
-    "subheading": "Chúng mình vô cùng vinh dự và vui mừng được đón tiếp quý khách!",
+    "heading": "Lịch Trình Chuyến Đi Thiện Nguyện",
+    "subheading": "Thứ Bảy, ngày 28 tháng 03, 2026",
     "items": [
       {
-        "time": "13:00 - 13:45",
-        "events": ["Đón tiếp"]
+        "time": "07:00 - 09:30",
+        "events": ["Di chuyển đến địa điểm Cô Nhi Viện", "(từ BUV và Hà Nội)"]
       },
       {
-        "time": "13:45 - 14:30",
-        "events": ["Khu trưng bày và", "Triển lãm tương tác"]
+        "time": "09:30 - 11:00",
+        "events": ["Chương trình giao lưu", "với các em nhỏ"]
       },
       {
-        "time": "14:30 - 16:15",
-        "events": ["Lễ Tri ân và Trưởng thành"]
+        "time": "11:00 - 11:30",
+        "events": ["Tặng quà và chụp ảnh lưu niệm"]
       },
       {
-        "time": "16:15 - 17:00",
-        "events": ["Tiệc trà và giao lưu"]
+        "time": "11:30 - 13:00",
+        "events": ["Ăn trưa"]
+      },
+      {
+        "time": "13:00 - 15:30",
+        "events": ["Di chuyển trở về", "(Hà Nội và BUV)"]
       }
     ]
   },
   "venue": {
     "sectionLabel": "Địa Điểm",
-    "imageAlt": "Hội Trường Sir Graeme Davies 3-3 tại Trường Đại học Anh Quốc Việt Nam",
     "eyebrow": "Vị Trí",
-    "headingLine1": "Hội Trường Sir",
-    "headingLine2": "Graeme Davies 3-3",
-    "body": "Trường Đại học Anh Quốc Việt Nam - nơi hành trình của chúng mình bắt đầu, kỉ niệm được tạo nên và một chặng đường đang dần khép lại.",
-    "addressLine1": "Trường Đại học Anh Quốc Việt Nam",
-    "addressLine2": "Lô GĐ-01, Khu Đô Thị Ecopark, Hưng Yên",
-    "directions": "Xem Đường Đi"
+    "addressLine1": "Cô nhi viện Thánh An Bùi Chu",
+    "addressLine2": "Bùi Chu, Nam Định",
+    "directions": "Xem Đường Đi trên Google Maps"
   },
   "rsvp": {
     "heading": "Bạn có thể tham dự không?",

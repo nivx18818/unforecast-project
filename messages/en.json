@@ -10,12 +10,9 @@
     "navLabel": "Main navigation",
     "navHero": "Home",
     "navProjectPhases": "Project Phases",
+    "navPostEvent": "Post Event",
     "navDiscovery": "Discovery",
     "navJourney": "Journey",
-    "navSchedule": "Schedule",
-    "navVenue": "Venue",
-    "rsvp": "RSVP",
-    "navMessages": "Messages",
     "switchLang": "Tiếng Việt"
   },
   "hero": {
@@ -100,37 +97,39 @@
     "galleryBody": "Featuring local specialities and traditional dishes from the hometowns of the four team organizers - Nam Dinh, Bac Ninh, Hai Phong, and Hanoi. This charity fundraising initiative by the Unforecast Project brings cultural spirit and regional stories to life through food, interactive activities, and shared experience."
   },
   "schedule": {
-    "heading": "Event Schedule",
-    "subheading": "We are honored and delighted to welcome you!",
+    "heading": "Charity Trip Schedule",
+    "subheading": "Saturday, March 28th 2026",
     "items": [
       {
-        "time": "13:00 - 13:45",
-        "events": ["Check-in", "Welcome drink"]
+        "time": "07:00 - 09:30",
+        "events": [
+          "Travel to destination of the orphanage (From BUV and Hanoi)"
+        ]
       },
       {
-        "time": "13:45 - 14:30",
-        "events": ["Showcase and interactive zone", "Graduation gallery"]
+        "time": "09:30 - 11:00",
+        "events": ["Engagement & interaction session with children"]
       },
       {
-        "time": "14:30 - 16:15",
-        "events": ["Main ceremony"]
+        "time": "11:00 - 11:30",
+        "events": ["Gift presentation & photo session"]
       },
       {
-        "time": "16:15 - 17:00",
-        "events": ["Networking session", "Tea break"]
+        "time": "11:30 - 13:00",
+        "events": ["Lunch"]
+      },
+      {
+        "time": "13:00 - 15:30",
+        "events": ["Return journey", "(To Hanoi and BUV)"]
       }
     ]
   },
   "venue": {
-    "sectionLabel": "Venue",
-    "imageAlt": "Theatre Pod Sir Graeme Davies 3-3 at British University Vietnam",
+    "sectionLabel": "Location",
     "eyebrow": "Location",
-    "headingLine1": "Theatre Pod Sir",
-    "headingLine2": "Graeme Davies 3-3",
-    "body": "British University Vietnam - where our journeys started, memories were made, and this chapter gracefully comes to a close.",
-    "addressLine1": "British University Vietnam",
-    "addressLine2": "Lot GD-01, Ecopark Urban Area, Hung Yen",
-    "directions": "Get Directions"
+    "addressLine1": "Saint An Orphanage",
+    "addressLine2": "Bui Chu, Nam Dinh",
+    "directions": "Get Directions on Google Maps"
   },
   "rsvp": {
     "heading": "Will you join us?",

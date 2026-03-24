@@ -21,10 +21,9 @@ export default function HeaderBar() {
 
   const navLinks = [
     { label: t("navProjectPhases"), href: "#project-phases" },
+    { label: t("navPostEvent"), href: "#post-event" },
     { label: t("navDiscovery"), href: "#discovery" },
     { label: t("navJourney"), href: "#journey" },
-    { label: t("navSchedule"), href: "#schedule" },
-    { label: t("navVenue"), href: "#venue" },
   ];
 
   const scrollTo = (id: string) => {
@@ -106,20 +105,6 @@ export default function HeaderBar() {
             </TooltipTrigger>
             <TooltipContent side="bottom">{t("switchLang")}</TooltipContent>
           </Tooltip>
-
-          {/* RSVP pill */}
-          <button
-            onClick={() => scrollTo("#rsvp")}
-            className={cn(
-              "rounded-pill border-gold h-10 border px-4 md:px-6",
-              "bg-gold-dim text-gold",
-              "font-sans text-sm leading-5 font-bold tracking-[0.7px] uppercase",
-              "hover:bg-gold hover:text-primary-foreground transition-all duration-200",
-              "focus-visible:outline-ring focus-visible:outline-2 focus-visible:outline-offset-2",
-            )}
-          >
-            {t("rsvp")}
-          </button>
         </div>
       </SlideDownMount>
     </header>
