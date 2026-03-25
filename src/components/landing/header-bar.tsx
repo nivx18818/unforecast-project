@@ -52,8 +52,8 @@ export default function HeaderBar() {
           <Image
             src={logoSrc}
             alt={t("logoAlt")}
-            width={48}
-            height={48}
+            width={40}
+            height={40}
             className="object-cover"
           />
           <span

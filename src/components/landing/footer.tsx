@@ -157,8 +157,8 @@ export default function Footer() {
           <Image
             src={logoSrc}
             alt={t("logoAlt")}
-            width={48}
-            height={48}
+            width={40}
+            height={40}
             className="object-cover"
           />
           <span className="font-display text-foreground text-[20px] leading-7 font-bold tracking-[0.5px] whitespace-nowrap">
