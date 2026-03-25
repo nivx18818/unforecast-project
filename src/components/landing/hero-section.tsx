@@ -9,8 +9,6 @@ const heroImageOverlay = "/images/backgrounds/hero-overlay.jpg";
 export default function HeroSection() {
   const t = useTranslations("hero");
   const locale = useLocale();
-  const titleLine1 = t("titleLine1");
-  const titleLine2 = t("titleLine2");
 
   return (
     <section
@@ -58,8 +56,7 @@ export default function HeroSection() {
         <FadeUpMount delay={0.2}>
           <div className="flex flex-col items-center drop-shadow-md">
             <h1 className="font-display text-gold max-w-4xl text-center text-5xl leading-tight font-bold sm:text-6xl md:text-7xl lg:text-8xl">
-              <span className="block">{titleLine1}</span>
-              <span className="block">{titleLine2}</span>
+              {t("title")}
             </h1>
           </div>
         </FadeUpMount>

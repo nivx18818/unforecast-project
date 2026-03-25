@@ -17,8 +17,7 @@
   },
   "hero": {
     "sectionLabel": "Hero",
-    "titleLine1": "Unforecast",
-    "titleLine2": "Project",
+    "title": "Unforecast Project",
     "description": "Dự án tốt nghiệp do nhóm sinh viên năm cuối ngành Quản lý Tổ chức Sự kiện tại trường Đại học Anh Quốc Việt Nam tổ chức.",
     "slogan": "\"Unforecast, Yet Unforgettable\""
   },

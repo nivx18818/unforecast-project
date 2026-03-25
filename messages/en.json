@@ -17,8 +17,7 @@
   },
   "hero": {
     "sectionLabel": "Hero",
-    "titleLine1": "Unforecast",
-    "titleLine2": "Project",
+    "title": "Unforecast Project",
     "description": "A capstone project by final-year BUV Events Management students",
     "slogan": "\"Unforecast, Yet Unforgettable\""
   },
