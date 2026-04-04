@@ -71,23 +71,7 @@
         "date": "28 tháng 3, 2026",
         "title": "Sau sự kiện: Chuyến đi thiện nguyện đến Cô Nhi viện Thánh An Bùi Chu"
       }
-    ],
-    "postEvent": {
-      "eyebrow": "Thông tin sau sự kiện",
-      "heading": "Cô Nhi Viện Thánh An",
-      "body1": "Cô nhi viện Thánh An (Bùi Chu, Nam Định) từ lâu đã trở thành mái ấm của nhiều trẻ mồ côi, bị bỏ rơi và có hoàn cảnh đặc biệt khó khăn. Không chỉ chăm lo cho cuộc sống thường nhật, nơi đây còn là điểm tựa để các em được học tập, rèn luyện và từng bước trưởng thành trong sự yêu thương và định hướng lâu dài cho tương lai.",
-      "body2": "Từ năm 1993 đến nay, Cô Nhi Viện đã tiếp nhận 341 trẻ em mồ côi, khuyết tật và bị bỏ rơi dưới nhiều hình thức khác nhau. Các em được chăm sóc, nuôi dưỡng và tạo những điều kiện tốt nhất. Những em có thể và có khả năng đi học luôn được tạo điều kiện để các em đến trường học chữ và học nghề với mục đích giúp các em sống tự lập và dễ hoà nhập vào đời sống cộng động.",
-      "body3": "Thấu hiểu và trân trọng hành trình ấy, Unforecast Project triển khai hoạt động quyên góp từ thiện nhằm lan tỏa sự sẻ chia và đồng hành cùng các em nhỏ. Toàn bộ sự đóng góp sẽ được trao tận tay các em trong chuyến đi thiện nguyện diễn ra vào ngày 28/03, như một sự kết nối trực tiếp và ý nghĩa, gửi tặng những tình cảm yêu thương và tiếp thêm động lực cho các em trong cuộc sống",
-      "donationHeading": "Thông tin quyên góp",
-      "accountNameLabel": "Chủ tài khoản",
-      "accountName": "NGUYEN THI MINH THU",
-      "accountNumberLabel": "Số tài khoản",
-      "accountNumber": "9969156805",
-      "bankNameLabel": "Ngân hàng",
-      "bankName": "Vietcombank - Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam (VCB)",
-      "transferNoteLabel": "Nội dung chuyển khoản",
-      "transferNote": "Họ tên - Từ thiện Cô Nhi Viện Thánh An"
-    }
+    ]
   },
   "journey": {
     "preEventEyebrow": "Tóm Tắt Tiền Sự Kiện",
@@ -99,38 +83,14 @@
     "mainEventBody": "Không chỉ là một sự kiện, mà là nơi những cảm xúc được gọi tên, từ những bất ngờ nhỏ, những khoảnh khắc lắng đọng, những tâm tư lần đầu được chia sẻ gửi đến gia đình, thầy cô và những người thân yêu. Và hơn tất cả, chính sự kết nối, sự đồng hành và tinh thần của tất cả mọi người tham gia đã tạo nên một sự kiện trọn vẹn nơi mỗi cá nhân đều là một mảnh ghép không thể thiếu. Cảm ơn tất cả mọi người đã cùng Unforecast Project làm nên một ngày thật đặc biệt.",
     "viewGalleryBtn": "Xem Toàn Bộ Thư Viện Ảnh"
   },
-  "schedule": {
-    "heading": "Lịch Trình Chuyến Đi Thiện Nguyện",
-    "subheading": "Thứ Bảy, ngày 28 tháng 03, 2026",
-    "items": [
-      {
-        "time": "07:00 - 09:30",
-        "events": ["Di chuyển đến địa điểm Cô Nhi Viện", "(từ BUV và Hà Nội)"]
-      },
-      {
-        "time": "09:30 - 11:00",
-        "events": ["Chương trình giao lưu", "với các em nhỏ"]
-      },
-      {
-        "time": "11:00 - 11:30",
-        "events": ["Tặng quà và chụp ảnh lưu niệm"]
-      },
-      {
-        "time": "11:30 - 13:00",
-        "events": ["Ăn trưa"]
-      },
-      {
-        "time": "13:00 - 15:30",
-        "events": ["Di chuyển trở về", "(Hà Nội và BUV)"]
-      }
-    ]
-  },
-  "venue": {
-    "sectionLabel": "Địa Điểm",
-    "eyebrow": "Vị Trí",
-    "addressLine1": "Cô nhi viện Thánh An",
-    "addressLine2": "Bùi Chu, Nam Định",
-    "directions": "Xem Đường Đi trên Google Maps"
+  "postEventRecap": {
+    "eyebrow": "Tóm tắt hoạt động sau sự kiện",
+    "heading": "Chuyến đi thiện nguyện đến Cô Nhi Viện Thánh An Bùi Chu",
+    "body1": "Cô nhi viện Thánh An (Bùi Chu, Nam Định) từ lâu đã trở thành mái ấm của nhiều trẻ mồ côi, bị bỏ rơi và có hoàn cảnh đặc biệt khó khăn. Không chỉ chăm lo cho cuộc sống thường nhật, nơi đây còn là điểm tựa để các em được học tập, rèn luyện và từng bước trưởng thành trong sự yêu thương và định hướng lâu dài cho tương lai.",
+    "body2": "Thấu hiểu và trân trọng hành trình ấy, Unforecast Project triển khai hoạt động quyên góp từ thiện nhằm lan tỏa sự sẻ chia và đồng hành cùng các em nhỏ. Chuyến đi thiện nguyện đã trọn vẹn trong từng khoảnh khắc với những nụ cười, sự kết nối và những cảm xúc khó diễn tả thành lời.",
+    "body3": "Chúng mình xin gửi lời cảm ơn chân thành đến tất cả các thành viên và cộng tác viên đã dành thời gian và tấm lòng để tạo nên chuyến đi ý nghĩa này.",
+    "body4": "Đồng thời, xin gửi lời cảm ơn sâu sắc đến quý phụ huynh và quý nhà tài trợ đã tin tưởng, ủng hộ và đóng góp để hành trình này có thể diễn ra trọn vẹn. Unforecast Project xin cảm ơn tất cả các tấm lòng hảo tâm đã gửi những đóng góp vào quỹ thiện nguyện, để cùng chúng mình mang đến sự hỗ trợ và niềm vui cho các em nhỏ tại cô nhi viện.",
+    "viewGalleryBtn": "Xem Toàn Bộ Thư Viện Ảnh"
   },
   "rsvp": {
     "heading": "Bạn có thể tham dự không?",

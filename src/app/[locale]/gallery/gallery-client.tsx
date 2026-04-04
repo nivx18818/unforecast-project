@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useEffect, useState } from "react";
+import { useMemo } from "react";
 import Image from "next/image";
 
 type ImageItem = {
@@ -34,14 +34,6 @@ export default function GalleryClient({
   initialImages: ImageItem[];
 }) {
   const items = useMemo(() => initialImages, [initialImages]);
-
-  // Handle hydration mismatch with browser window
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
 
   return (
     <div className="w-full columns-1 gap-4 sm:columns-2 md:columns-3 lg:columns-4">

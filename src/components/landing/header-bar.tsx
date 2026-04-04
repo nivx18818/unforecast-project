@@ -21,9 +21,9 @@ export default function HeaderBar() {
 
   const navLinks = [
     { label: t("navProjectPhases"), href: "#project-phases" },
-    { label: t("navPostEvent"), href: "#post-event" },
     { label: t("navDiscovery"), href: "#discovery" },
     { label: t("navJourney"), href: "#journey" },
+    { label: t("navPostEvent"), href: "#post-event" },
   ];
 
   const scrollTo = (id: string) => {

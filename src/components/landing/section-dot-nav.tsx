@@ -12,7 +12,6 @@ import {
 const SECTIONS = [
   { id: "hero", labelKey: "navHero" },
   { id: "project-phases", labelKey: "navProjectPhases" },
-  { id: "post-event", labelKey: "navPostEvent" },
   { id: "discovery", labelKey: "navDiscovery" },
   { id: "journey", labelKey: "navJourney" },
 ] as const;

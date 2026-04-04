@@ -83,8 +83,47 @@ const mainEventImages = [
   },
 ];
 
+const postEventRecapImages = [
+  {
+    src: "/images/gallery/post-event/highlight/post-event-recap-01.jpg",
+    alt: "Post event recap image 01",
+    className: "absolute left-[33.97%] top-[76.56%] h-[23.43%] w-[32.05%]",
+  },
+  {
+    src: "/images/gallery/post-event/highlight/post-event-recap-02.jpg",
+    alt: "Post event recap image 02",
+    className: "absolute left-0 top-0 h-[23.43%] w-[32.05%]",
+  },
+  {
+    src: "/images/gallery/post-event/highlight/post-event-recap-03.jpg",
+    alt: "Post event recap image 03",
+    className: "absolute left-0 top-[25.93%] h-[74.06%] w-[32.05%]",
+  },
+  {
+    src: "/images/gallery/post-event/highlight/post-event-recap-04.jpg",
+    alt: "Post event recap image 04",
+    className: "absolute left-[33.97%] top-0 h-[74.06%] w-[32.05%]",
+  },
+  {
+    src: "/images/gallery/post-event/highlight/post-event-recap-05.jpg",
+    alt: "Post event recap image 05",
+    className: "absolute left-[67.94%] top-0 h-[23.43%] w-[32.05%]",
+  },
+  {
+    src: "/images/gallery/post-event/highlight/post-event-recap-06.jpg",
+    alt: "Post event recap image 06",
+    className: "absolute left-[67.94%] top-[25.93%] h-[23.43%] w-[32.05%]",
+  },
+  {
+    src: "/images/gallery/post-event/highlight/post-event-recap-07.jpg",
+    alt: "Post event recap image 07",
+    className: "absolute left-[67.94%] top-[51.87%] h-[48.12%] w-[32.05%]",
+  },
+];
+
 export default function JourneySection() {
   const t = useTranslations("journey");
+  const tPostEvent = useTranslations("postEventRecap");
 
   return (
     <section id="journey" className="bg-background relative overflow-hidden">
@@ -174,7 +213,10 @@ export default function JourneySection() {
                 variant="ghost"
                 className="hover:text-gold transition-all duration-300"
               >
-                <Link href="/gallery" className="flex items-center gap-2">
+                <Link
+                  href="/gallery/main-event"
+                  className="flex items-center gap-2"
+                >
                   <span>{t("viewGalleryBtn")}</span>
                   <HugeiconsIcon icon={ArrowRight02Icon} />
                 </Link>
@@ -215,6 +257,86 @@ export default function JourneySection() {
                   sizes="33vw"
                 />
                 {/* Subtle gold radial tint on each photo */}
+                <div
+                  className="rounded-card-sm pointer-events-none absolute inset-0 opacity-10"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at 50% 50%, rgba(227,170,49,1) 0%, rgba(0,0,0,1) 100%)",
+                  }}
+                  aria-hidden="true"
+                />
+              </div>
+            ))}
+          </FadeIn>
+        </div>
+
+        {/* ── Post Event Recap / Gallery ─────────────────────── */}
+        <div
+          id="post-event"
+          className="relative flex flex-col gap-16 pt-12 pb-24"
+        >
+          <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
+            <FadeUp className="flex w-full max-w-175.75 flex-col gap-2">
+              <span className="text-gold font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
+                {tPostEvent("eyebrow")}
+              </span>
+              <h2 className="font-display text-foreground text-[32px] leading-10 font-bold md:text-[48px] md:leading-12">
+                {tPostEvent("heading")}
+              </h2>
+              <div className="text-muted-foreground mt-2 space-y-4 font-sans text-base leading-6">
+                <p>{tPostEvent("body1")}</p>
+                <p>{tPostEvent("body2")}</p>
+                <p>{tPostEvent("body3")}</p>
+                <p>{tPostEvent("body4")}</p>
+              </div>
+            </FadeUp>
+            <FadeUp className="shrink-0">
+              <Button
+                asChild
+                variant="ghost"
+                className="hover:text-gold transition-all duration-300"
+              >
+                <Link
+                  href="/gallery/post-event"
+                  className="flex items-center gap-2"
+                >
+                  <span>{tPostEvent("viewGalleryBtn")}</span>
+                  <HugeiconsIcon icon={ArrowRight02Icon} />
+                </Link>
+              </Button>
+            </FadeUp>
+          </div>
+
+          <FadeIn className="grid grid-cols-2 gap-2 md:hidden">
+            {postEventRecapImages.map(({ src, alt }) => (
+              <div
+                key={alt}
+                className="rounded-card-sm relative aspect-3/4 overflow-hidden"
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+            ))}
+          </FadeIn>
+
+          <FadeIn className="relative mx-auto hidden aspect-1248/960 w-full overflow-clip md:block">
+            {postEventRecapImages.map(({ src, alt, className }) => (
+              <div
+                key={alt}
+                className={cn("rounded-card-sm overflow-hidden", className)}
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  className="rounded-card-sm object-cover"
+                  sizes="33vw"
+                />
                 <div
                   className="rounded-card-sm pointer-events-none absolute inset-0 opacity-10"
                   style={{
