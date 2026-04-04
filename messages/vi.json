@@ -18,10 +18,10 @@
   "loading": {
     "brand": "Unforecast Project",
     "label": "Đang tải",
-    "homeTitle": "Đang chuẩn bị lời mời",
+    "homeTitle": "Đang chuẩn bị hành trình",
     "homeSubtitle": "Đang thiết lập màn hình tiếp theo cho hành trình của bạn.",
     "galleryTitle": "Đang tải thư viện ảnh",
-    "gallerySubtitle": "Đang tổng hợp những khoảnh khắc trong hành trình Unforecast."
+    "gallerySubtitle": "Đang tổng hợp những khoảnh khắc trong hành trình Unforecast Project."
   },
   "hero": {
     "sectionLabel": "Hero",

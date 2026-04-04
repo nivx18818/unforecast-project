@@ -18,10 +18,10 @@
   "loading": {
     "brand": "Unforecast Project",
     "label": "Loading",
-    "homeTitle": "Preparing the invitation",
+    "homeTitle": "Preparing the journey",
     "homeSubtitle": "Setting up the next view for your journey.",
     "galleryTitle": "Loading gallery",
-    "gallerySubtitle": "Gathering moments from the Unforecast journey."
+    "gallerySubtitle": "Gathering moments from the Unforecast Project journey."
   },
   "hero": {
     "sectionLabel": "Hero",
