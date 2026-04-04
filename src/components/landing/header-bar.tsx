@@ -23,7 +23,6 @@ export default function HeaderBar() {
     { label: t("navProjectPhases"), href: "#project-phases" },
     { label: t("navDiscovery"), href: "#discovery" },
     { label: t("navJourney"), href: "#journey" },
-    { label: t("navPostEvent"), href: "#post-event" },
   ];
 
   const scrollTo = (id: string) => {
