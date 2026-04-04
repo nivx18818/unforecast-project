@@ -1,10 +1,7 @@
 import { useTranslations } from "next-intl";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FadeUp, StaggerContainer, StaggerItem } from "./motion";
 
-// The active phase index (1-based index 1 = phase 02 = main event)
-const ACTIVE_PHASE_INDEX = 2;
 const bgImage = "/images/backgrounds/journey-bg.jpg";
 
 const sectionGradient = {
@@ -14,15 +11,11 @@ const sectionGradient = {
 
 export default function ProjectPhasesSection() {
   const t = useTranslations("projectPhases");
-  const phasesData = t.raw("phases") as Array<{
+  const phases = t.raw("phases") as Array<{
     number: string;
     date: string;
     title: string;
   }>;
-  const phases = phasesData.map((p, i) => ({
-    ...p,
-    active: i === ACTIVE_PHASE_INDEX,
-  }));
 
   return (
     <section
@@ -60,7 +53,7 @@ export default function ProjectPhasesSection() {
               </h2>
             </FadeUp>
 
-            <StaggerContainer className="relative flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+            <StaggerContainer className="mx-4 relative flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
               <div
                 className="pointer-events-none absolute top-5.5 right-0 left-0 hidden h-px md:block"
                 style={{
@@ -70,24 +63,14 @@ export default function ProjectPhasesSection() {
                 aria-hidden="true"
               />
 
-              {phases.map(({ number, date, title, active }) => (
+              {phases.map(({ number, date, title }) => (
                 <StaggerItem key={number} className="relative min-w-0 flex-1">
                   <div className="mb-6">
                     <div
-                      className={cn(
-                        "rounded-pill border-gold flex size-12 items-center justify-center border-2",
-                        active
-                          ? "bg-gold shadow-gold-active"
-                          : "shadow-gold-subtle bg-transparent",
-                      )}
+                      className="rounded-pill border-gold bg-gold shadow-gold-active flex size-12 items-center justify-center border-2"
                       aria-hidden="true"
                     >
-                      <span
-                        className={cn(
-                          "font-sans text-base leading-6 font-bold",
-                          active ? "text-primary-foreground" : "text-gold",
-                        )}
-                      >
+                      <span className="text-primary-foreground font-sans text-base leading-6 font-bold">
                         {number}
                       </span>
                     </div>
