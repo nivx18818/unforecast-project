@@ -82,21 +82,17 @@
   },
   "journey": {
     "preEventEyebrow": "Pre-Event Recap",
-    "galleryHeading": "A Glimpse into the Past",
-    "galleryBodyBold": "Mini Cultural Fair:",
-    "galleryBody": "Featuring local specialities and traditional dishes from the hometowns of the four team organizers - Nam Dinh, Bac Ninh, Hai Phong, and Hanoi. This charity fundraising initiative by the Unforecast Project brings cultural spirit and regional stories to life through food, interactive activities, and shared experience.",
+    "preEventHeading": "Mini Cultural Fair",
+    "preEventBody": "Featuring local specialities and traditional dishes from the hometowns of the four team organizers - Nam Dinh, Bac Ninh, Hai Phong, and Hanoi. This charity fundraising initiative by the Unforecast Project brings cultural spirit and regional stories to life through food, interactive activities, and shared experience.",
     "mainEventEyebrow": "Main Event Recap",
     "mainEventHeading": "Ceremony of Gratitude and Growth",
     "mainEventBody": "Not just a ceremony, it turned into a space where emotions could finally unfold. From subtle surprises to quiet, lingering emotions, and heartfelt words shared with family, teachers, and loved ones for the very first time, every detail carried meaning. Above all, it was the connection, the togetherness, and the spirit of everyone involved that made the day truly complete where each individual became an irreplaceable piece of the whole. Thank you for being part of Unforecast Project and for creating such a meaningful day.",
-    "viewGalleryBtn": "View Full Gallery"
-  },
-  "postEventRecap": {
-    "eyebrow": "Recap Post Event",
-    "heading": "Charity Trip to Saint An Bui Chu Orphanage",
-    "body1": "Saint An Orphanage (Bui Chu, Nam Dinh) has long been a home for children who are orphaned, abandoned, or living in especially difficult circumstances. Beyond providing for their daily needs, it serves as a source of support where they are given the opportunity to study, grow, and gradually build their future in an environment filled with care and long-term guidance.",
-    "body2": "Understanding and deeply appreciating this journey, Unforecast Project is organizing a fundraising initiative to spread compassion and support these children. The charity trip was complete in every moment, that filled with smiles, meaningful connections, and emotions that are hard to put into words.",
-    "body3": "We would like to express our sincere gratitude to all members and collaborators who dedicated their time and heart to making this meaningful journey possible.",
-    "body4": "We are also deeply thankful to our beloved parents and generous sponsors for their trust, support, and contributions that helped bring this trip to life. Unforecast Project would also like to extend our heartfelt thanks to everyone who showed care and made contributions to the charity fund, allowing us to bring support and small moments of joy to the children at the orphanage.",
+    "postEventEyebrow": "Post-Event Recap",
+    "postEventHeading": "Charity Trip to Saint An Bui Chu Orphanage",
+    "postEventBody1": "Saint An Orphanage (Bui Chu, Nam Dinh) has long been a home for children who are orphaned, abandoned, or living in especially difficult circumstances. Beyond providing for their daily needs, it serves as a source of support where they are given the opportunity to study, grow, and gradually build their future in an environment filled with care and long-term guidance.",
+    "postEventBody2": "Understanding and deeply appreciating this journey, Unforecast Project is organizing a fundraising initiative to spread compassion and support these children. The charity trip was complete in every moment, that filled with smiles, meaningful connections, and emotions that are hard to put into words.",
+    "postEventBody3": "We would like to express our sincere gratitude to all members and collaborators who dedicated their time and heart to making this meaningful journey possible.",
+    "postEventBody4": "We are also deeply thankful to our beloved parents and generous sponsors for their trust, support, and contributions that helped bring this trip to life. Unforecast Project would also like to extend our heartfelt thanks to everyone who showed care and made contributions to the charity fund, allowing us to bring support and small moments of joy to the children at the orphanage.",
     "viewGalleryBtn": "View Full Gallery"
   },
   "rsvp": {

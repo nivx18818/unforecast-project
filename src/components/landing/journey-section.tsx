@@ -123,7 +123,6 @@ const postEventRecapImages = [
 
 export default function JourneySection() {
   const t = useTranslations("journey");
-  const tPostEvent = useTranslations("postEventRecap");
 
   return (
     <section id="journey" className="bg-background relative overflow-hidden">
@@ -136,13 +135,10 @@ export default function JourneySection() {
               {t("preEventEyebrow")}
             </span>
             <h2 className="font-display text-foreground text-[32px] leading-10 font-bold md:text-[48px] md:leading-12">
-              {t("galleryHeading")}
+              {t("preEventHeading")}
             </h2>
             <p className="text-muted-foreground mt-2 font-sans text-base leading-6">
-              <strong className="text-muted-foreground font-bold">
-                {t("galleryBodyBold")}
-              </strong>{" "}
-              {t("galleryBody")}
+              {t("preEventBody")}
             </p>
           </FadeUp>
 
@@ -278,16 +274,16 @@ export default function JourneySection() {
           <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
             <FadeUp className="flex w-full max-w-175.75 flex-col gap-2">
               <span className="text-gold font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
-                {tPostEvent("eyebrow")}
+                {t("postEventEyebrow")}
               </span>
               <h2 className="font-display text-foreground text-[32px] leading-10 font-bold md:text-[48px] md:leading-12">
-                {tPostEvent("heading")}
+                {t("postEventHeading")}
               </h2>
               <div className="text-muted-foreground mt-2 space-y-4 font-sans text-base leading-6">
-                <p>{tPostEvent("body1")}</p>
-                <p>{tPostEvent("body2")}</p>
-                <p>{tPostEvent("body3")}</p>
-                <p>{tPostEvent("body4")}</p>
+                <p>{t("postEventBody1")}</p>
+                <p>{t("postEventBody2")}</p>
+                <p>{t("postEventBody3")}</p>
+                <p>{t("postEventBody4")}</p>
               </div>
             </FadeUp>
             <FadeUp className="shrink-0">
@@ -300,7 +296,7 @@ export default function JourneySection() {
                   href="/gallery/post-event"
                   className="flex items-center gap-2"
                 >
-                  <span>{tPostEvent("viewGalleryBtn")}</span>
+                  <span>{t("viewGalleryBtn")}</span>
                   <HugeiconsIcon icon={ArrowRight02Icon} />
                 </Link>
               </Button>

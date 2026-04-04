@@ -17,9 +17,9 @@ export default async function PostEventGalleryPage(props: {
   const params = await props.params;
   setRequestLocale(params.locale);
 
-  const tPostEvent = await getTranslations({
+  const tJourney = await getTranslations({
     locale: params.locale,
-    namespace: "postEventRecap",
+    namespace: "journey",
   });
 
   const tHeader = await getTranslations({
@@ -42,10 +42,10 @@ export default async function PostEventGalleryPage(props: {
 
         <div className="mb-12 flex w-full flex-col gap-2">
           <span className="text-gold font-sans text-sm leading-5 font-bold tracking-[2.8px] uppercase">
-            {tPostEvent("eyebrow")}
+            {tJourney("postEventEyebrow")}
           </span>
           <h1 className="font-display text-foreground text-[32px] leading-10 font-bold md:text-[48px] md:leading-12">
-            {tPostEvent("heading")}
+            {tJourney("postEventHeading")}
           </h1>
         </div>
 

@@ -82,21 +82,17 @@
   },
   "journey": {
     "preEventEyebrow": "Tóm Tắt Tiền Sự Kiện",
-    "galleryHeading": "Nhìn Lại Những Khoảnh Khắc",
-    "galleryBodyBold": "Không gian Trải nghiệm văn hoá ẩm thực:",
-    "galleryBody": "Giới thiệu các đặc sản địa phương và món ăn truyền thống đến từ quê hương của bốn thành viên ban tổ chức - Nam Định, Bắc Ninh, Hải Phòng và Hà Nội. Đây là hoạt động gây quỹ từ thiện của Unforecast Project, nơi tinh thần văn hóa và câu chuyện vùng miền được tái hiện thông qua ẩm thực, các hoạt động tương tác và những trải nghiệm gắn kết.",
+    "preEventHeading": "Không gian Trải nghiệm văn hoá ẩm thực",
+    "preEventBody": "Giới thiệu các đặc sản địa phương và món ăn truyền thống đến từ quê hương của bốn thành viên ban tổ chức - Nam Định, Bắc Ninh, Hải Phòng và Hà Nội. Đây là hoạt động gây quỹ từ thiện của Unforecast Project, nơi tinh thần văn hóa và câu chuyện vùng miền được tái hiện thông qua ẩm thực, các hoạt động tương tác và những trải nghiệm gắn kết.",
     "mainEventEyebrow": "Tóm Tắt Sự Kiện Chính",
     "mainEventHeading": "Lễ Tri ân và Trưởng thành",
     "mainEventBody": "Không chỉ là một sự kiện, mà là nơi những cảm xúc được gọi tên, từ những bất ngờ nhỏ, những khoảnh khắc lắng đọng, những tâm tư lần đầu được chia sẻ gửi đến gia đình, thầy cô và những người thân yêu. Và hơn tất cả, chính sự kết nối, sự đồng hành và tinh thần của tất cả mọi người tham gia đã tạo nên một sự kiện trọn vẹn nơi mỗi cá nhân đều là một mảnh ghép không thể thiếu. Cảm ơn tất cả mọi người đã cùng Unforecast Project làm nên một ngày thật đặc biệt.",
-    "viewGalleryBtn": "Xem Toàn Bộ Thư Viện Ảnh"
-  },
-  "postEventRecap": {
-    "eyebrow": "Tóm tắt hoạt động sau sự kiện",
-    "heading": "Chuyến đi thiện nguyện đến Cô Nhi Viện Thánh An Bùi Chu",
-    "body1": "Cô nhi viện Thánh An (Bùi Chu, Nam Định) từ lâu đã trở thành mái ấm của nhiều trẻ mồ côi, bị bỏ rơi và có hoàn cảnh đặc biệt khó khăn. Không chỉ chăm lo cho cuộc sống thường nhật, nơi đây còn là điểm tựa để các em được học tập, rèn luyện và từng bước trưởng thành trong sự yêu thương và định hướng lâu dài cho tương lai.",
-    "body2": "Thấu hiểu và trân trọng hành trình ấy, Unforecast Project triển khai hoạt động quyên góp từ thiện nhằm lan tỏa sự sẻ chia và đồng hành cùng các em nhỏ. Chuyến đi thiện nguyện đã trọn vẹn trong từng khoảnh khắc với những nụ cười, sự kết nối và những cảm xúc khó diễn tả thành lời.",
-    "body3": "Chúng mình xin gửi lời cảm ơn chân thành đến tất cả các thành viên và cộng tác viên đã dành thời gian và tấm lòng để tạo nên chuyến đi ý nghĩa này.",
-    "body4": "Đồng thời, xin gửi lời cảm ơn sâu sắc đến quý phụ huynh và quý nhà tài trợ đã tin tưởng, ủng hộ và đóng góp để hành trình này có thể diễn ra trọn vẹn. Unforecast Project xin cảm ơn tất cả các tấm lòng hảo tâm đã gửi những đóng góp vào quỹ thiện nguyện, để cùng chúng mình mang đến sự hỗ trợ và niềm vui cho các em nhỏ tại cô nhi viện.",
+    "postEventEyebrow": "Tóm tắt hoạt động sau sự kiện",
+    "postEventHeading": "Chuyến đi thiện nguyện đến Cô Nhi Viện Thánh An Bùi Chu",
+    "postEventBody1": "Cô nhi viện Thánh An (Bùi Chu, Nam Định) từ lâu đã trở thành mái ấm của nhiều trẻ mồ côi, bị bỏ rơi và có hoàn cảnh đặc biệt khó khăn. Không chỉ chăm lo cho cuộc sống thường nhật, nơi đây còn là điểm tựa để các em được học tập, rèn luyện và từng bước trưởng thành trong sự yêu thương và định hướng lâu dài cho tương lai.",
+    "postEventBody2": "Thấu hiểu và trân trọng hành trình ấy, Unforecast Project triển khai hoạt động quyên góp từ thiện nhằm lan tỏa sự sẻ chia và đồng hành cùng các em nhỏ. Chuyến đi thiện nguyện đã trọn vẹn trong từng khoảnh khắc với những nụ cười, sự kết nối và những cảm xúc khó diễn tả thành lời.",
+    "postEventBody3": "Chúng mình xin gửi lời cảm ơn chân thành đến tất cả các thành viên và cộng tác viên đã dành thời gian và tấm lòng để tạo nên chuyến đi ý nghĩa này.",
+    "postEventBody4": "Đồng thời, xin gửi lời cảm ơn sâu sắc đến quý phụ huynh và quý nhà tài trợ đã tin tưởng, ủng hộ và đóng góp để hành trình này có thể diễn ra trọn vẹn. Unforecast Project xin cảm ơn tất cả các tấm lòng hảo tâm đã gửi những đóng góp vào quỹ thiện nguyện, để cùng chúng mình mang đến sự hỗ trợ và niềm vui cho các em nhỏ tại cô nhi viện.",
     "viewGalleryBtn": "Xem Toàn Bộ Thư Viện Ảnh"
   },
   "rsvp": {
