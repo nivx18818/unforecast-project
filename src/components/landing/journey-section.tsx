@@ -121,6 +121,9 @@ const postEventRecapImages = [
   },
 ];
 
+const mainEventVideoEmbedUrl =
+  "https://www.youtube-nocookie.com/embed/L2zt_Y5loFc?rel=0";
+
 export default function JourneySection() {
   const t = useTranslations("journey");
 
@@ -264,6 +267,20 @@ export default function JourneySection() {
               </div>
             ))}
           </FadeIn>
+
+          <FadeUp className="w-full pt-2">
+            <div className="bg-background/60 shadow-gold-subtle rounded-card-lg border-primary/30 relative mx-auto aspect-video w-full max-w-5xl overflow-hidden border">
+              <iframe
+                src={mainEventVideoEmbedUrl}
+                title="Unforecast main event recap video"
+                className="h-full w-full"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </FadeUp>
         </div>
 
         {/* ── Post Event Recap / Gallery ─────────────────────── */}
