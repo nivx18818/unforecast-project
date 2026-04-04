@@ -15,6 +15,14 @@
     "navJourney": "Journey",
     "switchLang": "Tiếng Việt"
   },
+  "loading": {
+    "brand": "Unforecast Project",
+    "label": "Loading",
+    "homeTitle": "Preparing the invitation",
+    "homeSubtitle": "Setting up the next view for your journey.",
+    "galleryTitle": "Loading gallery",
+    "gallerySubtitle": "Gathering moments from the Unforecast journey."
+  },
   "hero": {
     "sectionLabel": "Hero",
     "title": "Unforecast Project",
