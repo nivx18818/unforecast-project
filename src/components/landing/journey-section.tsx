@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
 
-const galleryImages = [
+const preEventImages = [
   {
     src: "/images/gallery/pre-event/DSC04304.jpg",
     alt: "DSC04304",
@@ -124,6 +124,9 @@ const postEventRecapImages = [
 const mainEventVideoEmbedUrl =
   "https://www.youtube-nocookie.com/embed/L2zt_Y5loFc?rel=0";
 
+const postEventVideoEmbedUrl =
+  "https://www.youtube-nocookie.com/embed/qQ0t3VO7gB8?rel=0";
+
 export default function JourneySection() {
   const t = useTranslations("journey");
 
@@ -148,7 +151,7 @@ export default function JourneySection() {
           {/* Masonry gallery — mobile: simple 2-col grid; desktop: absolute mosaic */}
           {/* Mobile grid */}
           <FadeIn className="grid grid-cols-2 gap-2 md:hidden">
-            {galleryImages.map(({ src, alt }) => (
+            {preEventImages.map(({ src, alt }) => (
               <div
                 key={alt}
                 className="rounded-card-sm relative aspect-3/4 overflow-hidden"
@@ -165,7 +168,7 @@ export default function JourneySection() {
           </FadeIn>
           {/* Desktop mosaic */}
           <FadeIn className="relative mx-auto hidden aspect-1248/960 w-full overflow-clip md:block">
-            {galleryImages.map(({ src, alt, className }) => (
+            {preEventImages.map(({ src, alt, className }) => (
               <div
                 key={alt}
                 className={cn("rounded-card-sm overflow-hidden", className)}
@@ -272,7 +275,7 @@ export default function JourneySection() {
             <div className="bg-background/60 shadow-gold-subtle rounded-card-lg border-primary/30 relative mx-auto aspect-video w-full max-w-5xl overflow-hidden border">
               <iframe
                 src={mainEventVideoEmbedUrl}
-                title="Unforecast main event recap video"
+                title="Unforecast Project main event recap video"
                 className="h-full w-full"
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -361,6 +364,20 @@ export default function JourneySection() {
               </div>
             ))}
           </FadeIn>
+
+          <FadeUp className="w-full pt-2">
+            <div className="bg-background/60 shadow-gold-subtle rounded-card-lg border-primary/30 relative mx-auto aspect-video w-full max-w-5xl overflow-hidden border">
+              <iframe
+                src={postEventVideoEmbedUrl}
+                title="Unforecast Project post-event recap video"
+                className="h-full w-full"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </FadeUp>
         </div>
       </div>
     </section>
